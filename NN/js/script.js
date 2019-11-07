@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  screen.orientation.lock('landscape');
+
   // ----- BG MUSIC -----
   {
     // --- Ritsuko ---
