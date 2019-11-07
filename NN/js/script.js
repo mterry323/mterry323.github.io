@@ -92,7 +92,19 @@ $(document).ready(function() {
     $("#aboutBlurb").hide();
     $("#copyBlurb").hide();
     $("#Endscreen").hide();
-    $(".bgShade").hide();
+    $("#Startscreen").show();
+    $(".bgShade").show();
+
+    $(".start").click(function () {
+      $("#Startscreen").hide();
+      $(".bgShade").hide();
+      song1.play();
+      song2.play();
+      song3.play();
+      song4.play();
+      $("#bgmOn").css("color", "#ff8f1f");
+      $("#bgmOff").css("color", "white");
+    })
 
     $("#About").click(function() {
       $("#aboutBlurb").show();
