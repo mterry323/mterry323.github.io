@@ -124,6 +124,7 @@ $(document).ready(function() {
         $("#copyBlurb").hide();
         $(".bgShade").hide();
       });
+      
     });
 
     $("#toEndscreen").click(function() {
