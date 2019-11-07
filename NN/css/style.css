@@ -1,0 +1,190 @@
+body {
+  font-family: "Arial Narrow";
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#storyBG {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#storyBG img {
+  width: 100%;
+}
+
+#topMenu {
+  position: fixed;
+  top: 1;
+  margin-left: -35px;
+  width: 300px;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  background: #000;
+  border: 4px #ff8f1f double;
+  font-family: Times;
+  transform: scale(.8, 1);
+}
+
+#topMenu a {
+  color: white;
+}
+
+#topMenu a:hover {
+  color: #ff8f1f;
+}
+
+.bgShade {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0,0,0,0.6);
+}
+
+.popup {
+  position: absolute;
+  z-index: 2;
+  margin-left: 33.3%;
+  margin-top: 3%;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  background: black;
+  border: 4px #ff8f1f double;
+  color: white;
+  /* text-align: center; */
+  font-size:16px;
+  overflow-y: auto;
+}
+
+.popup h1 {
+  font-family: Times;
+  transform: scale(.8, 1);
+  font-size: 30px;
+  text-align: center;
+}
+
+.popup a {
+  font-family: Times;
+  transform: scale(.8, 1);
+  font-size: 20px;
+  color: #ff8f1f;
+}
+
+.popup a:hover {
+  color: white;
+}
+
+.close {
+  text-align: left;
+  font-size: 25px;
+  color: #ff8f1f;
+  line-height: 75%;
+}
+
+.close:hover {
+  color: white;
+}
+
+#box {
+  position: absolute;
+  width: 800px;
+  top: 75%;
+  margin-top: -60px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+#diaBox {
+  width: 800px;
+  height: 150px;
+  background: #000;
+  padding: 10px;
+  border: 4px #ff8f1f double;
+}
+
+#speakerName {
+    width: 100px;
+    height: auto;
+    background: #000;
+    color: white;
+    padding: 5px;
+    font-family: Times;
+    transform: scale(.8, 1);
+    font-size: 30px;
+    text-align: center;
+    border-top: 4px #ff8f1f double;
+    border-left: 4px #ff8f1f double;
+    border-right: 4px #ff8f1f double;
+}
+
+#avatar {
+  position: absolute;
+  margin-left: 650px;
+  margin-top: -115px;
+}
+
+#avatar img {
+  width: 80%;
+  border: 4px #ff8f1f double;
+  background: black;
+}
+
+.dialogue {
+  color: white;
+  text-align: left;
+  font-size: 24px;
+}
+
+.choices {
+    font-family: Times;
+    transform: scale(.8, 1);
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin-top: 150px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    padding: 5px;
+}
+
+.option {
+  background: #000;
+  padding: 5px;
+  color: #ff8f1f;
+  border: 4px #ff8f1f double;
+  max-width: 100%;
+}
+
+#nextButton {
+  position: absolute;
+  margin-top: 115px;
+  margin-left: 715px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff8f1f;
+  font-family: Times;
+  font-size: 30px;
+  transform: scale(.8, 1);
+}

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+
+<head>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <title>Boyfriend of Steel || A Neon Genesis Evangelion Fangame</title>
+
+</head>
+
+<body>
+
+  <!---TOP MENU-->
+  <div id="topMenu">
+    Music: <a href="#" id="bgmOn">On</a> &nbsp;<a href="#" id="bgmOff">Off</a> &nbsp; &nbsp; <a id="About" href="#">About</a> &nbsp; &nbsp; <a id="Copyright" href="#">Disclaimers</a>
+  </div>
+
+  <!---POPUP BOXES-->
+  <div>
+
+    <div class="bgShade"></div>
+    <div id="aboutBlurb" class="popup">
+      <a id="Close" class="close" href="#">X</a>
+      <h1>About This Project</h1>
+      <p><i>Boyfriend of Steel</i> is a fangame for the cultural landmark anime series, <i>Neon Genesis Evangelion,</i> which borrows from the premise of its officially licensed spinoff games, <i>Girlfriend of Steel</i> and <i>Girlfriend of Steel
+          2nd.</i> It is a project created by and for LGBTQ+ fans of the show which hopes to explore more in-depth the queer themes of the show which are often left underexplored in canon material. Despite having two canonically LGBT male characters
+        within the text of the show and movies, <i>Eva's</i> marketing tends to dance around their queerness in favor of the classic "leave it up to interpretation" explanation. This fangame seeks to give LGBTQ+ fans the explicit representation they
+        may hope to see.</p>
+
+      <p>This is a demo which spans one in-game school day and uses assets from the <i>Girlfriend</i> games. The final game will be created with Renpy and could potentially look and feel very different from this demo. This is simply a proof of
+        concept hosted online for easy access.</p>
+
+      <p><b>Disclaimer:</b> This demo assumes prior knowledge of <i>Eva</i> and thus will not explain lore in depth. Further, there will be spoilers. <i>Eva</i> is available on Netflix for streaming.</p>
+    </div>
+
+    <div class="bgShade"></div>
+    <div id="copyBlurb" class="popup">
+      <a id="Close1" class="close" href="#">X</a>
+      <h1>Copyright Disclaimer</h1>
+      <p><i>Neon Genesis Evangelion,</i> the TV series, movies and mangas, its characters, games, and all supplemental material is owned and copyrighted by Studio Gainax and Studio Khara. The copyrighted material used in the <i>Boyfriend of Steel</i>
+        fangame is used under the Fair Use Policy, in that it is being used for non-profit educational purposes and cannot be used as a replacement for the material in question or infringe upon any potential market of this material nor its value.</p>
+      <h1>References</h1>
+      <p>All images used are from <i>Girlfriend of Steel,</i> <i>Girlfriend of Steel 2nd,</i> or <i>Evangelion 3.0: You Can (Not) Redo.</i></p>
+      <p>Songs used:</p>
+      <ul>
+        <li>2EM12_KK_A08 - Shiro Sagisu, arr. and performed by Nik Harnoncourt</li>
+        <li>Quatre Mains (short ver.) - Shiro Sagisu, arr. and performed by Nik Harnoncourt</li>
+        <li>Ode to Joy (from Symphony No. 9 mo. 4) - Ludwig Van Beethoven, piano arr. by Andrew Wrangell</li>
+        <li>Ritsuko - Shiro Sagisu</li>
+      </ul>
+    </div>
+
+    <div class="bgShade"></div>
+    <div id="Endscreen" class="popup">
+      <!-- <a id="Close" class="close" href="#">X</a> -->
+      <h1>Thank You!</h1>
+      <p>Thank you for playing this demo of Boyfriend of Steel! This is a simple proof of concept that will likely differ in several ways from the final build, so please stay tuned for the finished product! In the meantime, feel free to play again..</p>
+
+      <p align="center"><a href="index.html">Restart</a></p>
+    </div>
+
+  </div>
+
+  <!---STORY START-->
+  <div>
+
+    <div class="storypoint" id="s1">
+      <div id="storyBG"><img src="img/bg/gos2_school_campus.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toS2">next</div>
+          </a>
+          <div class="dialogue">The school day is over, and students are milling about, going to clubs, joining up with friends. I rise from my seat and grab my bag.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="s2">
+      <div id="storyBG"><img src="img/bg/gos2_school_campus.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toS3">next</div>
+          </a>
+          <div class="dialogue">I guess I should get going, too. But I don’t really want to go home yet, and I’m not needed at NERV today...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="s3">
+      <div id="storyBG"><img src="img/bg/gos2_school_campus.jpg"></div>
+      <div class="choices">
+        <a href="#">
+          <h2 class="option" id="toMus1">Music room</h2>
+        </a>
+        <a href="#">
+          <h2 class="option" id="toTrack1">Track field</h2>
+        </a>
+        <a href="#">
+          <h2 class="option" id="toHr1">Homeroom</h2>
+        </a>
+      </div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <div class="dialogue">Where should I go?</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!---MUSIC ROOM-->
+  <div>
+
+    <div class="storypoint" id="mus1">
+      <div id="storyBG"><img src="img/bg/gos2_school_corridor.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus2">next</div>
+          </a>
+          <div class="dialogue">I’m a little worried that if I go to the music room, I might be overheard playing the cello. Or that I might be told to leave, since I’m not actually in the orchestra class.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus2">
+      <div id="storyBG"><img src="img/bg/gos2_school_corridor.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus3">next</div>
+          </a>
+          <div class="dialogue">It’s just an old hobby of mine. I was told to start it as a child, and no one ever told me to stop.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus3">
+      <div id="storyBG"><img src="img/bg/gos2_school_corridor.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus4">next</div>
+          </a>
+          <div class="dialogue">Still, it beats the alternative. Things have been kind of awkward at home lately…</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus4">
+      <div id="storyBG"><img src="img/bg/gos2_school_corridor.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus5">next</div>
+          </a>
+          <div class="dialogue">I come down the hallway and gingerly approach the music room, only to hear the sound of a piano already coming from inside. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus5">
+      <div id="storyBG"><img src="img/bg/gos2_school_corridor.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus6">next</div>
+          </a>
+          <div class="dialogue">When I peer through the glass panel on the door, I see Kaworu, my classmate, sitting on the bench, hands flying effortlessly across the keys. He seems so in his element, blissfully smiling as “Ode to Joy” rings
+            throughout the room.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus6">
+      <div id="storyBG"><img src="img/bg/gos2_school_corridor.jpg"></div>
+      <div class="choices">
+        <a href="#">
+          <h2 class="option" id="toMus8">Go inside</h2>
+        </a>
+        <a href="#">
+          <h2 class="option" id="toMus7">Let him be</h2>
+        </a>
+      </div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <div class="dialogue">I wonder if I should go inside. It would be nice to listen to him...but what if I’m bothering him?</div>
+        </div>
+      </div>
+    </div>
+
+    <!---If the player leaves this route-->
+
+    <div class="storypoint" id="mus7">
+      <div id="storyBG"><img src="img/bg/gos2_school_corridor.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="leaveMus">next</div>
+          </a>
+          <div class="dialogue">Yeah. I don’t want to be a burden on him or anything. I might embarrass him or something…</div>
+        </div>
+      </div>
+    </div>
+
+    <!---If the player stays on this route-->
+
+    <div class="storypoint" id="mus8">
+      <div id="storyBG"><img src="img/bg/gos2_school_corridor.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus9">next</div>
+          </a>
+          <div class="dialogue">I really hope I’m not interrupting. My curiosity is just getting the better of me…</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus9">
+      <div id="storyBG"><img src="img/bg/gos2_school_music-room.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus10">next</div>
+          </a>
+          <div class="dialogue">I open the door. I’m careful to do it slowly, so as to avoid disturbing Kaworu with the noise, but he notices anyway and I’m immediately hit with a pang of guilt.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus10">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-l.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus11">next</div>
+          </a>
+          <div class="dialogue">Sorry, I was just — I don’t know, I —</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus11">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus12">next</div>
+          </a>
+          <div class="dialogue">Not to worry, Shinji. The company is welcome. After all, music is best enjoyed in the company of others.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus12">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus13">next</div>
+          </a>
+          <div class="dialogue">With an easy smile, Kaworu stands from the bench. I feel like my presence is forcing him to stop playing, but before I can say anything he gestures to the keys, looking my way.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus13">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus14">next</div>
+          </a>
+          <div class="dialogue">Would you like to try?</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus14">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus15">next</div>
+          </a>
+          <div class="dialogue">There’s a certainty in his eyes when he asks me, so prominent that it makes me wonder if the two of us have ever done anything like this before.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus15">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus16">next</div>
+          </a>
+          <div class="dialogue">My words catch in my throat. I’ve played cello before, but the piano is another story. Plus, no matter what instrument it is, I don’t think I could play in front of other people.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mus16">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div class="choices">
+        <a href="#">
+          <h2 class="option" id="toMY1">I'll give it a try</h2>
+        </a>
+        <a href="#">
+          <h2 class="option" id="toMN1">I'll pass</h2>
+        </a>
+        <a href="#">
+          <h2 class="option" id="toMM1">I can't play piano, but —</h2>
+        </a>
+      </div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <div class="dialogue">I feel like I’m being put on the spot...what should I do?</div>
+        </div>
+      </div>
+    </div>
+
+    <!--- If the player says yes -->
+
+    <div class="storypoint" id="my1">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY2">next</div>
+          </a>
+          <div class="dialogue">I’m almost completely sure I’ll look like a fool trying to play in front of Kaworu, but somehow my desire to spend this time with him overcomes the voice in my head telling me I shouldn’t.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my2">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-b.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY3">next</div>
+          </a>
+          <div class="dialogue">Me? Are you sure? I’m not any good at the piano...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my3">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY4">next</div>
+          </a>
+          <div class="dialogue">The only way you will know if you’re good or not is if you try. If you aren’t satisfied, then you practice until you can play something that feels good to
+            you.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my4">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY5">next</div>
+          </a>
+          <div class="dialogue">I hesitate a moment before finally taking a seat at the piano. Kaworu sits beside me, his shoulder brushing against mine. Why does it make my heart stop for a beat...?</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my5">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY6">next</div>
+          </a>
+          <div class="dialogue">Try playing this.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my6">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY7">next</div>
+          </a>
+          <div class="dialogue">He demonstrates with a short riff. I try and replicate it, but it’s clumsy and uncertain.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my7">
+      <div id="storyBG"><img src="img/event/piano.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY8">next</div>
+          </a>
+          <div class="dialogue">Suddenly, his hands return to the keys and he’s playing along with me!</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my8">
+      <div id="storyBG"><img src="img/event/piano.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY9">next</div>
+          </a>
+          <div class="dialogue">I struggle to keep up at first. But each time we repeat the riff, I relax into our sound. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my9">
+      <div id="storyBG"><img src="img/event/piano2.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY10">next</div>
+          </a>
+          <div class="dialogue">Very good! Our sounds work well together.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my10">
+      <div id="storyBG"><img src="img/event/piano2.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY11">next</div>
+          </a>
+          <div class="dialogue">I don’t say anything in response, or else I’ll lose my focus on what I’m playing. It doesn’t come as naturally to me.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my11">
+      <div id="storyBG"><img src="img/event/piano2.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY12">next</div>
+          </a>
+          <div class="dialogue">Still, I’m beginning to enjoy myself. The two of us are able to lose track of time, completely absorbed in what we’re playing, repeating it until it feels nice. I even start to forget what I was so nervous about.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my12">
+      <div id="storyBG"><img src="img/event/piano2.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY13">next</div>
+          </a>
+          <div class="dialogue">The two of us go on like this for a while, practicing this duet born from some uncertain first notes. We barely even pay attention to the setting sun.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my13">
+      <div id="storyBG"><img src="img/event/piano2.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY14">next</div>
+          </a>
+          <div class="dialogue">We only realize how late it is when an announcement sounds over the intercom, saying that the campus grounds are closing and all remaining students need to go home.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my14">
+      <div id="storyBG"><img src="img/event/piano2.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY15">next</div>
+          </a>
+          <div class="dialogue">Ah. Perhaps we should take our leave.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my15">
+      <div id="storyBG"><img src="img/event/piano2.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-o.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMY16">next</div>
+          </a>
+          <div class="dialogue">Oh — yeah. I didn’t even realize it was that late.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="my16">
+      <div id="storyBG"><img src="img/event/piano2.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <!-- <div id="avatar"><img src="img/face/kaworu.png"></div> -->
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD1">next</div>
+          </a>
+          <div class="dialogue">We place the cover over the ivory keys and rise to gather our things.</div>
+        </div>
+      </div>
+    </div>
+
+    <!--- If the player brings up the cello -->
+
+    <div class="storypoint" id="mm1">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus16">next</div>
+          </a>
+          <div class="dialogue">(cello answer)</div>
+        </div>
+      </div>
+    </div>
+
+    <!--- If the player says no -->
+
+    <div class="storypoint" id="mn1">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMus16">next</div>
+          </a>
+          <div class="dialogue">(no answer)</div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Good Kaworu End -->
+
+    <div class="storypoint" id="mGood1">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-o.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD2">next</div>
+          </a>
+          <div class="dialogue">Thank you, Kaworu. I had a lot of fun today.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood2">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD3">next</div>
+          </a>
+          <div class="dialogue">The pleasure is mine, Shinji. I’m glad I was able to share that with you.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood3">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD4">next</div>
+          </a>
+          <div class="dialogue">The two of us leave campus together. Looking at Kaworu, I feel a gentle, pleasant warmth fill my chest. I’m almost disappointed the duet ended so soon, but I’m glad it happened at all.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood4">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-b.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD5">next</div>
+          </a>
+          <div class="dialogue">Um, hey, Kaworu...do you think we’d be able to do that again?</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood5">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD6">next</div>
+          </a>
+          <div class="dialogue">It’s out of my mouth before I even realize what I said. But Kaworu only replies with a soft, knowing chuckle.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood6">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD7">next</div>
+          </a>
+          <div class="dialogue">Of course. I almost always go to the music room when it’s available for use, so feel free to join me anytime.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood7">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD8">next</div>
+          </a>
+          <div class="dialogue">Something to look forward to during school...the thought makes me happy. Like I won’t have to force myself out of bed in the mornings. I’ve always tended to be alone in school, so even though this is unfamiliar...as
+            long as it’s Kaworu, I think it’ll be a good thing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood8">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-k.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD9">next</div>
+          </a>
+          <div class="dialogue">Thank you, Kaworu. Um, I guess I should probably start heading home…</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood9">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD10">next</div>
+          </a>
+          <div class="dialogue">Would you like company on the way?</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood10">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD11">next</div>
+          </a>
+          <div class="dialogue">I consider saying yes, but then I realize the time. I wonder if Miss Misato will care that I was out so late without saying anything. I don’t think I want Kaworu to see that.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood11">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-j.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD12">next</div>
+          </a>
+          <div class="dialogue">I wish I could, but I have some things to take care of at home. S-Sorry.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood12">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD13">next</div>
+          </a>
+          <div class="dialogue">It’s nothing to apologize for. Perhaps some other time.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood13">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-o.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD14">next</div>
+          </a>
+          <div class="dialogue">Y — Yeah. When I can, let’s do that.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood14">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD15">next</div>
+          </a>
+          <div class="dialogue">In that case, I’ll see you tomorrow. Rest well tonight, Shinji.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood15">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-g.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMGOOD16">next</div>
+          </a>
+          <div class="dialogue">Yeah. See you tomorrow.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mGood16">
+      <div id="storyBG"><img src="img/bg/gos2_school_rooftop.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toEndscreen">next</div>
+          </a>
+          <div class="dialogue">With that, we each go our separate ways, until we’ll meet up again tomorrow...
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!---TRACK FIELD-->
+  <div>
+
+    <div class="storypoint" id="track1">
+      <div id="storyBG"><img src="img/bg/gos2_school_pool-back.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTrack2">next</div>
+          </a>
+          <div class="dialogue">track field start</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="track2">
+      <div id="storyBG"><img src="img/bg/gos2_school_pool-back.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTrack3">next</div>
+          </a>
+          <div class="dialogue">-</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!---HOMEROOM-->
+  <div>
+
+    <div class="storypoint" id="hr1">
+      <div id="storyBG"><img src="img/bg/gos2_school_classroom.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toHr2">next</div>
+          </a>
+          <div class="dialogue">homeroom start</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="hr2">
+      <div id="storyBG"><img src="img/bg/gos2_school_classroom.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toHr3">next</div>
+          </a>
+          <div class="dialogue">-</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
