@@ -95,7 +95,7 @@ $(document).ready(function() {
     $("#Startscreen").show();
     $(".bgShade").show();
 
-    $(".start").click(function () {
+    $(".begin").click(function () {
       $("#Startscreen").hide();
       $(".bgShade").hide();
       song1.play();
