@@ -1,0 +1,20 @@
+{
+  "short_name": "BoS",
+  "name": "Boyfriend of Steel",
+  "icons": [
+    {
+      "src": "/img/nerv-161.png",
+      "type": "image/png",
+      "sizes": "161x161"
+    },
+    {
+      "src": "/img/nerv-500.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    }
+  ],
+  "background_color": "#1f1f1f",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#ff8f1f"
+}
