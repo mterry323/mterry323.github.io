@@ -3,14 +3,14 @@
   "name": "Boyfriend of Steel",
   "icons": [
     {
-      "src": "/img/nerv-161.png",
+      "src": "/img/nerv-192.png",
       "type": "image/png",
-      "sizes": "161x161"
+      "sizes": "192x192"
     },
     {
-      "src": "/img/nerv-500.png",
+      "src": "/img/nerv-512.png",
       "type": "image/png",
-      "sizes": "500x500"
+      "sizes": "512x512"
     }
   ],
   "background_color": "#1f1f1f",
