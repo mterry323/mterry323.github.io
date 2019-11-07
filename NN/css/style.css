@@ -54,7 +54,7 @@ a {
   right: 0;
   width: 100%;
   z-index: 1;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .popup {
@@ -69,7 +69,7 @@ a {
   border: 4px #ff8f1f double;
   color: white;
   /* text-align: center; */
-  font-size:16px;
+  font-size: 16px;
   overflow-y: auto;
 }
 
@@ -120,18 +120,18 @@ a {
 }
 
 #speakerName {
-    width: 100px;
-    height: auto;
-    background: #000;
-    color: white;
-    padding: 5px;
-    font-family: Times;
-    transform: scale(.8, 1);
-    font-size: 30px;
-    text-align: center;
-    border-top: 4px #ff8f1f double;
-    border-left: 4px #ff8f1f double;
-    border-right: 4px #ff8f1f double;
+  width: 100px;
+  height: auto;
+  background: #000;
+  color: white;
+  padding: 5px;
+  font-family: Times;
+  transform: scale(.8, 1);
+  font-size: 30px;
+  text-align: center;
+  border-top: 4px #ff8f1f double;
+  border-left: 4px #ff8f1f double;
+  border-right: 4px #ff8f1f double;
 }
 
 #avatar {
@@ -153,20 +153,20 @@ a {
 }
 
 .choices {
-    font-family: Times;
-    transform: scale(.8, 1);
-    display: block;
-    position: absolute;
-    text-align: center;
-    margin-top: 150px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 250px;
-    padding: 5px;
+  font-family: Times;
+  transform: scale(.8, 1);
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin-top: 150px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  padding: 5px;
 }
 
 .option {
