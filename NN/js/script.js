@@ -92,7 +92,6 @@ $(document).ready(function() {
     $("#aboutBlurb").hide();
     $("#copyBlurb").hide();
     $("#Endscreen").hide();
-    
     $("#Startscreen").show();
     $(".bgShade").show();
 
@@ -125,7 +124,7 @@ $(document).ready(function() {
         $("#copyBlurb").hide();
         $(".bgShade").hide();
       });
-
+      
     });
 
     $("#toEndscreen").click(function() {
