@@ -2,14 +2,14 @@
 
 <head>
 
+  <title>Boyfriend of Steel || A Neon Genesis Evangelion Fangame</title>
+
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 
   <link rel="manifest" href="manifest.json">
-
-  <title>Boyfriend of Steel || A Neon Genesis Evangelion Fangame</title>
 
 </head>
 
@@ -24,8 +24,8 @@
   <div>
 
     <div class="bgShade"></div>
+
     <div id="Startscreen" class="popup">
-      <!-- <a id="Close" class="close" href="#">X</a> -->
       <h1>Welcome!</h1>
       <p>Welcome to the demo version of Boyfriend of Steel! This is a proof of concept for a <i>Neon Genesis Evangelion</i> fangame currently in the works, based on the official <i>Girlfriend of Steel</i> games. You can learn more about the project in the "About" tab.</p>
 
@@ -600,11 +600,73 @@
       <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
       <div id="box">
         <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-l.png"></div>
         <div id="diaBox">
           <a id="nextButton" href="#">
-            <div id="toMus16">next</div>
+            <div id="toMN2">next</div>
           </a>
-          <div class="dialogue">(no answer)</div>
+          <div class="dialogue">I’d better not. I can’t play.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mn2">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Kaworu</div>
+        <div id="avatar"><img src="img/face/kaworu.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMN3">next</div>
+          </a>
+          <div class="dialogue">To live is to change. People must try new things in order to live.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mn3">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMN4">next</div>
+          </a>
+          <div class="dialogue">Despite my lack of experience, Kaworu insists.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mn4">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div class="choices">
+        <a href="#">
+          <h2 class="option" id="switchMY1">I'll try it anyway</h2>
+        </a>
+        <a href="#">
+          <h2 class="option" id="switchMM1">I <i>can</i> play the cello...</h2>
+        </a>
+        <a href="#">
+          <h2 class="option" id="toMN5">I should really get going</h2>
+        </a>
+      </div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <div class="dialogue">I’m really going to embarrass myself if I try, though it seems like he really wants to hear my playing...if it can even be called that…</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storypoint" id="mn5">
+      <div id="storyBG"><img src="img/event/gos2_124_a.jpg"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toMN6">next</div>
+          </a>
+          <div class="dialogue">(player leaves room)</div>
         </div>
       </div>
     </div>

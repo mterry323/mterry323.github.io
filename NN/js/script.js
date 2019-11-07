@@ -266,6 +266,7 @@ $(document).ready(function() {
     $("#toMY1").click(function() {
       $("#my1").show();
       $("#mus16").hide();
+      $("#mn4").hide();
     });
 
     $("#toMY2").click(function() {
@@ -350,6 +351,10 @@ $(document).ready(function() {
   // --- player plays cello ---
   {
     $("#toMM1").click(function() {
+      // if ($("#mn4").show() = true) {
+      //   $("#mn4").hide();
+      // }
+
       $("#mm1").show();
       $("#mus16").hide();
     });
@@ -360,6 +365,36 @@ $(document).ready(function() {
     $("#toMN1").click(function() {
       $("#mn1").show();
       $("#mus16").hide();
+    });
+
+    $("#toMN2").click(function() {
+      $("#mn2").show();
+      $("#mn1").hide();
+    });
+
+    $("#toMN3").click(function() {
+      $("#mn3").show();
+      $("#mn2").hide();
+    });
+
+    $("#toMN4").click(function() {
+      $("#mn4").show();
+      $("#mn3").hide();
+    });
+
+    $("#switchMY1").click(function() {
+      $("#mn4").hide();
+      $("#my1").show();
+    });
+
+    $("#switchMM1").click(function() {
+      $("#mn4").hide();
+      $("#mm1").show();
+    });
+
+    $("#toMN5").click(function() {
+      $("#mn5").show();
+      $("#mn4").hide();
     });
   }
 
