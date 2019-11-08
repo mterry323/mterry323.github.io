@@ -52,6 +52,7 @@ $(document).ready(function() {
     }, true);
 
     song4.src = qMains;
+    song4.loop = true;
 
   }
 
@@ -291,7 +292,6 @@ $(document).ready(function() {
     $("#toMY1").click(function() {
       $("#my1").show();
       $("#mus16").hide();
-      $("#mn4").hide();
     });
 
     $("#toMY2").click(function() {
@@ -311,15 +311,15 @@ $(document).ready(function() {
     });
 
     $("#toMY5").click(function() {
+      piano1.play();
       $("#my5").show();
       $("#my4").hide();
-      piano1.play();
     });
 
     $("#toMY6").click(function() {
+      piano2.play();
       $("#my6").show();
       $("#my5").hide();
-      piano2.play();
     });
 
     $("#toMY7").click(function() {
