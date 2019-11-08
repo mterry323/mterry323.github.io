@@ -56,6 +56,34 @@ $(document).ready(function() {
 
   }
 
+  // ----- SOUND EFFECTS -----
+
+  {
+    var riff1 = "audio/riff1.wav"
+    var piano1 = new Audio();
+
+    piano1.load()
+    piano1.addEventListener("load", function() {
+      piano1.play();
+    }, true);
+
+    piano1.src = riff1;
+    piano1.loop = false;
+
+    var riff2 = "audio/riff2.wav"
+    var piano2 = new Audio();
+
+    piano2.load()
+    piano2.addEventListener("load", function() {
+      piano2.play();
+    }, true);
+
+    piano2.src = riff2;
+    piano2.loop = false;
+
+  }
+
+
   // ----- SET FIRST SONG -----
   {
     song1.volume = 1;
@@ -288,11 +316,13 @@ $(document).ready(function() {
     $("#toMY5").click(function() {
       $("#my5").show();
       $("#my4").hide();
+      piano1.play();
     });
 
     $("#toMY6").click(function() {
       $("#my6").show();
       $("#my5").hide();
+      piano2.play();
     });
 
     $("#toMY7").click(function() {
