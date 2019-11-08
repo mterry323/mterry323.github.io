@@ -108,6 +108,19 @@ $(document).ready(function() {
     piano2.src = riff2;
     piano2.volume = 1;
 
+    // --- cello playing ---
+
+    var prelude = "audio/sfx/cello.mp3"
+    var cello = new Audio();
+
+    cello.load()
+    cello.addEventListener("load", function() {
+      cello.play();
+    }, true);
+
+    cello.src = prelude;
+    cello.volume = 1;
+
   }
 
   // ----- SET FIRST SONG -----
@@ -418,6 +431,69 @@ $(document).ready(function() {
     $("#toMM1").click(function() {
       $("#mm1").show();
       $("#mus16").hide();
+    });
+
+    $("#toMM2").click(function() {
+      $("#mm2").show();
+      $("#mm1").hide();
+    });
+
+    $("#toMM3").click(function() {
+      $("#mm3").show();
+      $("#mm2").hide();
+    });
+
+    $("#toMM4").click(function() {
+      $("#mm4").show();
+      $("#mm3").hide();
+    });
+
+    $("#toMM5").click(function() {
+      $("#mm5").show();
+      $("#mm4").hide();
+    });
+
+    $("#toMM6").click(function() {
+      $("#mm6").show();
+      $("#mm5").hide();
+    });
+
+    $("#toMM7").click(function() {
+      $("#mm7").show();
+      $("#mm6").hide();
+    });
+
+    $("#toMM8").click(function() {
+      $("#mm8").show();
+      $("#mm7").hide();
+    });
+
+    $("#toMM9").click(function() {
+      $("#mm9").show();
+      $("#mm8").hide();
+    });
+
+    $("#toMM10").click(function() {
+      $("#mm10").show();
+      $("#mm9").hide();
+    });
+
+    $("#toMM11").click(function() {
+      $("#mm11").show();
+      $("#mm10").hide();
+    });
+
+    $("#toMM12").click(function() {
+      $(".storyBG").css("background-image", "url(img/event/gos2_034.jpg)");
+      $("#mm12").show();
+      $("#mm11").hide();
+      song3.volume = 0;
+      cello.play();
+    });
+
+    $("#toMM13").click(function() {
+      $("#mm13").show();
+      $("#mm12").hide();
     });
   }
 
