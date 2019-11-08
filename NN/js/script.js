@@ -327,6 +327,8 @@ $(document).ready(function() {
     $("#toMY7").click(function() {
       $("#my7").show();
       $("#my6").hide();
+      piano1.pause();
+      piano2.pause();
       song4.volume = 1;
       song4.currentTime = 0;
     });
