@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  screen.orientation.lock('landscape');
+  // screen.orientation.lock('landscape');
 
   // ----- BG MUSIC -----
   {
@@ -176,6 +176,7 @@ $(document).ready(function() {
     });
 
     $("#toMus1").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/gos2_school_corridor.jpg)");
       $("#mus1").show();
       $("#s3").hide();
       song1.volume = 0;
@@ -184,11 +185,13 @@ $(document).ready(function() {
     });
 
     $("#toTrack1").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/gos2_school_pool-back.jpg)");
       $("#track1").show();
       $("#s3").hide();
     });
 
     $("#toHr1").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/gos2_school_classroom.jpg)");
       $("#hr1").show();
       $("#s3").hide();
     });
@@ -247,6 +250,7 @@ $(document).ready(function() {
   });
 
   $("#toMus9").click(function() {
+    $(".storyBG").css("background-image", "url(img/bg/gos2_school_music-room.jpg)");
     $("#mus9").show();
     $("#mus8").hide();
     song2.volume = 0;
@@ -255,6 +259,7 @@ $(document).ready(function() {
   });
 
   $("#toMus10").click(function() {
+    $(".storyBG").css("background-image", "url(img/event/gos2_124_a.jpg)");
     $("#mus10").show();
     $("#mus9").hide();
   });
@@ -325,6 +330,7 @@ $(document).ready(function() {
     });
 
     $("#toMY7").click(function() {
+      $(".storyBG").css("background-image", "url(img/event/piano.jpg)");
       $("#my7").show();
       $("#my6").hide();
       piano1.pause();
@@ -339,6 +345,7 @@ $(document).ready(function() {
     });
 
     $("#toMY9").click(function() {
+      $(".storyBG").css("background-image", "url(img/event/piano2.jpg)");
       $("#my9").show();
       $("#my8").hide();
     });
@@ -432,6 +439,7 @@ $(document).ready(function() {
   // --- good kaworu end ---
   {
     $("#toMGOOD1").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/gos2_school_rooftop.jpg)");
       $("#mGood1").show();
       $("#my16").hide();
       song4.volume = 0;
