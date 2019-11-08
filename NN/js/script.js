@@ -52,7 +52,6 @@ $(document).ready(function() {
     }, true);
 
     song4.src = qMains;
-    song4.loop = true;
 
   }
 
@@ -79,7 +78,6 @@ $(document).ready(function() {
     }, true);
 
     piano2.src = riff2;
-    piano2.loop = false;
 
   }
 
