@@ -60,15 +60,15 @@ a {
 .popup {
   position: absolute;
   z-index: 2;
-  margin-left: 33.3%;
-  margin-top: 3%;
-  width: 500px;
-  height: 500px;
+  top: 20%;
+  left: 50%;
+  margin-left: -25%;
+  width: 50%;
+  height: 50%;
   padding: 10px;
   background: black;
   border: 4px #ff8f1f double;
   color: white;
-  /* text-align: center; */
   font-size: 16px;
   overflow-y: auto;
 }
@@ -105,8 +105,9 @@ a {
 #box {
   position: absolute;
   width: 800px;
+  /* height: 20%; */
   top: 75%;
-  margin-top: -60px;
+  margin-top: -5%;
   left: 50%;
   margin-left: -400px;
 }
@@ -120,7 +121,7 @@ a {
 }
 
 #speakerName {
-  width: 100px;
+  width: 150px;
   height: auto;
   background: #000;
   color: white;
