@@ -67,7 +67,6 @@ $(document).ready(function() {
     }, true);
 
     piano1.src = riff1;
-    piano1.loop = false;
 
     var riff2 = "audio/riff2.wav"
     var piano2 = new Audio();
