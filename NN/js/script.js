@@ -5,7 +5,7 @@ $(document).ready(function() {
   // ----- BG MUSIC -----
   {
     // --- Ritsuko ---
-    var ritsuko = "audio/Ritsuko.mp3"
+    var ritsuko = "audio/music/Ritsuko.mp3"
     var song1 = new Audio();
 
     song1.load()
@@ -17,7 +17,7 @@ $(document).ready(function() {
     song1.loop = true;
 
     // --- Ode to Joy ---
-    var joy = "audio/Ode to Joy.mp3"
+    var joy = "audio/music/Ode to Joy.mp3"
     var song2 = new Audio();
 
     song2.load()
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     // --- Instabilite ---
 
-    var em12 = "audio/Instabilite.mp3"
+    var em12 = "audio/music/Instabilite.mp3"
     var song3 = new Audio();
 
     song3.load()
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
     // --- Quatre Mains ---
 
-    var qMains = "audio/Quatre Mains_short.mp3"
+    var qMains = "audio/music/Quatre Mains_short.mp3"
     var song4 = new Audio();
 
     song4.load()
@@ -59,7 +59,34 @@ $(document).ready(function() {
   // ----- SOUND EFFECTS -----
 
   {
-    var riff1 = "audio/riff1.mp3"
+    // --- school bell ---
+    var scBell = "audio/sfx/bell.mp3"
+    var bell = new Audio();
+
+    bell.load()
+    bell.addEventListener("load", function() {
+      bell.play();
+    }, true);
+
+    bell.src = scBell;
+    bell.volume = 1;
+
+    // --- cicadas ---
+
+    var miii = "audio/sfx/cicada1.mp3"
+    var cicada = new Audio();
+
+    cicada.load()
+    cicada.addEventListener("load", function() {
+      cicada.play();
+    }, true);
+
+    cicada.src = miii;
+    cicada.volume = 1;
+
+    // --- piano riffs ---
+
+    var riff1 = "audio/sfx/riff1.mp3"
     var piano1 = new Audio();
 
     piano1.load()
@@ -70,7 +97,7 @@ $(document).ready(function() {
     piano1.src = riff1;
     piano1.volume = 1;
 
-    var riff2 = "audio/riff2.mp3"
+    var riff2 = "audio/sfx/riff2.mp3"
     var piano2 = new Audio();
 
     piano2.load()
@@ -82,7 +109,6 @@ $(document).ready(function() {
     piano2.volume = 1;
 
   }
-
 
   // ----- SET FIRST SONG -----
   {
@@ -130,6 +156,7 @@ $(document).ready(function() {
       song2.play();
       song3.play();
       song4.play();
+      // bell.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     })
