@@ -68,6 +68,7 @@ $(document).ready(function() {
     }, true);
 
     piano1.src = riff1;
+    piano1.volume = 1;
 
     var riff2 = "audio/riff2.mp3"
     var piano2 = new Audio();
@@ -78,6 +79,7 @@ $(document).ready(function() {
     }, true);
 
     piano2.src = riff2;
+    piano2.volume = 1;
 
   }
 
