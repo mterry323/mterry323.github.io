@@ -389,10 +389,6 @@ $(document).ready(function() {
   // --- player plays cello ---
   {
     $("#toMM1").click(function() {
-      // if ($("#mn4").show() = true) {
-      //   $("#mn4").hide();
-      // }
-
       $("#mm1").show();
       $("#mus16").hide();
     });
