@@ -59,7 +59,7 @@ $(document).ready(function() {
   // ----- SOUND EFFECTS -----
 
   {
-    var riff1 = "audio/riff1.wav"
+    var riff1 = "audio/riff1.mp3"
     var piano1 = new Audio();
 
     piano1.load()
@@ -69,7 +69,7 @@ $(document).ready(function() {
 
     piano1.src = riff1;
 
-    var riff2 = "audio/riff2.wav"
+    var riff2 = "audio/riff2.mp3"
     var piano2 = new Audio();
 
     piano2.load()
