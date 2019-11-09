@@ -54,6 +54,53 @@ $(document).ready(function() {
     song4.src = qMains;
     song4.loop = true;
 
+    // --- Suiten fur Violoncello ---
+
+    var suiten = "audio/music/Violoncello.mp3"
+    var song5 = new Audio();
+
+    song5.load()
+    song5.addEventListener("load", function() {
+      song5.play();
+    }, true);
+
+    song5.src = suiten;
+    song5.loop = true;
+
+  }
+
+  // ----- SET FIRST SONG -----
+  {
+    song1.volume = 1;
+    song2.volume = 0;
+    song3.volume = 0;
+    song4.volume = 0;
+    song5.volume = 0;
+  }
+
+  // ----- DEFAULT MUSIC CONTROLS -----
+  {
+    $("#bgmOff").css("color", "#ff8f1f");
+
+    $("#bgmOn").click(function() {
+      song1.play();
+      song2.play();
+      song3.play();
+      song4.play();
+      song5.play();
+      $("#bgmOn").css("color", "#ff8f1f");
+      $("#bgmOff").css("color", "white");
+    });
+
+    $("#bgmOff").click(function() {
+      song1.pause();
+      song2.pause();
+      song3.pause();
+      song4.pause();
+      song5.pause();
+      $("#bgmOff").css("color", "#ff8f1f");
+      $("#bgmOn").css("color", "white");
+    });
   }
 
   // ----- SOUND EFFECTS -----
@@ -123,37 +170,6 @@ $(document).ready(function() {
 
   }
 
-  // ----- SET FIRST SONG -----
-  {
-    song1.volume = 1;
-    song2.volume = 0;
-    song3.volume = 0;
-    song4.volume = 0;
-  }
-
-  // ----- DEFAULT MUSIC CONTROLS -----
-  {
-    $("#bgmOff").css("color", "#ff8f1f");
-
-    $("#bgmOn").click(function() {
-      song1.play();
-      song2.play();
-      song3.play();
-      song4.play();
-      $("#bgmOn").css("color", "#ff8f1f");
-      $("#bgmOff").css("color", "white");
-    });
-
-    $("#bgmOff").click(function() {
-      song1.pause();
-      song2.pause();
-      song3.pause();
-      song4.pause();
-      $("#bgmOff").css("color", "#ff8f1f");
-      $("#bgmOn").css("color", "white");
-    });
-  }
-
   // ----- POPUPS -----
   {
     $("#aboutBlurb").hide();
@@ -169,6 +185,7 @@ $(document).ready(function() {
       song2.play();
       song3.play();
       song4.play();
+      song5.play();
       // bell.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
@@ -487,13 +504,66 @@ $(document).ready(function() {
       $(".storyBG").css("background-image", "url(img/event/gos2_034.jpg)");
       $("#mm12").show();
       $("#mm11").hide();
-      song3.volume = 0;
       cello.play();
+      song3.volume = 0;
     });
 
     $("#toMM13").click(function() {
       $("#mm13").show();
       $("#mm12").hide();
+    });
+
+    $("#toMM14").click(function() {
+      $("#mm14").show();
+      $("#mm13").hide();
+    });
+
+    $("#toMM15").click(function() {
+      $("#mm15").show();
+      $("#mm14").hide();
+    });
+
+    $("#toMM16").click(function() {
+      $("#mm16").show();
+      $("#mm15").hide();
+    });
+
+    $("#toMM17").click(function() {
+      $("#mm17").show();
+      $("#mm16").hide();
+    });
+
+    $("#toMM18").click(function() {
+      $("#mm18").show();
+      $("#mm17").hide();
+    });
+
+    $("#toMM19").click(function() {
+      $("#mm19").show();
+      $("#mm18").hide();
+    });
+
+    $("#toMM20").click(function() {
+      $("#mm20").show();
+      $("#mm19").hide();
+    });
+
+    $("#toMM21").click(function() {
+      $("#mm21").show();
+      $("#mm20").hide();
+      cello.pause();
+    });
+
+    $("#toMM22").click(function() {
+      $("#mm22").show();
+      $("#mm21").hide();
+      song5.volume = 1;
+      song5.currentTime = 0;
+    });
+
+    $("#toMM23").click(function() {
+      $("#mm23").show();
+      $("#mm22").hide();
     });
   }
 
