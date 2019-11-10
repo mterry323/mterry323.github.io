@@ -184,7 +184,7 @@ $(document).ready(function() {
       song3.play();
       song4.play();
       song5.play();
-      // bell.play();
+      bell.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     })
@@ -657,6 +657,66 @@ $(document).ready(function() {
     $("#toMN5").click(function() {
       $("#mn5").show();
       $("#mn4").hide();
+    });
+
+    $("#toMN6").click(function() {
+      $("#mn6").show();
+      $("#mn5").hide();
+    });
+
+    $("#toMN7").click(function() {
+      $("#mn7").show();
+      $("#mn6").hide();
+    });
+
+    $("#toMN8").click(function() {
+      $("#mn8").show();
+      $("#mn7").hide();
+    });
+
+    $("#toMN9").click(function() {
+      $("#mn9").show();
+      $("#mn8").hide();
+    });
+
+    $("#toMN10").click(function() {
+      $("#mn10").show();
+      $("#mn9").hide();
+    });
+
+    $("#toMN11").click(function() {
+      $("#mn11").show();
+      $("#mn10").hide();
+    });
+
+    $("#toMN12").click(function() {
+      $("#mn12").show();
+      $("#mn11").hide();
+    });
+
+    $("#toMN13").click(function() {
+      $("#mn13").show();
+      $("#mn12").hide();
+    });
+
+    $("#toMN14").click(function() {
+      $("#mn14").show();
+      $("#mn13").hide();
+    });
+
+    $("#toMN15").click(function() {
+      $("#mn15").show();
+      $("#mn14").hide();
+    });
+
+    $("#toMN16").click(function() {
+      $("#mn16").show();
+      $("#mn15").hide();
+    });
+
+    $(".toMBAD1").click(function() {
+      $("#mBad1").show();
+      $("#mn16").hide();
     });
   }
 
