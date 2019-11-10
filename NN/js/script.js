@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-  // screen.orientation.lock('landscape');
-
   // ----- BG MUSIC -----
   {
     // --- Ritsuko ---
@@ -227,9 +225,10 @@ $(document).ready(function() {
       $("#s1").hide();
     });
 
-    $("#toS3").click(function() {
+    $(".toS3").click(function() {
       $("#s3").show();
       $("#s2").hide();
+      $("#mus7").hide();
     });
 
     $("#toMus1").click(function() {
@@ -286,16 +285,6 @@ $(document).ready(function() {
       $("#mus7").show();
       $("#mus6").hide();
     });
-
-    // --- player leaves kaworu route ---
-
-    $("#leaveMus").click(function() {
-      $("#s3").show();
-      $("#mus7").hide();
-      song2.volume = 0;
-      song1.volume = 1;
-      song1.currentTime = 0;
-    })
 
   }
 
@@ -496,16 +485,16 @@ $(document).ready(function() {
     });
 
     $("#toMM11").click(function() {
+      $(".storyBG").css("background-image", "url(img/event/gos2_034.jpg)");
       $("#mm11").show();
       $("#mm10").hide();
+      cello.play();
+      song3.volume = 0;
     });
 
     $("#toMM12").click(function() {
-      $(".storyBG").css("background-image", "url(img/event/gos2_034.jpg)");
       $("#mm12").show();
       $("#mm11").hide();
-      cello.play();
-      song3.volume = 0;
     });
 
     $("#toMM13").click(function() {
@@ -546,25 +535,91 @@ $(document).ready(function() {
     $("#toMM20").click(function() {
       $("#mm20").show();
       $("#mm19").hide();
+      cello.pause();
     });
 
     $("#toMM21").click(function() {
       $("#mm21").show();
       $("#mm20").hide();
-      cello.pause();
+      song5.volume = 1;
+      song5.currentTime = 0;
     });
 
     $("#toMM22").click(function() {
       $("#mm22").show();
       $("#mm21").hide();
-      song5.volume = 1;
-      song5.currentTime = 0;
     });
 
     $("#toMM23").click(function() {
       $("#mm23").show();
       $("#mm22").hide();
     });
+
+    $("#toMM24").click(function() {
+      $("#mm24").show();
+      $("#mm23").hide();
+    });
+
+    $("#toMM25").click(function() {
+      $("#mm25").show();
+      $("#mm24").hide();
+    });
+
+    $("#toMM26").click(function() {
+      $("#mm26").show();
+      $("#mm25").hide();
+    });
+
+    $("#toMM27").click(function() {
+      $("#mm27").show();
+      $("#mm26").hide();
+    });
+
+    $("#toMM28").click(function() {
+      $("#mm28").show();
+      $("#mm27").hide();
+    });
+
+    $("#toMM29").click(function() {
+      $("#mm29").show();
+      $("#mm28").hide();
+    });
+
+    $("#toMM30").click(function() {
+      $("#mm30").show();
+      $("#mm29").hide();
+    });
+
+    $("#toMM31").click(function() {
+      $("#mm31").show();
+      $("#mm30").hide();
+    });
+
+    $("#toMM32").click(function() {
+      $("#mm32").show();
+      $("#mm31").hide();
+    });
+
+    $("#toMM33").click(function() {
+      $("#mm33").show();
+      $("#mm32").hide();
+    });
+
+    $("#toMM34").click(function() {
+      $("#mm34").show();
+      $("#mm33").hide();
+    });
+
+    $("#toMM35").click(function() {
+      $("#mm35").show();
+      $("#mm34").hide();
+    });
+
+    $("#toMM36").click(function() {
+      $("#mm36").show();
+      $("#mm35").hide();
+    });
+
   }
 
   // --- player says no ---
@@ -607,11 +662,13 @@ $(document).ready(function() {
 
   // --- good kaworu end ---
   {
-    $("#toMGOOD1").click(function() {
+    $(".toMGOOD1").click(function() {
       $(".storyBG").css("background-image", "url(img/bg/gos2_school_rooftop.jpg)");
       $("#mGood1").show();
       $("#my16").hide();
+      $("#mm36").hide();
       song4.volume = 0;
+      song5.volume = 0;
       song3.volume = 1;
       song3.currentTime = 0;
     });
@@ -710,4 +767,4 @@ $(document).ready(function() {
 
   }
 
-});
+})
