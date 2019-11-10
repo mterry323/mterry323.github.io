@@ -80,7 +80,7 @@ $(document).ready(function() {
 
   // ----- DEFAULT MUSIC CONTROLS -----
   {
-    $("#bgmOff").css("color", "#ff8f1f");
+    $("#bgmOn").css("color", "#ff8f1f");
 
     $("#bgmOn").click(function() {
       song1.play();

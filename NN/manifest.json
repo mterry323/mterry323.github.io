@@ -1,5 +1,5 @@
 {
-  "short_name": "BoS",
+  "short_name": "Boyfriend of Steel",
   "name": "Boyfriend of Steel",
   "icons": [
     {
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#1f1f1f",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "landscape",
   "theme_color": "#ff8f1f"
 }
