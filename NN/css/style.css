@@ -212,6 +212,7 @@ background: black;
 
 #nextButton {
   position: absolute;
+  z-index:1;
   top: 80%;
   right: 20%;
   text-align: center;
