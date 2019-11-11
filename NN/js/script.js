@@ -229,6 +229,7 @@ $(document).ready(function() {
       $("#s3").show();
       $("#s2").hide();
       $("#mus7").hide();
+      $("#roof6").hide();
     });
 
     $("#toMus1").click(function() {
@@ -823,6 +824,37 @@ $(document).ready(function() {
     $("#toRoof2").click(function() {
       $("#roof2").show();
       $("#roof1").hide();
+    });
+
+
+    $("#toRoof3").click(function() {
+      $("#roof3").show();
+      $("#roof2").hide();
+    });
+
+
+    $("#toRoof4").click(function() {
+      $("#roof4").show();
+      $("#roof3").hide();
+    });
+
+
+    $("#toRoof5").click(function() {
+      $("#roof5").show();
+      $("#roof4").hide();
+    });
+
+
+    $("#toRoof6").click(function() {
+      $("#roof6").show();
+      $("#roof5").hide();
+    });
+
+
+    $("#toRoof7").click(function() {
+      $(".storyBG").css("background-image", "url(img/event/gos2_118.jpg)");
+      $("#roof7").show();
+      $("#roof5").hide();
     });
 
   }
