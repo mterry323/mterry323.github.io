@@ -246,9 +246,9 @@ $(document).ready(function() {
       $("#s3").hide();
     });
 
-    $("#toHr1").click(function() {
-      $(".storyBG").css("background-image", "url(img/bg/gos2_school_classroom.jpg)");
-      $("#hr1").show();
+    $("#toRoof1").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/gos2_school_rooftop.jpg)");
+      $("#roof1").show();
       $("#s3").hide();
     });
 
@@ -723,7 +723,7 @@ $(document).ready(function() {
   // --- good kaworu end ---
   {
     $(".toMGOOD1").click(function() {
-      $(".storyBG").css("background-image", "url(img/bg/gos2_school_rooftop.jpg)");
+      $(".storyBG").css("background-image", "url(img/bg/gos_tokyo3_evening.jpg)");
       $("#mGood1").show();
       $("#my16").hide();
       $("#mm36").hide();
@@ -820,9 +820,9 @@ $(document).ready(function() {
 
   // ----- HOMEROOM -----
   {
-    $("#toHr2").click(function() {
-      $("#hr2").show();
-      $("#hr1").hide();
+    $("#toRoof2").click(function() {
+      $("#roof2").show();
+      $("#roof1").hide();
     });
 
   }
