@@ -25,6 +25,14 @@ width:2px;
 background: black;
 }
 
+::-moz-selection {
+  background: #ff8f1f;
+}
+
+::selection {
+  background: #ff8f1f;
+}
+
 .storyBG {
   background-image: url(../img/bg/gos_school_classroom-inside.jpg);
   background-repeat: no-repeat;
@@ -200,7 +208,7 @@ background: black;
   transform: scale(.8, 1);
   font-size: 30px;
   text-align: center;
-  line-height: 50%;
+  line-height: 80%;
 }
 
 .option {

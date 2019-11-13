@@ -857,6 +857,117 @@ $(document).ready(function() {
       $("#roof5").hide();
     });
 
+    $("#toRoof8").click(function() {
+      $("#roof8").show();
+      $("#roof7").hide();
+    });
+
+	$("#toRoof9").click(function() {
+      $("#roof9").show();
+      $("#roof8").hide();
+    });
+
+	$("#toRoof10").click(function() {
+      $("#roof10").show();
+      $("#roof9").hide();
+    });
+
+	$("#toRoof11").click(function() {
+      $("#roof11").show();
+      $("#roof10").hide();
+    });
+
+	$("#toRoof12").click(function() {
+      $("#roof12").show();
+      $("#roof11").hide();
+    });
+
+	$("#toRoof13").click(function() {
+      $("#roof13").show();
+      $("#roof12").hide();
+    });
+
+	$("#toRoof14").click(function() {
+      $("#roof14").show();
+      $("#roof13").hide();
+    });
+
+	$("#toRoof15").click(function() {
+      $("#roof15").show();
+      $("#roof14").hide();
+    });
+
+	$("#toRoof16").click(function() {
+      $("#roof16").show();
+      $("#roof15").hide();
+    });
+
+	$("#toRoof17").click(function() {
+      $("#roof17").show();
+      $("#roof16").hide();
+    });
+
+	$("#toRoof18").click(function() {
+      $("#roof18").show();
+      $("#roof17").hide();
+    });
+
+	$("#toRoof19").click(function() {
+      $("#roof19").show();
+      $("#roof18").hide();
+    });
+
+	$("#toRoof20").click(function() {
+      $("#roof20").show();
+      $("#roof19").hide();
+    });
+
+	$("#toRoof21").click(function() {
+      $("#roof21").show();
+      $("#roof20").hide();
+    });
+
+	$("#toRoof22").click(function() {
+      $("#roof22").show();
+      $("#roof21").hide();
+    });
+
+	$("#toRoof23").click(function() {
+      $("#roof23").show();
+      $("#roof22").hide();
+    });
+
+	$("#toRoof24").click(function() {
+      $("#roof24").show();
+      $("#roof23").hide();
+    });
+
+	$("#toRoof25").click(function() {
+      $("#roof25").show();
+      $("#roof24").hide();
+    });
+
+    // --- player hands camera ---
+
+    $("#toRY1").click(function() {
+        $("#rY1").show();
+        $("#roof25").hide();
+      });
+
+    // --- player watches ---
+
+    $("#toRM1").click(function() {
+        $("#rM1").show();
+        $("#roof25").hide();
+      });
+
+    // --- player leaves ---
+
+    $("#toRN1").click(function() {
+        $("#rN1").show();
+        $("#roof25").hide();
+      });
+
   }
 
 })
