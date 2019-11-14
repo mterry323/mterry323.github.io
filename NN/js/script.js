@@ -264,7 +264,7 @@ $(document).ready(function() {
       });
     });
 
-    $("#toEndscreen").click(function() {
+    $(".toEndscreen").click(function() {
       $("#Endscreen").show();
       $(".bgShade").show();
     });
@@ -1122,7 +1122,7 @@ $(document).ready(function() {
 
     // --- player watches ---
     {
-      $(".toRM1").click(function() {
+      $("#toRM1").click(function() {
         $("#rm1").show();
         $("#roof25").hide();
         $("#rn4").hide();
@@ -1251,6 +1251,81 @@ $(document).ready(function() {
         terror.volume = 0;
         peace.volume = 1;
         peace.currentTime = 0;
+      });
+
+      $("#toRGOOD2").click(function() {
+        $("#rGood2").show();
+        $("#rGood1").hide();
+      });
+
+      $("#toRGOOD3").click(function() {
+        $("#rGood3").show();
+        $("#rGood2").hide();
+      });
+
+      $("#toRGOOD4").click(function() {
+        $("#rGood4").show();
+        $("#rGood3").hide();
+      });
+
+      $("#toRGOOD5").click(function() {
+        $("#rGood5").show();
+        $("#rGood4").hide();
+      });
+
+      $("#toRGOOD6").click(function() {
+        $("#rGood6").show();
+        $("#rGood5").hide();
+      });
+
+      $("#toRGOOD7").click(function() {
+        $("#rGood7").show();
+        $("#rGood6").hide();
+      });
+
+      $("#toRGOOD8").click(function() {
+        $("#rGood8").show();
+        $("#rGood7").hide();
+      });
+
+      $("#toRGOOD9").click(function() {
+        $("#rGood9").show();
+        $("#rGood8").hide();
+      });
+
+      $("#toRGOOD10").click(function() {
+        $("#rGood10").show();
+        $("#rGood9").hide();
+      });
+
+      $("#toRGOOD11").click(function() {
+        $("#rGood11").show();
+        $("#rGood10").hide();
+      });
+
+      $("#toRGOOD12").click(function() {
+        $("#rGood12").show();
+        $("#rGood11").hide();
+      });
+
+      $("#toRGOOD13").click(function() {
+        $("#rGood13").show();
+        $("#rGood12").hide();
+      });
+
+      $("#toRGOOD14").click(function() {
+        $("#rGood14").show();
+        $("#rGood13").hide();
+      });
+
+      $("#toRGOOD15").click(function() {
+        $("#rGood15").show();
+        $("#rGood14").hide();
+      });
+
+      $("#toRGOOD16").click(function() {
+        $("#rGood16").show();
+        $("#rGood15").hide();
       });
     }
 
