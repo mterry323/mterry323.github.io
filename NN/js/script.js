@@ -317,9 +317,11 @@ $(document).ready(function() {
       $("#roof1").show();
       $("#s3").hide();
       cicada.play();
-      joy.volume = 0;
-      ritsuko.volume = 1;
-      ritsuko.currentTime = 0;
+      if (joy.volume == 1) {
+        joy.volume = 0;
+        ritsuko.volume = 1;
+        ritsuko.currentTime = 0;
+      }
     });
 
   }
