@@ -1120,9 +1120,10 @@ $(document).ready(function() {
 
     // --- player watches ---
     {
-      $("#toRM1").click(function() {
+      $(".toRM1").click(function() {
         $("#rM1").show();
         $("#roof25").hide();
+        $("#rn4").hide();
       });
 
       $("#toRM2").click(function() {
@@ -1256,6 +1257,36 @@ $(document).ready(function() {
       $("#toRN1").click(function() {
         $("#rN1").show();
         $("#roof25").hide();
+      });
+
+      $("#toRN2").click(function() {
+        $("#rN2").show();
+        $("#rN1").hide();
+      });
+
+      $("#toRN3").click(function() {
+        $("#rN3").show();
+        $("#rN2").hide();
+      });
+
+      $("#toRN4").click(function() {
+        $("#rN4").show();
+        $("#rN3").hide();
+      });
+
+      $("#switchRY1").click(function() {
+        $("#rY1").show();
+        $("#rN4").hide();
+      });
+
+      $("#switchRM1").click(function() {
+        $("#rM1").show();
+        $("#rN4").hide();
+      });
+
+      $("#toRN5").click(function() {
+        $("#rN5").show();
+        $("#rN4").hide();
       });
     }
 
