@@ -121,15 +121,6 @@ $(document).ready(function() {
   // ----- SOUND EFFECTS -----
 
   {
-    // --- school bell ---
-    var bell = new Audio();
-    bell.src = "audio/sfx/bell.mp3";
-    bell.volume = 1;
-
-    bell.load()
-    bell.addEventListener("load", function() {
-      bell.play();
-    }, true);
 
     // --- cicadas ---
     var cicada = new Audio();
@@ -197,7 +188,6 @@ $(document).ready(function() {
     $("#sfxOn").css("color", "#ff8f1f");
 
     $("#sfxOn").click(function() {
-      bell.volume = 1;
       cicada.volume = 1;
       piano1.volume = 1;
       piano2.volume = 1;
@@ -209,7 +199,6 @@ $(document).ready(function() {
     });
 
     $("#sfxOff").click(function() {
-      bell.volume = 0;
       cicada.volume = 0;
       piano1.volume = 0;
       piano2.volume = 0;
@@ -239,7 +228,6 @@ $(document).ready(function() {
       suiten.play();
       terror.play();
       peace.play();
-      bell.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     })
