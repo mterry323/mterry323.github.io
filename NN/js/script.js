@@ -770,8 +770,9 @@ $(document).ready(function() {
           $("#mn15").hide();
         });
 
-        $(".toMBAD1").click(function() {
-          $("#mBad1").show();
+        $(".toBADEND1").click(function() {
+          $(".storyBG").css("background-image", "url(img/bg/gos2_home_comfort-17-apartment.jpg)");
+          $("#badEnd1").show();
           $("#mn16").hide();
         });
       }
