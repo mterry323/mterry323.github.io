@@ -317,6 +317,9 @@ $(document).ready(function() {
       $("#roof1").show();
       $("#s3").hide();
       cicada.play();
+      joy.volume = 0;
+      ritsuko.volume = 1;
+      ritsuko.currentTime = 0;
     });
 
   }
