@@ -76,6 +76,17 @@ $(document).ready(function() {
       peace.play();
     }, true);
 
+    // --- When I Find Peace Of Mind ---
+
+    var sorrow = new Audio();
+    sorrow.src = "audio/music/The Sorrow Of Losing The Object Of One's Dependence.mp3";
+    sorrow.loop = true;
+
+    sorrow.load()
+    sorrow.addEventListener("load", function() {
+      sorrow.play();
+    }, true);
+
   }
 
   // ----- SET FIRST SONG -----
@@ -87,6 +98,7 @@ $(document).ready(function() {
     suiten.volume = 0;
     terror.volume = 0;
     peace.volume = 0;
+    sorrow.volume = 0;
   }
 
   // ----- MUSIC CONTROLS -----
@@ -101,6 +113,7 @@ $(document).ready(function() {
       suiten.play();
       terror.play();
       peace.play();
+      sorrow.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     });
@@ -113,6 +126,7 @@ $(document).ready(function() {
       suiten.pause();
       terror.pause();
       peace.pause();
+      sorrow.pause();
       $("#bgmOff").css("color", "#ff8f1f");
       $("#bgmOn").css("color", "white");
     });
@@ -215,6 +229,7 @@ $(document).ready(function() {
     $("#aboutBlurb").hide();
     $("#copyBlurb").hide();
     $("#Endscreen").hide();
+    $("#gameOver").hide();
     $("#Startscreen").show();
     $(".bgShade").show();
 
@@ -228,6 +243,7 @@ $(document).ready(function() {
       suiten.play();
       terror.play();
       peace.play();
+      sorrow.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     })
@@ -254,6 +270,11 @@ $(document).ready(function() {
 
     $(".toEndscreen").click(function() {
       $("#Endscreen").show();
+      $(".bgShade").show();
+    });
+
+    $(".toGameover").click(function() {
+      $("#gameOver").show();
       $(".bgShade").show();
     });
   }
@@ -288,12 +309,14 @@ $(document).ready(function() {
       $(".storyBG").css("background-image", "url(img/bg/gos2_school_pool-back.jpg)");
       $("#track1").show();
       $("#s3").hide();
+      cicada.play();
     });
 
     $("#toRoof1").click(function() {
       $(".storyBG").css("background-image", "url(img/bg/gos2_school_rooftop.jpg)");
       $("#roof1").show();
       $("#s3").hide();
+      cicada.play();
     });
 
   }
@@ -763,6 +786,10 @@ $(document).ready(function() {
           $("#badEnd1").show();
           $("#mn16").hide();
           $("#rn14").hide();
+          em17.volume = 0;
+          terror.volume = 0;
+          sorrow.volume = 1;
+          sorrow.currentTime = 0;
         });
       }
     }
@@ -1399,6 +1426,92 @@ $(document).ready(function() {
         $("#rn13").hide();
       });
     }
+
+  }
+
+  // ----- GENERAL BAD END -----
+  {
+    $("#toBADEND2").click(function() {
+      $("#badEnd2").show();
+      $("#badEnd1").hide();
+    });
+
+    $("#toBADEND3").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/gos2_home_living-room.jpg)");
+      $("#badEnd3").show();
+      $("#badEnd2").hide();
+    });
+
+    $("#toBADEND4").click(function() {
+      $("#badEnd4").show();
+      $("#badEnd3").hide();
+    });
+
+    $("#toBADEND5").click(function() {
+      $("#badEnd5").show();
+      $("#badEnd4").hide();
+    });
+
+	$("#toBADEND6").click(function() {
+	$(".storyBG").css("background-image", "url(img/event/gos_c309.jpg)");
+      $("#badEnd6").show();
+      $("#badEnd5").hide();
+    });
+
+	$("#toBADEND7").click(function() {
+      $("#badEnd7").show();
+      $("#badEnd6").hide();
+    });
+
+	$("#toBADEND8").click(function() {
+      $("#badEnd8").show();
+      $("#badEnd7").hide();
+    });
+
+	$("#toBADEND9").click(function() {
+      $("#badEnd9").show();
+      $("#badEnd8").hide();
+    });
+
+	$("#toBADEND10").click(function() {
+      $("#badEnd10").show();
+      $("#badEnd9").hide();
+    });
+
+	$("#toBADEND11").click(function() {
+      $("#badEnd11").show();
+      $("#badEnd10").hide();
+    });
+
+	$("#toBADEND12").click(function() {
+      $("#badEnd12").show();
+      $("#badEnd11").hide();
+    });
+
+	$("#toBADEND13").click(function() {
+      $("#badEnd13").show();
+      $("#badEnd12").hide();
+    });
+
+	$("#toBADEND14").click(function() {
+      $("#badEnd14").show();
+      $("#badEnd13").hide();
+    });
+
+	$("#toBADEND15").click(function() {
+      $("#badEnd15").show();
+      $("#badEnd14").hide();
+    });
+
+	$("#toBADEND16").click(function() {
+      $("#badEnd16").show();
+      $("#badEnd15").hide();
+    });
+
+	$("#toBADEND17").click(function() {
+      $("#badEnd17").show();
+      $("#badEnd16").hide();
+    });
 
   }
 
