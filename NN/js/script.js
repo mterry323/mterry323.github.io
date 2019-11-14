@@ -774,6 +774,7 @@ $(document).ready(function() {
           $(".storyBG").css("background-image", "url(img/bg/gos2_home_comfort-17-apartment.jpg)");
           $("#badEnd1").show();
           $("#mn16").hide();
+          $("#rn14").hide();
         });
       }
     }
@@ -1012,231 +1013,231 @@ $(document).ready(function() {
     // --- player hands camera ---
     {
       $("#toRY1").click(function() {
-        $("#rY1").show();
+        $("#ry1").show();
         $("#roof25").hide();
       });
 
       $("#toRY2").click(function() {
-        $("#rY2").show();
-        $("#rY1").hide();
+        $("#ry2").show();
+        $("#ry1").hide();
       });
 
       $("#toRY3").click(function() {
-        $("#rY3").show();
-        $("#rY2").hide();
+        $("#ry3").show();
+        $("#ry2").hide();
       });
 
       $("#toRY4").click(function() {
-        $("#rY4").show();
-        $("#rY3").hide();
+        $("#ry4").show();
+        $("#ry3").hide();
       });
 
       $("#toRY5").click(function() {
-        $("#rY5").show();
-        $("#rY4").hide();
+        $("#ry5").show();
+        $("#ry4").hide();
       });
 
       $("#toRY6").click(function() {
         $(".storyBG").css("background-image", "url(img/event/gos_c251.jpg)");
-        $("#rY6").show();
-        $("#rY5").hide();
+        $("#ry6").show();
+        $("#ry5").hide();
       });
 
       $("#toRY7").click(function() {
-        $("#rY7").show();
-        $("#rY6").hide();
+        $("#ry7").show();
+        $("#ry6").hide();
         atField.play();
       });
 
       $("#toRY8").click(function() {
-        $("#rY8").show();
-        $("#rY7").hide();
+        $("#ry8").show();
+        $("#ry7").hide();
       });
 
       $("#toRY9").click(function() {
-        $("#rY9").show();
-        $("#rY8").hide();
+        $("#ry9").show();
+        $("#ry8").hide();
       });
 
       $("#toRY10").click(function() {
-        $("#rY10").show();
-        $("#rY9").hide();
+        $("#ry10").show();
+        $("#ry9").hide();
       });
 
       $("#toRY11").click(function() {
-        $("#rY11").show();
-        $("#rY10").hide();
+        $("#ry11").show();
+        $("#ry10").hide();
       });
 
       $("#toRY12").click(function() {
-        $("#rY12").show();
-        $("#rY11").hide();
+        $("#ry12").show();
+        $("#ry11").hide();
       });
 
       $("#toRY13").click(function() {
-        $("#rY13").show();
-        $("#rY12").hide();
+        $("#ry13").show();
+        $("#ry12").hide();
       });
 
       $("#toRY14").click(function() {
-        $("#rY14").show();
-        $("#rY13").hide();
+        $("#ry14").show();
+        $("#ry13").hide();
       });
 
       $("#toRY15").click(function() {
-        $("#rY15").show();
-        $("#rY14").hide();
+        $("#ry15").show();
+        $("#ry14").hide();
       });
 
       $("#toRY16").click(function() {
-        $("#rY16").show();
-        $("#rY15").hide();
+        $("#ry16").show();
+        $("#ry15").hide();
       });
 
       $("#toRY17").click(function() {
-        $("#rY17").show();
-        $("#rY16").hide();
+        $("#ry17").show();
+        $("#ry16").hide();
       });
 
       $("#toRY18").click(function() {
-        $("#rY18").show();
-        $("#rY17").hide();
+        $("#ry18").show();
+        $("#ry17").hide();
       });
 
       $("#toRY19").click(function() {
-        $("#rY19").show();
-        $("#rY18").hide();
+        $("#ry19").show();
+        $("#ry18").hide();
       });
 
       $("#toRY20").click(function() {
-        $("#rY20").show();
-        $("#rY19").hide();
+        $("#ry20").show();
+        $("#ry19").hide();
       });
 
       $("#toRY21").click(function() {
-        $("#rY21").show();
-        $("#rY20").hide();
+        $("#ry21").show();
+        $("#ry20").hide();
       });
     }
 
     // --- player watches ---
     {
       $(".toRM1").click(function() {
-        $("#rM1").show();
+        $("#rm1").show();
         $("#roof25").hide();
         $("#rn4").hide();
       });
 
       $("#toRM2").click(function() {
         $(".storyBG").css("background-image", "url(img/event/gos_c251.jpg)");
-        $("#rM2").show();
-        $("#rM1").hide();
+        $("#rm2").show();
+        $("#rm1").hide();
       });
 
       $("#toRM3").click(function() {
-        $("#rM3").show();
-        $("#rM2").hide();
+        $("#rm3").show();
+        $("#rm2").hide();
         atField.play();
       });
 
       $("#toRM4").click(function() {
-        $("#rM4").show();
-        $("#rM3").hide();
+        $("#rm4").show();
+        $("#rm3").hide();
       });
 
       $("#toRM5").click(function() {
-        $("#rM5").show();
-        $("#rM4").hide();
+        $("#rm5").show();
+        $("#rm4").hide();
       });
 
       $("#toRM6").click(function() {
-        $("#rM6").show();
-        $("#rM5").hide();
+        $("#rm6").show();
+        $("#rm5").hide();
       });
 
       $("#toRM7").click(function() {
-        $("#rM7").show();
-        $("#rM6").hide();
+        $("#rm7").show();
+        $("#rm6").hide();
       });
 
       $("#toRM8").click(function() {
-        $("#rM8").show();
-        $("#rM7").hide();
+        $("#rm8").show();
+        $("#rm7").hide();
       });
 
       $("#toRM9").click(function() {
-        $("#rM9").show();
-        $("#rM8").hide();
+        $("#rm9").show();
+        $("#rm8").hide();
       });
 
       $("#toRM10").click(function() {
-        $("#rM10").show();
-        $("#rM9").hide();
+        $("#rm10").show();
+        $("#rm9").hide();
       });
 
       $("#toRM11").click(function() {
-        $("#rM11").show();
-        $("#rM10").hide();
+        $("#rm11").show();
+        $("#rm10").hide();
       });
 
       $("#toRM12").click(function() {
-        $("#rM12").show();
-        $("#rM11").hide();
+        $("#rm12").show();
+        $("#rm11").hide();
       });
 
       $("#toRM13").click(function() {
-        $("#rM13").show();
-        $("#rM12").hide();
+        $("#rm13").show();
+        $("#rm12").hide();
       });
 
       $("#toRM14").click(function() {
-        $("#rM14").show();
-        $("#rM13").hide();
+        $("#rm14").show();
+        $("#rm13").hide();
       });
 
       $("#toRM15").click(function() {
-        $("#rM15").show();
-        $("#rM14").hide();
+        $("#rm15").show();
+        $("#rm14").hide();
       });
 
       $("#toRM16").click(function() {
-        $("#rM16").show();
-        $("#rM15").hide();
+        $("#rm16").show();
+        $("#rm15").hide();
       });
 
       $("#toRM17").click(function() {
-        $("#rM17").show();
-        $("#rM16").hide();
+        $("#rm17").show();
+        $("#rm16").hide();
       });
 
       $("#toRM18").click(function() {
-        $("#rM18").show();
-        $("#rM17").hide();
+        $("#rm18").show();
+        $("#rm17").hide();
       });
 
       $("#toRM19").click(function() {
-        $("#rM19").show();
-        $("#rM18").hide();
+        $("#rm19").show();
+        $("#rm18").hide();
       });
 
       $("#toRM20").click(function() {
-        $("#rM20").show();
-        $("#rM19").hide();
+        $("#rm20").show();
+        $("#rm19").hide();
       });
 
       $("#toRM21").click(function() {
-        $("#rM21").show();
-        $("#rM20").hide();
+        $("#rm21").show();
+        $("#rm20").hide();
       });
 
       $("#toRM22").click(function() {
-        $("#rM22").show();
-        $("#rM21").hide();
+        $("#rm22").show();
+        $("#rm21").hide();
       });
 
       $("#toRM23").click(function() {
-        $("#rM23").show();
-        $("#rM22").hide();
+        $("#rm23").show();
+        $("#rm22").hide();
       });
     }
 
@@ -1245,8 +1246,8 @@ $(document).ready(function() {
       $(".toRGOOD1").click(function() {
         $(".storyBG").css("background-image", "url(img/bg/gos_tokyo3_evening.jpg)");
         $("#rGood1").show();
-        $("#rY21").hide();
-        $("#rM23").hide();
+        $("#ry21").hide();
+        $("#rm23").hide();
         terror.volume = 0;
         peace.volume = 1;
         peace.currentTime = 0;
@@ -1256,38 +1257,83 @@ $(document).ready(function() {
     // --- player leaves ---
     {
       $("#toRN1").click(function() {
-        $("#rN1").show();
+        $("#rn1").show();
         $("#roof25").hide();
       });
 
       $("#toRN2").click(function() {
-        $("#rN2").show();
-        $("#rN1").hide();
+        $("#rn2").show();
+        $("#rn1").hide();
       });
 
       $("#toRN3").click(function() {
-        $("#rN3").show();
-        $("#rN2").hide();
+        $("#rn3").show();
+        $("#rn2").hide();
       });
 
       $("#toRN4").click(function() {
-        $("#rN4").show();
-        $("#rN3").hide();
+        $("#rn4").show();
+        $("#rn3").hide();
       });
 
       $("#switchRY1").click(function() {
-        $("#rY1").show();
-        $("#rN4").hide();
+        $("#ry1").show();
+        $("#rn4").hide();
       });
 
       $("#switchRM1").click(function() {
-        $("#rM1").show();
-        $("#rN4").hide();
+        $("#rm1").show();
+        $("#rn4").hide();
       });
 
       $("#toRN5").click(function() {
-        $("#rN5").show();
-        $("#rN4").hide();
+        $("#rn5").show();
+        $("#rn4").hide();
+      });
+
+      $("#toRN6").click(function() {
+        $("#rn6").show();
+        $("#rn5").hide();
+      });
+
+      $("#toRN7").click(function() {
+        $("#rn7").show();
+        $("#rn6").hide();
+      });
+
+      $("#toRN8").click(function() {
+        $("#rn8").show();
+        $("#rn7").hide();
+      });
+
+      $("#toRN9").click(function() {
+        $("#rn9").show();
+        $("#rn8").hide();
+      });
+
+      $("#toRN10").click(function() {
+        $("#rn10").show();
+        $("#rn9").hide();
+      });
+
+      $("#toRN11").click(function() {
+        $("#rn11").show();
+        $("#rn10").hide();
+      });
+
+      $("#toRN12").click(function() {
+        $("#rn12").show();
+        $("#rn11").hide();
+      });
+
+      $("#toRN13").click(function() {
+        $("#rn13").show();
+        $("#rn12").hide();
+      });
+
+      $("#toRN14").click(function() {
+        $("#rn14").show();
+        $("#rn13").hide();
       });
     }
 
