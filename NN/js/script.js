@@ -76,7 +76,7 @@ $(document).ready(function() {
       peace.play();
     }, true);
 
-    // --- When I Find Peace Of Mind ---
+    // --- Sorrow of Losing ---
 
     var sorrow = new Audio();
     sorrow.src = "audio/music/The Sorrow Of Losing The Object Of One's Dependence.mp3";
@@ -85,6 +85,17 @@ $(document).ready(function() {
     sorrow.load()
     sorrow.addEventListener("load", function() {
       sorrow.play();
+    }, true);
+
+    // --- Barefoot in the Park ---
+
+    var barefoot = new Audio();
+    barefoot.src = "audio/music/Barefoot In The Park.mp3";
+    barefoot.loop = true;
+
+    barefoot.load()
+    barefoot.addEventListener("load", function() {
+      barefoot.play();
     }, true);
 
   }
@@ -99,6 +110,7 @@ $(document).ready(function() {
     terror.volume = 0;
     peace.volume = 0;
     sorrow.volume = 0;
+    barefoot.volume = 0;
   }
 
   // ----- MUSIC CONTROLS -----
@@ -114,6 +126,7 @@ $(document).ready(function() {
       terror.play();
       peace.play();
       sorrow.play();
+      barefoot.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     });
@@ -127,6 +140,7 @@ $(document).ready(function() {
       terror.pause();
       peace.pause();
       sorrow.pause();
+      barefoot.pause();
       $("#bgmOff").css("color", "#ff8f1f");
       $("#bgmOn").css("color", "white");
     });
@@ -244,6 +258,7 @@ $(document).ready(function() {
       terror.play();
       peace.play();
       sorrow.play();
+      barefoot.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     })
@@ -294,15 +309,22 @@ $(document).ready(function() {
       $("#s2").hide();
       $("#mus7").hide();
       $("#roof6").hide();
+      $("#track6").hide();
     });
 
     $("#toMus1").click(function() {
       $(".storyBG").css("background-image", "url(img/bg/gos2_school_corridor.jpg)");
       $("#mus1").show();
       $("#s3").hide();
-      ritsuko.volume = 0;
-      joy.volume = 1;
-      joy.currentTime = 0;
+      if (ritsuko.volume == 1) {
+        ritsuko.volume = 0;
+        joy.volume = 1;
+        joy.currentTime = 0;
+      } else if (barefoot.volume == 1) {
+        barefoot.volume = 0;
+        joy.volume = 1;
+        joy.currentTime = 0;
+      }
     });
 
     $("#toTrack1").click(function() {
@@ -310,6 +332,15 @@ $(document).ready(function() {
       $("#track1").show();
       $("#s3").hide();
       cicada.play();
+      if (ritsuko.volume == 1) {
+        ritsuko.volume = 0;
+        barefoot.volume = 1;
+        barefoot.currentTime = 0;
+      } else if (joy.volume == 1) {
+        joy.volume = 0;
+        barefoot.volume = 1;
+        barefoot.currentTime = 0;
+      }
     });
 
     $("#toRoof1").click(function() {
@@ -319,6 +350,10 @@ $(document).ready(function() {
       cicada.play();
       if (joy.volume == 1) {
         joy.volume = 0;
+        ritsuko.volume = 1;
+        ritsuko.currentTime = 0;
+      } else if (barefoot.volume == 1) {
+        barefoot.volume = 0;
         ritsuko.volume = 1;
         ritsuko.currentTime = 0;
       }
@@ -895,6 +930,102 @@ $(document).ready(function() {
       $("#track2").show();
       $("#track1").hide();
     });
+
+    $("#toTrack3").click(function() {
+      $("#track3").show();
+      $("#track2").hide();
+    });
+
+    $("#toTrack4").click(function() {
+      $("#track4").show();
+      $("#track3").hide();
+    });
+
+    $("#toTrack5").click(function() {
+      $("#track5").show();
+      $("#track4").hide();
+    });
+
+    // -- player leaves --
+
+    $("#toTrack6").click(function() {
+      $("#track6").show();
+      $("#track5").hide();
+    });
+
+    // -- player stays --
+
+    $("#toTrack7").click(function() {
+      $("#track7").show();
+      $("#track5").hide();
+    });
+
+    $("#toTrack8").click(function() {
+      $("#track8").show();
+      $("#track7").hide();
+    });
+
+    $("#toTrack9").click(function() {
+      $("#track9").show();
+      $("#track8").hide();
+    });
+
+    $("#toTrack10").click(function() {
+      $("#track10").show();
+      $("#track9").hide();
+    });
+
+    $("#toTrack11").click(function() {
+      $("#track11").show();
+      $("#track10").hide();
+    });
+
+    $("#toTrack12").click(function() {
+      $("#track12").show();
+      $("#track11").hide();
+    });
+
+    $("#toTrack13").click(function() {
+      $("#track13").show();
+      $("#track12").hide();
+    });
+
+    $("#toTrack14").click(function() {
+      $("#track14").show();
+      $("#track13").hide();
+    });
+
+    // --- positive route ---
+    {
+      $("#toTY1").click(function() {
+        $("#ty1").show();
+        $("#track14").hide();
+      });
+
+    }
+
+    // --- neutral route ---
+    {
+      $("#toTM1").click(function() {
+        $("#tm1").show();
+        $("#track14").hide();
+      });
+
+    }
+
+    // --- negative route ---
+    {
+      $("#toTN1").click(function() {
+        $("#tn1").show();
+        $("#track14").hide();
+      });
+
+    }
+
+    // --- good toji end ---
+    {
+
+    }
 
   }
 
