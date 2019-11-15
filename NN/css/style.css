@@ -198,12 +198,13 @@ background: black;
 
 .choices {
   position: absolute;
-  top: 20%;
+  top: 50%;
   bottom: 0;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -13%;
   max-width: 350px;
   font-family: Times;
   transform: scale(.8, 1);
@@ -221,7 +222,7 @@ background: black;
 
 #nextButton {
   position: absolute;
-  z-index:1;
+  /* z-index:1; */
   top: 80%;
   right: 20%;
   text-align: center;

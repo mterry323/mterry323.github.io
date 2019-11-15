@@ -18,7 +18,7 @@
   <!---TOP MENU-->
   <div id="topMenu">
     Music: <a href="#" id="bgmOn">On</a> &nbsp;<a href="#" id="bgmOff">Off</a> &nbsp; &nbsp; SFX: <a href="#" id="sfxOn">On</a> &nbsp;<a href="#" id="sfxOff">Off</a> &nbsp; &nbsp; <a id="About" href="#">About</a> &nbsp; &nbsp; <a id="Copyright"
-      href="#">Disclaimers</a>
+      href="#">Credits</a>
   </div>
 
   <!---POPUP BOXES-->
@@ -70,6 +70,7 @@
       <ul>
         <li>A Step Forward Into Terror - Shiro Sagisu
         </li>
+        <li>Barefoot in the Park - Shiro Sagisu</li>
         <li>Cello Suite No. 1 in G - Prelude - J.S. Bach (from <i>Evangelion: Death</i>)
         </li>
         <li>Childhood Memories, Shut Away - arr. by Shiro Sagisu (from Cello Suite No. 1 in G)</li>
@@ -136,9 +137,9 @@
         <a href="#">
           <div class="option" id="toMus1">Music room</div><br>
         </a>
-        <!-- <a href="#">
+        <a href="#">
           <div class="option" id="toTrack1">Track field</div><br>
-        </a> -->
+        </a>
         <a href="#">
           <div class="option" id="toRoof1">Rooftop</div>
         </a>
@@ -1724,7 +1725,7 @@
           <a id="nextButton" href="#">
             <div id="toTrack14">next</div>
           </a>
-          <div class="dialogue">Ah, gotcha. Well, since I’ve got time to kill now, how about if I go with ya?</div>
+          <div class="dialogue">Ah, gotcha. Well, since I’ve got time to kill now, how about if I go with ya? I gotta grab my bag from the locker room, so I was on my way there anyway.</div>
         </div>
       </div>
     </div>
@@ -1733,13 +1734,13 @@
       <div class="storyBG"></div>
       <div class="choices">
         <a href="#">
-          <div class="option" id="toTY1">choice</div><br>
+          <div class="option" id="toTY1">Sure, let’s go</div><br>
         </a>
         <a href="#">
-          <div class="option" id="toTM1">choice</div><br>
+          <div class="option" id="toTM1">Actually, can you do me a favor?</div><br>
         </a>
         <a href="#">
-          <div class="option" id="toTN1">choice</div>
+          <div class="option" id="toTN1">I have plans after</div>
         </a>
       </div>
       <div id="box">
@@ -1750,7 +1751,7 @@
       </div>
     </div>
 
-    <!-- if the player goes positive route -->
+    <!-- if the player goes to the locker room -->
 
     <div class="storypoint" id="ty1">
       <div class="storyBG"></div>
@@ -1766,23 +1767,361 @@
       </div>
     </div>
 
-    <!-- if the player goes neutral route -->
+    <!-- if the player gets drinks -->
 
     <div class="storypoint" id="tm1">
       <div class="storyBG"></div>
       <div id="box">
         <div id="speakerName">Shinji</div>
-        <!-- <div id="avatar"><img src="img/face/toji-f.png."></div> -->
         <div id="diaBox">
           <a id="nextButton" href="#">
             <div id="toTM2">next</div>
           </a>
-          <div class="dialogue">neutral</div>
+          <div class="dialogue">The more I think about it, the more I realize I don’t really want to be in the locker room. What if there are other people in there? I don’t want them to notice I forgot my stuff.</div>
         </div>
       </div>
     </div>
 
-    <!-- if the player goes negative route -->
+    <div class="storypoint" id="tm2">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM3">next</div>
+          </a>
+          <div class="dialogue">I think on it for a moment before turning to Toji.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm3">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-b.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM4">next</div>
+          </a>
+          <div class="dialogue">Actually, uh...sorry, would you mind grabbing my stuff for me?</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm4">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Toji</div>
+        <div id="avatar"><img src="img/face/toji-h.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM5">next</div>
+          </a>
+          <div class="dialogue">Huh? I mean, sure, no skin off my nose, but how come?</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm5">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-l.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM6">next</div>
+          </a>
+          <div class="dialogue">Oh, I just...in case anyone else is in there. I don’t want to bother them.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm6">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM7">next</div>
+          </a>
+          <div class="dialogue">When I say it out loud, I realize how silly it sounds. But Toji just grins and claps me on the back.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm7">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Toji</div>
+        <div id="avatar"><img src="img/face/toji-f.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM8">next</div>
+          </a>
+          <div class="dialogue">Sure thing, man. Just gimme a minute, I’ll be back.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm8">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-o.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM9">next</div>
+          </a>
+          <div class="dialogue">Thank you. I can go grab drinks for us or something, if you want.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm9">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Toji</div>
+        <div id="avatar"><img src="img/face/toji-a.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM10">next</div>
+          </a>
+          <div class="dialogue">Oh, could you? I’ll take a coffee or something. Lemme grab some change from my bag, and I’ll give it to you when I get back.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm10">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-a.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM11">next</div>
+          </a>
+          <div class="dialogue">Sure. I’ll meet you back here, okay?</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm11">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Toji</div>
+        <div id="avatar"><img src="img/face/toji-f.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM12">next</div>
+          </a>
+          <div class="dialogue">Sure thing. See ya in a few.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm12">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM13">next</div>
+          </a>
+          <div class="dialogue">I head over to the pastry corner to grab the drinks, shuffling around in my pockets for loose change. I find myself taking my time, thinking.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm13">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM14">next</div>
+          </a>
+          <div class="dialogue">I’m stuck on Toji’s bewilderment upon my request, cringing at how strange I must have sounded.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm14">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM15">next</div>
+          </a>
+          <div class="dialogue">Yet, he was completely fine with it. He really didn’t seem to mind. I’ve never really had anyone like that in school before…</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm15">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM16">next</div>
+          </a>
+          <div class="dialogue">I pick up two canned coffees before returning to the track field. By the time I get back, Toji’s already waiting with the money for his.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm16">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Toji</div>
+        <div id="avatar"><img src="img/face/toji-f.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM17">next</div>
+          </a>
+          <div class="dialogue">Thanks, man. Here’s your stuff.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm17">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM18">next</div>
+          </a>
+          <div class="dialogue">I hand him his drink, and he hands me my gym uniform.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm18">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-a.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM19">next</div>
+          </a>
+          <div class="dialogue">Thanks, Toji. Sorry for making you do that…</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm19">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Toji</div>
+        <div id="avatar"><img src="img/face/toji-f.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM20">next</div>
+          </a>
+          <div class="dialogue">Nah, seriously, don’t worry about it. I kinda owe ya, after all.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm20">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-b.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM21">next</div>
+          </a>
+          <div class="dialogue">Owe me?</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm21">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM22">next</div>
+          </a>
+          <div class="dialogue">My brow furrows in my confusion. Owe me for what?</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm22">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Toji</div>
+        <div id="avatar"><img src="img/face/toji-g.png"></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM23">next</div>
+          </a>
+          <div class="dialogue">For that one time, y’know? The whole thing when you transferred in and all that.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm23">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM24">next</div>
+          </a>
+          <div class="dialogue">Understanding washes over me, and I recall my first day in Tokyo-3 Junior High. It was after my first sortie in my EVA, most of which I don’t remember.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm24">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM25">next</div>
+          </a>
+          <div class="dialogue">I lost consciousness at some point, but apparently Toji’s younger sister was harmed in the collateral damage. When my classmates learned I was the pilot, Toji took out his anger on me and beat me up.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm25">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM26">next</div>
+          </a>
+          <div class="dialogue">We’ve worked things out since. He even insisted that I punch him back to get even. I had no idea he was still feeling guilt over it.</div>
+        </div>
+      </div>
+    </div>
+
+	<div class="storypoint" id="tm26">
+      <div class="storyBG"></div>
+      <div id="box">
+        <div id="speakerName">Shinji</div>
+        <div id="avatar"><img src="img/face/shinji-l.png."></div>
+        <div id="diaBox">
+          <a id="nextButton" href="#">
+            <div id="toTM27">next</div>
+          </a>
+          <div class="dialogue">Toji, you really don’t need to worry about that. It was a while ago already.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- if the player goes tries to leave -->
 
     <div class="storypoint" id="tn1">
       <div class="storyBG"></div>

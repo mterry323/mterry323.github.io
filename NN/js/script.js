@@ -961,6 +961,7 @@ $(document).ready(function() {
     });
 
     $("#toTrack8").click(function() {
+      $(".storyBG").css("background-image", "url(img/event/toji.jpg)");
       $("#track8").show();
       $("#track7").hide();
     });
@@ -1009,6 +1010,133 @@ $(document).ready(function() {
       $("#toTM1").click(function() {
         $("#tm1").show();
         $("#track14").hide();
+      });
+
+      $("#toTM2").click(function() {
+        $("#tm2").show();
+        $("#tm1").hide();
+      });
+
+      $("#toTM3").click(function() {
+        $("#tm3").show();
+        $("#tm2").hide();
+      });
+
+      $("#toTM4").click(function() {
+        $("#tm4").show();
+        $("#tm3").hide();
+      });
+
+      $("#toTM5").click(function() {
+        $("#tm5").show();
+        $("#tm4").hide();
+      });
+
+      $("#toTM6").click(function() {
+        $("#tm6").show();
+        $("#tm5").hide();
+      });
+
+      $("#toTM7").click(function() {
+        $("#tm7").show();
+        $("#tm6").hide();
+      });
+
+      $("#toTM8").click(function() {
+        $("#tm8").show();
+        $("#tm7").hide();
+      });
+
+      $("#toTM9").click(function() {
+        $("#tm9").show();
+        $("#tm8").hide();
+      });
+
+      $("#toTM10").click(function() {
+        $("#tm10").show();
+        $("#tm9").hide();
+      });
+
+      $("#toTM11").click(function() {
+        $("#tm11").show();
+        $("#tm10").hide();
+      });
+
+      $("#toTM12").click(function() {
+        $(".storyBG").css("background-image", "url(img/bg/gos2_school_pastry-corner-room.jpg)");
+        $("#tm12").show();
+        $("#tm11").hide();
+      });
+
+      $("#toTM13").click(function() {
+        $("#tm13").show();
+        $("#tm12").hide();
+      });
+
+      $("#toTM14").click(function() {
+        $("#tm14").show();
+        $("#tm13").hide();
+      });
+
+      $("#toTM15").click(function() {
+        $("#tm15").show();
+        $("#tm14").hide();
+      });
+
+      $("#toTM16").click(function() {
+        $(".storyBG").css("background-image", "url(img/event/gos2_020c.jpg)");
+        $("#tm16").show();
+        $("#tm15").hide();
+      });
+
+      $("#toTM17").click(function() {
+        $("#tm17").show();
+        $("#tm16").hide();
+      });
+
+      $("#toTM18").click(function() {
+        $("#tm18").show();
+        $("#tm17").hide();
+      });
+
+      $("#toTM19").click(function() {
+        $("#tm19").show();
+        $("#tm18").hide();
+      });
+
+      $("#toTM20").click(function() {
+        $("#tm20").show();
+        $("#tm19").hide();
+      });
+
+      $("#toTM21").click(function() {
+        $("#tm21").show();
+        $("#tm20").hide();
+      });
+
+      $("#toTM22").click(function() {
+        $("#tm22").show();
+        $("#tm21").hide();
+      });
+
+      $("#toTM23").click(function() {
+        $("#tm23").show();
+        $("#tm22").hide();
+      });
+
+      $("#toTM24").click(function() {
+        $("#tm24").show();
+        $("#tm23").hide();
+      });
+
+      $("#toTM25").click(function() {
+        $("#tm25").show();
+        $("#tm24").hide();
+      });
+
+      $("#toTM26").click(function() {
+        $("#tm26").show();
+        $("#tm25").hide();
       });
 
     }
