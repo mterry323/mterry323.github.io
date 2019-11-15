@@ -3,12 +3,12 @@
   "name": "Boyfriend of Steel: An Evangelion Fangame",
   "icons": [
     {
-      "src": "/img/nerv-192.png",
+      "src": "img/nerv-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/nerv-512.png",
+      "src": "img/nerv-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
