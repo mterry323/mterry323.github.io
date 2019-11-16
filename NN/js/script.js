@@ -147,7 +147,6 @@ $(document).ready(function() {
   }
 
   // ----- SOUND EFFECTS -----
-
   {
 
     // --- cicadas ---
@@ -208,7 +207,6 @@ $(document).ready(function() {
     atField.addEventListener("load", function() {
       atField.play();
     }, true);
-
   }
 
   // ----- SOUND CONTROLS -----
@@ -389,7 +387,6 @@ $(document).ready(function() {
     });
 
     // --- player leaves kaworu route ---
-
     $("#toMus7").click(function() {
       $("#mus7").show();
       $("#mus6").hide();
@@ -947,14 +944,12 @@ $(document).ready(function() {
     });
 
     // -- player leaves --
-
     $("#toTrack6").click(function() {
       $("#track6").show();
       $("#track5").hide();
     });
 
     // -- player stays --
-
     $("#toTrack7").click(function() {
       $("#track7").show();
       $("#track5").hide();
@@ -996,16 +991,15 @@ $(document).ready(function() {
       $("#track13").hide();
     });
 
-    // --- positive route ---
+    // --- player goes to locker room ---
     {
       $("#toTY1").click(function() {
         $("#ty1").show();
         $("#track14").hide();
       });
-
     }
 
-    // --- neutral route ---
+    // --- player gets drinks ---
     {
       $("#toTM1").click(function() {
         $("#tm1").show();
@@ -1138,23 +1132,20 @@ $(document).ready(function() {
         $("#tm26").show();
         $("#tm25").hide();
       });
-
     }
 
-    // --- negative route ---
+    // --- player leaves ---
     {
       $("#toTN1").click(function() {
         $("#tn1").show();
         $("#track14").hide();
       });
-
     }
 
     // --- good toji end ---
     {
-
+      //insert code here
     }
-
   }
 
   // ----- ROOFTOP -----
@@ -1164,30 +1155,25 @@ $(document).ready(function() {
       $("#roof1").hide();
     });
 
-
     $("#toRoof3").click(function() {
       $("#roof3").show();
       $("#roof2").hide();
     });
-
 
     $("#toRoof4").click(function() {
       $("#roof4").show();
       $("#roof3").hide();
     });
 
-
     $("#toRoof5").click(function() {
       $("#roof5").show();
       $("#roof4").hide();
     });
 
-
     $("#toRoof6").click(function() {
       $("#roof6").show();
       $("#roof5").hide();
     });
-
 
     $("#toRoof7").click(function() {
       $(".storyBG").css("background-image", "url(img/event/gos2_118.jpg)");
@@ -1690,7 +1676,6 @@ $(document).ready(function() {
         $("#rn13").hide();
       });
     }
-
   }
 
   // ----- GENERAL BAD END -----
@@ -1716,63 +1701,63 @@ $(document).ready(function() {
       $("#badEnd4").hide();
     });
 
-	$("#toBADEND6").click(function() {
-	$(".storyBG").css("background-image", "url(img/event/gos_c309.jpg)");
+    $("#toBADEND6").click(function() {
+      $(".storyBG").css("background-image", "url(img/event/gos_c309.jpg)");
       $("#badEnd6").show();
       $("#badEnd5").hide();
     });
 
-	$("#toBADEND7").click(function() {
+    $("#toBADEND7").click(function() {
       $("#badEnd7").show();
       $("#badEnd6").hide();
     });
 
-	$("#toBADEND8").click(function() {
+    $("#toBADEND8").click(function() {
       $("#badEnd8").show();
       $("#badEnd7").hide();
     });
 
-	$("#toBADEND9").click(function() {
+    $("#toBADEND9").click(function() {
       $("#badEnd9").show();
       $("#badEnd8").hide();
     });
 
-	$("#toBADEND10").click(function() {
+    $("#toBADEND10").click(function() {
       $("#badEnd10").show();
       $("#badEnd9").hide();
     });
 
-	$("#toBADEND11").click(function() {
+    $("#toBADEND11").click(function() {
       $("#badEnd11").show();
       $("#badEnd10").hide();
     });
 
-	$("#toBADEND12").click(function() {
+    $("#toBADEND12").click(function() {
       $("#badEnd12").show();
       $("#badEnd11").hide();
     });
 
-	$("#toBADEND13").click(function() {
+    $("#toBADEND13").click(function() {
       $("#badEnd13").show();
       $("#badEnd12").hide();
     });
 
-	$("#toBADEND14").click(function() {
+    $("#toBADEND14").click(function() {
       $("#badEnd14").show();
       $("#badEnd13").hide();
     });
 
-	$("#toBADEND15").click(function() {
+    $("#toBADEND15").click(function() {
       $("#badEnd15").show();
       $("#badEnd14").hide();
     });
 
-	$("#toBADEND16").click(function() {
+    $("#toBADEND16").click(function() {
       $("#badEnd16").show();
       $("#badEnd15").hide();
     });
 
-	$("#toBADEND17").click(function() {
+    $("#toBADEND17").click(function() {
       $("#badEnd17").show();
       $("#badEnd16").hide();
     });
