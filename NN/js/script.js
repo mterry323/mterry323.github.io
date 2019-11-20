@@ -1132,6 +1132,51 @@ $(document).ready(function() {
         $("#tm26").show();
         $("#tm25").hide();
       });
+
+      $("#toTM27").click(function() {
+        $("#tm27").show();
+        $("#tm26").hide();
+      });
+
+      $("#toTM28").click(function() {
+        $("#tm28").show();
+        $("#tm27").hide();
+      });
+
+      $("#toTM29").click(function() {
+        $("#tm29").show();
+        $("#tm28").hide();
+      });
+
+      $("#toTM30").click(function() {
+        $("#tm30").show();
+        $("#tm29").hide();
+      });
+
+      $("#toTM31").click(function() {
+        $("#tm31").show();
+        $("#tm30").hide();
+      });
+
+      $("#toTM32").click(function() {
+        $("#tm32").show();
+        $("#tm31").hide();
+      });
+
+      $("#toTM33").click(function() {
+        $("#tm33").show();
+        $("#tm32").hide();
+      });
+
+      $("#toTM34").click(function() {
+        $("#tm34").show();
+        $("#tm33").hide();
+      });
+
+      $("#toTM35").click(function() {
+        $("#tm35").show();
+        $("#tm34").hide();
+      });
     }
 
     // --- player leaves ---
