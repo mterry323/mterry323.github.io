@@ -1281,7 +1281,7 @@ $(document).ready(function() {
       });
 
       $("#switchTM1").click(function() {
-        $("#tm2").show();
+        $("#tm1").show();
         $("#tn5").hide();
       });
 
