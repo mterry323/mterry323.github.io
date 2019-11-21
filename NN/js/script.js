@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+  // ----- PROGRESS WITH SPACE BAR -----
+
+//   $(window).keypress(function(e) {
+//   if (e.keyCode == 0 || e.keyCode == 32) {
+//     console.log('Space pressed');
+//     $("#nextButton").click();
+//   }
+// });
+
   // ----- BG MUSIC -----
   {
     // --- Ritsuko ---
@@ -98,6 +107,17 @@ $(document).ready(function() {
       barefoot.play();
     }, true);
 
+    // --- Hedgehog's Dilemma ---
+
+    var hedgehog = new Audio();
+    hedgehog.src = "audio/music/Hedgehog's Dilemma.mp3";
+    hedgehog.loop = true;
+
+    hedgehog.load()
+    hedgehog.addEventListener("load", function() {
+      hedgehog.play();
+    }, true);
+
   }
 
   // ----- SET FIRST SONG -----
@@ -111,6 +131,7 @@ $(document).ready(function() {
     peace.volume = 0;
     sorrow.volume = 0;
     barefoot.volume = 0;
+    hedgehog.volume = 0;
   }
 
   // ----- MUSIC CONTROLS -----
@@ -127,6 +148,7 @@ $(document).ready(function() {
       peace.play();
       sorrow.play();
       barefoot.play();
+      hedgehog.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     });
@@ -141,6 +163,7 @@ $(document).ready(function() {
       peace.pause();
       sorrow.pause();
       barefoot.pause();
+      hedgehog.pause();
       $("#bgmOff").css("color", "#ff8f1f");
       $("#bgmOn").css("color", "white");
     });
@@ -257,6 +280,7 @@ $(document).ready(function() {
       peace.play();
       sorrow.play();
       barefoot.play();
+      hedgehog.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     })
@@ -823,8 +847,10 @@ $(document).ready(function() {
           $("#badEnd1").show();
           $("#mn16").hide();
           $("#rn14").hide();
+          $("#tn11").hide();
           em17.volume = 0;
           terror.volume = 0;
+          barefoot.volume = 0;
           sorrow.volume = 1;
           sorrow.currentTime = 0;
         });
@@ -1060,6 +1086,9 @@ $(document).ready(function() {
         $(".storyBG").css("background-image", "url(img/bg/gos2_school_pastry-corner-room.jpg)");
         $("#tm12").show();
         $("#tm11").hide();
+        barefoot.volume = 0;
+        hedgehog.volume = 1;
+        hedgehog.currentTime = 0;
       });
 
       $("#toTM13").click(function() {
@@ -1177,6 +1206,46 @@ $(document).ready(function() {
         $("#tm35").show();
         $("#tm34").hide();
       });
+
+      $("#toTM36").click(function() {
+        $("#tm36").show();
+        $("#tm35").hide();
+      });
+
+      $("#toTM37").click(function() {
+        $("#tm37").show();
+        $("#tm36").hide();
+      });
+
+      $("#toTM38").click(function() {
+        $("#tm38").show();
+        $("#tm37").hide();
+      });
+
+      $("#toTM39").click(function() {
+        $("#tm39").show();
+        $("#tm38").hide();
+      });
+
+      $("#toTM40").click(function() {
+        $("#tm40").show();
+        $("#tm39").hide();
+      });
+
+      $("#toTM41").click(function() {
+        $("#tm41").show();
+        $("#tm40").hide();
+      });
+
+      $("#toTM42").click(function() {
+        $("#tm42").show();
+        $("#tm41").hide();
+      });
+
+      $("#toTM43").click(function() {
+        $("#tm43").show();
+        $("#tm42").hide();
+      });
     }
 
     // --- player leaves ---
@@ -1185,11 +1254,79 @@ $(document).ready(function() {
         $("#tn1").show();
         $("#track14").hide();
       });
+
+      $("#toTN2").click(function() {
+        $("#tn2").show();
+        $("#tn1").hide();
+      });
+
+      $("#toTN3").click(function() {
+        $("#tn3").show();
+        $("#tn2").hide();
+      });
+
+      $("#toTN4").click(function() {
+        $("#tn4").show();
+        $("#tn3").hide();
+      });
+
+      $("#toTN5").click(function() {
+        $("#tn5").show();
+        $("#tn4").hide();
+      });
+
+      $("#switchTY1").click(function() {
+        $("#ty1").show();
+        $("#tn5").hide();
+      });
+
+      $("#switchTM1").click(function() {
+        $("#tm2").show();
+        $("#tn5").hide();
+      });
+
+      $("#toTN6").click(function() {
+        $("#tn6").show();
+        $("#tn5").hide();
+      });
+
+      $("#toTN7").click(function() {
+        $("#tn7").show();
+        $("#tn6").hide();
+      });
+
+      $("#toTN8").click(function() {
+        $("#tn8").show();
+        $("#tn7").hide();
+      });
+
+      $("#toTN9").click(function() {
+        $("#tn9").show();
+        $("#tn8").hide();
+      });
+
+      $("#toTN10").click(function() {
+        $("#tn10").show();
+        $("#tn9").hide();
+      });
+
+      $("#toTN11").click(function() {
+        $("#tn11").show();
+        $("#tn10").hide();
+      });
     }
 
     // --- good toji end ---
     {
-      //insert code here
+      $(".toTGOOD1").click(function() {
+        $(".storyBG").css("background-image", "url(img/bg/gos_tokyo3_evening.jpg)");
+        $("#tGood1").show();
+        //hide "yes" last point
+        $("#tm43").hide();
+        hedgehog.volume = 0;
+        peace.volume = 1;
+        peace.currentTime = 0;
+      });
     }
   }
 
