@@ -1,14 +1,5 @@
 $(document).ready(function() {
 
-  // ----- PROGRESS WITH SPACE BAR -----
-
-//   $(window).keypress(function(e) {
-//   if (e.keyCode == 0 || e.keyCode == 32) {
-//     console.log('Space pressed');
-//     $("#nextButton").click();
-//   }
-// });
-
   // ----- BG MUSIC -----
   {
     // --- Ritsuko ---
@@ -118,6 +109,16 @@ $(document).ready(function() {
       hedgehog.play();
     }, true);
 
+    // --- A Moment When the Tension Breaks ---
+
+    var tension = new Audio();
+    tension.src = "audio/music/A Moment When The Tension Breaks.mp3";
+    tension.loop = true;
+
+    tension.load()
+    tension.addEventListener("load", function() {
+      tension.play();
+    }, true);
   }
 
   // ----- SET FIRST SONG -----
@@ -132,6 +133,7 @@ $(document).ready(function() {
     sorrow.volume = 0;
     barefoot.volume = 0;
     hedgehog.volume = 0;
+    tension.volume = 0;
   }
 
   // ----- MUSIC CONTROLS -----
@@ -149,6 +151,7 @@ $(document).ready(function() {
       sorrow.play();
       barefoot.play();
       hedgehog.play();
+      tension.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     });
@@ -164,6 +167,7 @@ $(document).ready(function() {
       sorrow.pause();
       barefoot.pause();
       hedgehog.pause();
+      tension.pause();
       $("#bgmOff").css("color", "#ff8f1f");
       $("#bgmOn").css("color", "white");
     });
@@ -281,6 +285,7 @@ $(document).ready(function() {
       sorrow.play();
       barefoot.play();
       hedgehog.play();
+      tension.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     })
@@ -1023,6 +1028,188 @@ $(document).ready(function() {
         $("#ty1").show();
         $("#track14").hide();
       });
+
+      $("#toTY2").click(function() {
+        $("#ty2").show();
+        $("#ty1").hide();
+      });
+
+      $("#toTY3").click(function() {
+        $("#ty3").show();
+        $("#ty2").hide();
+      });
+
+      $("#toTY4").click(function() {
+        $(".storyBG").css("background-image", "url(img/bg/gos2_ael_boys-locker-room.jpg)");
+        $("#ty4").show();
+        $("#ty3").hide();
+      });
+
+      $("#toTY5").click(function() {
+        $("#ty5").show();
+        $("#ty4").hide();
+      });
+
+      $("#toTY6").click(function() {
+        $("#ty6").show();
+        $("#ty5").hide();
+      });
+
+      $("#toTY7").click(function() {
+        $("#ty7").show();
+        $("#ty6").hide();
+      });
+
+      $("#toTY8").click(function() {
+        $("#ty8").show();
+        $("#ty7").hide();
+      });
+
+      $("#toTY9").click(function() {
+        $("#ty9").show();
+        $("#ty8").hide();
+      });
+
+      $("#toTY10").click(function() {
+        $("#ty10").show();
+        $("#ty9").hide();
+      });
+
+      $("#toTY11").click(function() {
+        $("#ty11").show();
+        $("#ty10").hide();
+      });
+
+      $("#toTY12").click(function() {
+        $("#ty12").show();
+        $("#ty11").hide();
+      });
+
+      $("#toTY13").click(function() {
+        $("#ty13").show();
+        $("#ty12").hide();
+      });
+
+      $("#toTY14").click(function() {
+        $("#ty14").show();
+        $("#ty13").hide();
+      });
+
+      $("#toTY15").click(function() {
+        $("#ty15").show();
+        $("#ty14").hide();
+      });
+
+      $("#toTY16").click(function() {
+        $("#ty16").show();
+        $("#ty15").hide();
+      });
+
+      $("#toTY17").click(function() {
+        $("#ty17").show();
+        $("#ty16").hide();
+      });
+
+      $("#toTY18").click(function() {
+        $("#ty18").show();
+        $("#ty17").hide();
+      });
+
+      $("#toTY19").click(function() {
+        $("#ty19").show();
+        $("#ty18").hide();
+      });
+
+      $("#toTY20").click(function() {
+        $("#ty20").show();
+        $("#ty19").hide();
+      });
+
+      $("#toTY21").click(function() {
+        $("#ty21").show();
+        $("#ty20").hide();
+      });
+
+      $("#toTY22").click(function() {
+        $("#ty22").show();
+        $("#ty21").hide();
+      });
+
+      $("#toTY23").click(function() {
+        $("#ty23").show();
+        $("#ty22").hide();
+      });
+
+      $("#toTY24").click(function() {
+        $("#ty24").show();
+        $("#ty23").hide();
+      });
+
+      $("#toTY25").click(function() {
+        $("#ty25").show();
+        $("#ty24").hide();
+      });
+
+      $("#toTY26").click(function() {
+        $("#ty26").show();
+        $("#ty25").hide();
+      });
+
+      $("#toTY27").click(function() {
+        $("#ty27").show();
+        $("#ty26").hide();
+      });
+
+      $("#toTY28").click(function() {
+        $("#ty28").show();
+        $("#ty27").hide();
+      });
+
+      $("#toTY29").click(function() {
+        $("#ty29").show();
+        $("#ty28").hide();
+      });
+
+      $("#toTY30").click(function() {
+        $("#ty30").show();
+        $("#ty29").hide();
+      });
+
+      $("#toTY31").click(function() {
+        $(".storyBG").css("background-image", "url(img/event/gos2_075.jpg)");
+        $("#ty31").show();
+        $("#ty30").hide();
+      });
+
+      $("#toTY32").click(function() {
+        $("#ty32").show();
+        $("#ty31").hide();
+      });
+
+      $("#toTY33").click(function() {
+        $("#ty33").show();
+        $("#ty32").hide();
+      });
+
+      $("#toTY34").click(function() {
+        $("#ty34").show();
+        $("#ty33").hide();
+      });
+
+      $("#toTY35").click(function() {
+        $("#ty35").show();
+        $("#ty34").hide();
+      });
+
+      $("#toTY36").click(function() {
+        $("#ty36").show();
+        $("#ty35").hide();
+      });
+
+      $("#toTY37").click(function() {
+        $("#ty37").show();
+        $("#ty36").hide();
+      });
     }
 
     // --- player gets drinks ---
@@ -1321,11 +1508,97 @@ $(document).ready(function() {
       $(".toTGOOD1").click(function() {
         $(".storyBG").css("background-image", "url(img/bg/gos_tokyo3_evening.jpg)");
         $("#tGood1").show();
-        //hide "yes" last point
+        $("#ty37").hide();
         $("#tm43").hide();
         hedgehog.volume = 0;
-        peace.volume = 1;
-        peace.currentTime = 0;
+        barefoot.volume = 0;
+        tension.volume = 1;
+        tension.currentTime = 0;
+      });
+
+      $("#toTGOOD2").click(function() {
+        $("#tGood2").show();
+        $("#tGood1").hide();
+      });
+
+      $("#toTGOOD3").click(function() {
+        $("#tGood3").show();
+        $("#tGood2").hide();
+      });
+
+      $("#toTGOOD4").click(function() {
+        $("#tGood4").show();
+        $("#tGood3").hide();
+      });
+
+      $("#toTGOOD5").click(function() {
+        $("#tGood5").show();
+        $("#tGood4").hide();
+      });
+
+      $("#toTGOOD6").click(function() {
+        $("#tGood6").show();
+        $("#tGood5").hide();
+      });
+
+      $("#toTGOOD7").click(function() {
+        $("#tGood7").show();
+        $("#tGood6").hide();
+      });
+
+      $("#toTGOOD8").click(function() {
+        $("#tGood8").show();
+        $("#tGood7").hide();
+      });
+
+      $("#toTGOOD9").click(function() {
+        $("#tGood9").show();
+        $("#tGood8").hide();
+      });
+
+      $("#toTGOOD10").click(function() {
+        $("#tGood10").show();
+        $("#tGood9").hide();
+      });
+
+      $("#toTGOOD11").click(function() {
+        $("#tGood11").show();
+        $("#tGood10").hide();
+      });
+
+      $("#toTGOOD12").click(function() {
+        $("#tGood12").show();
+        $("#tGood11").hide();
+      });
+
+      $("#toTGOOD13").click(function() {
+        $("#tGood13").show();
+        $("#tGood12").hide();
+      });
+
+      $("#toTGOOD14").click(function() {
+        $("#tGood14").show();
+        $("#tGood13").hide();
+      });
+
+      $("#toTGOOD15").click(function() {
+        $("#tGood15").show();
+        $("#tGood14").hide();
+      });
+
+      $("#toTGOOD16").click(function() {
+        $("#tGood16").show();
+        $("#tGood15").hide();
+      });
+
+      $("#toTGOOD17").click(function() {
+        $("#tGood17").show();
+        $("#tGood16").hide();
+      });
+
+      $("#toTGOOD18").click(function() {
+        $("#tGood18").show();
+        $("#tGood17").hide();
       });
     }
   }
