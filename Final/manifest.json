@@ -1,0 +1,21 @@
+{
+  "short_name": "Boyfriend of Steel",
+  "name": "Boyfriend of Steel: An Evangelion Fangame",
+  "icons": [
+    {
+      "src": "img/nerv-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/nerv-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#1f1f1f",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "#ff8f1f"
+}
