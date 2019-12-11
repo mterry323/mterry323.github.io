@@ -2700,6 +2700,146 @@ $(document).ready(function() {
       });
     }
 
+    $("#toRGOOD17").click(function() {
+      $("#rGood17").show();
+      $("#rGood16").hide();
+    });
+
+    $("#toRGOOD18").click(function() {
+      $("#rGood18").show();
+      $("#rGood17").hide();
+    });
+
+    $("#toRGOOD19").click(function() {
+      $("#rGood19").show();
+      $("#rGood18").hide();
+    });
+
+    // --- Player goes home ---
+
+    $("#toRGOOD20").click(function() {
+      $("#rGood20").show();
+      $("#rGood19").hide();
+    });
+
+    $("#toRGOOD21").click(function() {
+      $("#rGood21").show();
+      $("#rGood20").hide();
+    });
+
+    $("#toRGOOD22").click(function() {
+      $("#rGood22").show();
+      $("#rGood21").hide();
+    });
+
+    $("#toRGOOD23").click(function() {
+      $("#rGood23").show();
+      $("#rGood22").hide();
+    });
+
+    $("#toRGOOD24").click(function() {
+      $("#rGood24").show();
+      $("#rGood23").hide();
+    });
+
+    $("#toRGOOD25").click(function() {
+      $("#rGood25").show();
+      $("#rGood24").hide();
+    });
+
+    // --- Player goes with Kensuke ---
+
+    $("#toREXT1").click(function() {
+      $("#rExt1").show();
+      $("#rGood19").hide();
+    });
+
+    $("#toREXT2").click(function() {
+        $("#rExt2").show();
+        $("#rExt1").hide();
+      });
+
+      $("#toREXT3").click(function() {
+        $("#rExt3").show();
+        $("#rExt2").hide();
+      });
+
+      $("#toREXT4").click(function() {
+	  $(".storyBG").css("background-image", "url(img/bg/field.jpg)");
+        $("#rExt4").show();
+        $("#rExt3").hide();
+      });
+
+      $("#toREXT5").click(function() {
+        $("#rExt5").show();
+        $("#rExt4").hide();
+      });
+
+      $("#toREXT6").click(function() {
+        $("#rExt6").show();
+        $("#rExt5").hide();
+      });
+
+      $("#toREXT7").click(function() {
+        $("#rExt7").show();
+        $("#rExt6").hide();
+      });
+
+      $("#toREXT8").click(function() {
+        $("#rExt8").show();
+        $("#rExt7").hide();
+      });
+
+      $("#toREXT9").click(function() {
+        $("#rExt9").show();
+        $("#rExt8").hide();
+      });
+
+      $("#toREXT10").click(function() {
+        $("#rExt10").show();
+        $("#rExt9").hide();
+      });
+
+      $("#toREXT11").click(function() {
+        $("#rExt11").show();
+        $("#rExt10").hide();
+      });
+
+      $("#toREXT12").click(function() {
+        $("#rExt12").show();
+        $("#rExt11").hide();
+      });
+
+      $("#toREXT13").click(function() {
+        $("#rExt13").show();
+        $("#rExt12").hide();
+      });
+
+      $("#toREXT14").click(function() {
+        $("#rExt14").show();
+        $("#rExt13").hide();
+      });
+
+      $("#toREXT15").click(function() {
+        $("#rExt15").show();
+        $("#rExt14").hide();
+      });
+
+      $("#toREXT16").click(function() {
+        $("#rExt16").show();
+        $("#rExt15").hide();
+      });
+
+      $("#toREXT17").click(function() {
+        $("#rExt17").show();
+        $("#rExt16").hide();
+      });
+
+      $("#toREXT18").click(function() {
+        $("#rExt18").show();
+        $("#rExt17").hide();
+      });
+
     // --- player leaves ---
     {
       $("#toRN1").click(function() {
