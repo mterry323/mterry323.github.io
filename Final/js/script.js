@@ -1313,6 +1313,154 @@ $(document).ready(function() {
         $("#mExt66").hide();
       });
 
+      $("#toLiving2").click(function() {
+        $("#living2").show();
+        $("#living1").hide();
+      });
+
+      $("#toLiving3").click(function() {
+        $("#living3").show();
+        $("#living2").hide();
+      });
+
+      $("#toLiving4").click(function() {
+        $("#living4").show();
+        $("#living3").hide();
+      });
+
+      $("#toLiving5").click(function() {
+        $("#living5").show();
+        $("#living4").hide();
+      });
+
+      $("#toLiving6").click(function() {
+        $("#living6").show();
+        $("#living5").hide();
+      });
+
+      $("#toLiving7").click(function() {
+        $("#living7").show();
+        $("#living6").hide();
+      });
+
+      $("#toLiving8").click(function() {
+        $("#living8").show();
+        $("#living7").hide();
+      });
+
+      $("#toLiving9").click(function() {
+        $(".storyBG").css("background-image", "url(img/bg/gos_living-room-night.jpg)");
+        $("#living9").show();
+        $("#living8").hide();
+        misato.volume = 0;
+      });
+
+      $("#toLiving10").click(function() {
+        $("#living10").show();
+        $("#living9").hide();
+      });
+
+      $("#toLiving11").click(function() {
+        $("#living11").show();
+        $("#living10").hide();
+      });
+
+      $("#toLiving12").click(function() {
+        $("#living12").show();
+        $("#living11").hide();
+      });
+
+      $("#toLiving13").click(function() {
+        $("#living13").show();
+        $("#living12").hide();
+      });
+
+      $("#toLiving14").click(function() {
+        $("#living14").show();
+        $("#living13").hide();
+      });
+
+      $("#toLiving15").click(function() {
+        $("#living15").show();
+        $("#living14").hide();
+      });
+
+      $("#toLiving16").click(function() {
+        $("#living16").show();
+        $("#living15").hide();
+      });
+
+      $("#toLiving17").click(function() {
+        $("#living17").show();
+        $("#living16").hide();
+      });
+
+      $("#toLiving18").click(function() {
+        $("#living18").show();
+        $("#living17").hide();
+      });
+
+      $("#toLiving19").click(function() {
+        $("#living19").show();
+        $("#living18").hide();
+      });
+
+      $("#toLiving20").click(function() {
+        $("#living20").show();
+        $("#living19").hide();
+      });
+
+      $("#toLiving21").click(function() {
+        $("#living21").show();
+        $("#living20").hide();
+      });
+
+      $("#toLiving22").click(function() {
+        $("#living22").show();
+        $("#living21").hide();
+      });
+
+      $("#toLiving23").click(function() {
+        $("#living23").show();
+        $("#living22").hide();
+      });
+
+      $("#toLiving24").click(function() {
+        $(".storyBG").css("background-image", "url(img/event/gos_c105.jpg)");
+        $("#living24").show();
+        $("#living23").hide();
+      });
+
+      $("#toLiving25").click(function() {
+        $("#living25").show();
+        $("#living24").hide();
+      });
+
+      $("#toLiving26").click(function() {
+        $("#living26").show();
+        $("#living25").hide();
+      });
+
+      $("#toLiving27").click(function() {
+        $("#living27").show();
+        $("#living26").hide();
+      });
+
+      $("#toLiving28").click(function() {
+        $("#living28").show();
+        $("#living27").hide();
+      });
+
+      $("#toLiving29").click(function() {
+        $("#living29").show();
+        $("#living28").hide();
+      });
+
+      $("#toLiving30").click(function() {
+        $("#living30").show();
+        $("#living29").hide();
+      });
+
       // --- If the player chooses Shinji's room ---
 
       $("#toRoom1").click(function() {
