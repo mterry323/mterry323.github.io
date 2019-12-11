@@ -1090,7 +1090,7 @@ $(document).ready(function() {
       });
 
       $("#toMEXT24").click(function() {
-        $(".storyBG").css("background-image", "url(img/event/IMG51070.jpg)");
+        $(".storyBG").css("background-image", "url(img/event/gos2_016.jpg)");
         $("#mExt24").show();
         $("#mExt23").hide();
       });
@@ -1206,6 +1206,252 @@ $(document).ready(function() {
         $("#mExt45").hide();
       });
 
+      $("#toMEXT47").click(function() {
+        $("#mExt47").show();
+        $("#mExt46").hide();
+      });
+
+      $("#toMEXT48").click(function() {
+        $("#mExt48").show();
+        $("#mExt47").hide();
+      });
+
+      $("#toMEXT49").click(function() {
+        $("#mExt49").show();
+        $("#mExt48").hide();
+      });
+
+      $("#toMEXT50").click(function() {
+        $("#mExt50").show();
+        $("#mExt49").hide();
+      });
+
+      $("#toMEXT51").click(function() {
+        $("#mExt51").show();
+        $("#mExt50").hide();
+      });
+
+      $("#toMEXT52").click(function() {
+        $("#mExt52").show();
+        $("#mExt51").hide();
+      });
+
+      $("#toMEXT53").click(function() {
+        $("#mExt53").show();
+        $("#mExt52").hide();
+      });
+
+      $("#toMEXT54").click(function() {
+        $("#mExt54").show();
+        $("#mExt53").hide();
+      });
+
+      $("#toMEXT55").click(function() {
+        $("#mExt55").show();
+        $("#mExt54").hide();
+      });
+
+      $("#toMEXT56").click(function() {
+        $("#mExt56").show();
+        $("#mExt55").hide();
+      });
+
+      $("#toMEXT57").click(function() {
+        $("#mExt57").show();
+        $("#mExt56").hide();
+      });
+
+      $("#toMEXT58").click(function() {
+        $("#mExt58").show();
+        $("#mExt57").hide();
+      });
+
+      $("#toMEXT59").click(function() {
+        $("#mExt59").show();
+        $("#mExt58").hide();
+      });
+
+      $("#toMEXT60").click(function() {
+        $("#mExt60").show();
+        $("#mExt59").hide();
+      });
+
+      $("#toMEXT61").click(function() {
+        $("#mExt61").show();
+        $("#mExt60").hide();
+      });
+
+      $("#toMEXT62").click(function() {
+        $("#mExt62").show();
+        $("#mExt61").hide();
+      });
+
+      $("#toMEXT63").click(function() {
+        $("#mExt63").show();
+        $("#mExt62").hide();
+      });
+
+      $("#toMEXT64").click(function() {
+        $("#mExt64").show();
+        $("#mExt63").hide();
+      });
+
+      $("#toMEXT65").click(function() {
+        $("#mExt65").show();
+        $("#mExt64").hide();
+      });
+
+      $("#toMEXT66").click(function() {
+        $("#mExt66").show();
+        $("#mExt65").hide();
+      });
+
+      // --- If the player chooses living room ---
+
+      $("#toLiving1").click(function() {
+        $("#living1").show();
+        $("#mExt66").hide();
+      });
+
+      // --- If the player chooses Shinji's room ---
+
+      $("#toRoom1").click(function() {
+        $("#room1").show();
+        $("#mExt66").hide();
+      });
+
+      $("#toRoom2").click(function() {
+        $("#room2").show();
+        $("#room1").hide();
+      });
+
+      $("#toRoom3").click(function() {
+        $("#room3").show();
+        $("#room2").hide();
+      });
+
+      $("#toRoom4").click(function() {
+        $("#room4").show();
+        $("#room3").hide();
+      });
+
+      $("#toRoom5").click(function() {
+        $("#room5").show();
+        $("#room4").hide();
+      });
+
+      $("#toRoom6").click(function() {
+        $("#room6").show();
+        $("#room5").hide();
+      });
+
+      $("#toRoom7").click(function() {
+        $("#room7").show();
+        $("#room6").hide();
+      });
+
+      $("#toRoom8").click(function() {
+        $("#room8").show();
+        $("#room7").hide();
+      });
+
+      $("#toRoom9").click(function() {
+        $(".storyBG").css("background-image", "url(img/event/shinji-room.jpg)");
+        $("#room9").show();
+        $("#room8").hide();
+        misato.volume = 0;
+      });
+
+      $("#toRoom10").click(function() {
+        $("#room10").show();
+        $("#room9").hide();
+      });
+
+      $("#toRoom11").click(function() {
+        $("#room11").show();
+        $("#room10").hide();
+      });
+
+      $("#toRoom12").click(function() {
+        $("#room12").show();
+        $("#room11").hide();
+      });
+
+      $("#toRoom13").click(function() {
+        $("#room13").show();
+        $("#room12").hide();
+      });
+
+      $("#toRoom14").click(function() {
+        $("#room14").show();
+        $("#room13").hide();
+      });
+
+      $("#toRoom15").click(function() {
+        $("#room15").show();
+        $("#room14").hide();
+      });
+
+      $("#toRoom16").click(function() {
+        $("#room16").show();
+        $("#room15").hide();
+      });
+
+      $("#toRoom17").click(function() {
+        $("#room17").show();
+        $("#room16").hide();
+      });
+
+      $("#toRoom18").click(function() {
+        $("#room18").show();
+        $("#room17").hide();
+      });
+
+      $("#toRoom19").click(function() {
+        $("#room19").show();
+        $("#room18").hide();
+      });
+
+      $("#toRoom20").click(function() {
+        $("#room20").show();
+        $("#room19").hide();
+      });
+
+      $("#toRoom21").click(function() {
+        $("#room21").show();
+        $("#room20").hide();
+      });
+
+      $("#toRoom22").click(function() {
+        $("#room22").show();
+        $("#room21").hide();
+      });
+
+      $("#toRoom23").click(function() {
+        $("#room23").show();
+        $("#room22").hide();
+      });
+
+      $("#toRoom24").click(function() {
+        $("#room24").show();
+        $("#room23").hide();
+      });
+
+      $("#toRoom25").click(function() {
+        $(".storyBG").css("background-image", "url(img/event/born-to-meet-you.jpg)");
+        $("#room25").show();
+        $("#room24").hide();
+      });
+
+      $("#toRoom26").click(function() {
+        $("#room26").show();
+        $("#room25").hide();
+      });
+
+      $("#toRoom27").click(function() {
+        $("#room27").show();
+        $("#room26").hide();
+      });
     }
   }
 
