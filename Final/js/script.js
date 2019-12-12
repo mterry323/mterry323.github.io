@@ -2905,6 +2905,7 @@ $(document).ready(function() {
     });
 
     $("#toREXT28").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/field-night.jpg)");
       $("#rExt28").show();
       $("#rExt27").hide();
     });
@@ -2924,6 +2925,72 @@ $(document).ready(function() {
     $("#toHome1").click(function() {
       $("#home1").show();
       $("#rExt30").hide();
+    });
+
+    $("#toHome2").click(function() {
+      $("#home2").show();
+      $("#home1").hide();
+    });
+
+    $("#toHome3").click(function() {
+      $("#home3").show();
+      $("#home2").hide();
+    });
+
+    $("#toHome4").click(function() {
+      $("#home4").show();
+      $("#home3").hide();
+    });
+
+    $("#toHome5").click(function() {
+      $("#home5").show();
+      $("#home4").hide();
+    });
+
+    $("#toHome6").click(function() {
+      $("#home6").show();
+      $("#home5").hide();
+    });
+
+    $("#toHome7").click(function() {
+      $("#home7").show();
+      $("#home6").hide();
+    });
+
+    $("#toHome8").click(function() {
+      $("#home8").show();
+      $("#home7").hide();
+    });
+
+    $("#toHome9").click(function() {
+      $("#home9").show();
+      $("#home8").hide();
+      misato.volume = 0;
+    });
+
+    $("#toHome10").click(function() {
+      $("#home10").show();
+      $("#home9").hide();
+    });
+
+    $("#toHome11").click(function() {
+      $("#home11").show();
+      $("#home10").hide();
+    });
+
+    $("#toHome12").click(function() {
+      $("#home12").show();
+      $("#home11").hide();
+    });
+
+    $("#toHome13").click(function() {
+      $("#home13").show();
+      $("#home12").hide();
+    });
+
+    $("#toHome14").click(function() {
+      $("#home14").show();
+      $("#home13").hide();
     });
 
     // --- Player stays ---
