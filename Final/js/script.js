@@ -2965,7 +2965,6 @@ $(document).ready(function() {
     $("#toHome9").click(function() {
       $("#home9").show();
       $("#home8").hide();
-      misato.volume = 0;
     });
 
     $("#toHome10").click(function() {
@@ -2998,6 +2997,74 @@ $(document).ready(function() {
     $("#toStars1").click(function() {
       $("#stars1").show();
       $("#rExt30").hide();
+    });
+
+    $("#toStars2").click(function() {
+      $("#stars2").show();
+      $("#stars1").hide();
+    });
+
+    $("#toStars3").click(function() {
+      $("#stars3").show();
+      $("#stars2").hide();
+    });
+
+    $("#toStars4").click(function() {
+      $("#stars4").show();
+      $("#stars3").hide();
+    });
+
+    $("#toStars5").click(function() {
+      $("#stars5").show();
+      $("#stars4").hide();
+    });
+
+    $("#toStars6").click(function() {
+      $("#stars6").show();
+      $("#stars5").hide();
+    });
+
+    $("#toStars7").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/black.jpg)");
+      $("#stars7").show();
+      $("#stars6").hide();
+    });
+
+    $("#toStars8").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/field-dawn.jpg)");
+      $("#stars8").show();
+      $("#stars7").hide();
+      three.volume = 0;
+    });
+
+    $("#toStars9").click(function() {
+      $("#stars9").show();
+      $("#stars8").hide();
+    });
+
+    $("#toStars10").click(function() {
+      $("#stars10").show();
+      $("#stars9").hide();
+    });
+
+    $("#toStars11").click(function() {
+      $("#stars11").show();
+      $("#stars10").hide();
+    });
+
+    $("#toStars12").click(function() {
+      $("#stars12").show();
+      $("#stars11").hide();
+    });
+
+    $("#toStars13").click(function() {
+      $("#stars13").show();
+      $("#stars12").hide();
+    });
+
+    $("#toStars14").click(function() {
+      $("#stars14").show();
+      $("#stars13").hide();
     });
 
     // --- player leaves ---
