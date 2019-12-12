@@ -130,6 +130,17 @@ $(document).ready(function() {
     misato.addEventListener("load", function() {
       misato.play();
     }, true);
+
+    // --- Three of Me, One of Someone Else ---
+
+    var three = new Audio();
+    three.src = "audio/music/Three of Me One of Someone Else.mp3";
+    three.loop = true;
+
+    three.load()
+    three.addEventListener("load", function() {
+      three.play();
+    }, true);
   }
 
   // ----- SET FIRST SONG -----
@@ -146,6 +157,7 @@ $(document).ready(function() {
     hedgehog.volume = 0;
     tension.volume = 0;
     misato.volume = 0;
+    three.volume = 0;
   }
 
   // ----- MUSIC CONTROLS -----
@@ -165,6 +177,7 @@ $(document).ready(function() {
       hedgehog.play();
       tension.play();
       misato.play();
+      three.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     });
@@ -182,6 +195,7 @@ $(document).ready(function() {
       hedgehog.pause();
       tension.pause();
       misato.pause();
+      three.pause();
       $("#bgmOff").css("color", "#ff8f1f");
       $("#bgmOn").css("color", "white");
     });
@@ -301,6 +315,7 @@ $(document).ready(function() {
       hedgehog.play();
       tension.play();
       misato.play();
+      three.play();
       $("#bgmOn").css("color", "#ff8f1f");
       $("#bgmOff").css("color", "white");
     })
@@ -2755,90 +2770,168 @@ $(document).ready(function() {
     });
 
     $("#toREXT2").click(function() {
-        $("#rExt2").show();
-        $("#rExt1").hide();
-      });
+      $("#rExt2").show();
+      $("#rExt1").hide();
+    });
 
-      $("#toREXT3").click(function() {
-        $("#rExt3").show();
-        $("#rExt2").hide();
-      });
+    $("#toREXT3").click(function() {
+      $("#rExt3").show();
+      $("#rExt2").hide();
+    });
 
-      $("#toREXT4").click(function() {
-	  $(".storyBG").css("background-image", "url(img/bg/field.jpg)");
-        $("#rExt4").show();
-        $("#rExt3").hide();
-      });
+    $("#toREXT4").click(function() {
+      $(".storyBG").css("background-image", "url(img/bg/field.jpg)");
+      $("#rExt4").show();
+      $("#rExt3").hide();
+      peace.volume = 0;
+      three.volume = 1;
+      three.currentTime = 0;
+    });
 
-      $("#toREXT5").click(function() {
-        $("#rExt5").show();
-        $("#rExt4").hide();
-      });
+    $("#toREXT5").click(function() {
+      $("#rExt5").show();
+      $("#rExt4").hide();
+    });
 
-      $("#toREXT6").click(function() {
-        $("#rExt6").show();
-        $("#rExt5").hide();
-      });
+    $("#toREXT6").click(function() {
+      $("#rExt6").show();
+      $("#rExt5").hide();
+    });
 
-      $("#toREXT7").click(function() {
-        $("#rExt7").show();
-        $("#rExt6").hide();
-      });
+    $("#toREXT7").click(function() {
+      $("#rExt7").show();
+      $("#rExt6").hide();
+    });
 
-      $("#toREXT8").click(function() {
-        $("#rExt8").show();
-        $("#rExt7").hide();
-      });
+    $("#toREXT8").click(function() {
+      $("#rExt8").show();
+      $("#rExt7").hide();
+    });
 
-      $("#toREXT9").click(function() {
-        $("#rExt9").show();
-        $("#rExt8").hide();
-      });
+    $("#toREXT9").click(function() {
+      $("#rExt9").show();
+      $("#rExt8").hide();
+    });
 
-      $("#toREXT10").click(function() {
-        $("#rExt10").show();
-        $("#rExt9").hide();
-      });
+    $("#toREXT10").click(function() {
+      $("#rExt10").show();
+      $("#rExt9").hide();
+    });
 
-      $("#toREXT11").click(function() {
-        $("#rExt11").show();
-        $("#rExt10").hide();
-      });
+    $("#toREXT11").click(function() {
+      $("#rExt11").show();
+      $("#rExt10").hide();
+    });
 
-      $("#toREXT12").click(function() {
-        $("#rExt12").show();
-        $("#rExt11").hide();
-      });
+    $("#toREXT12").click(function() {
+      $("#rExt12").show();
+      $("#rExt11").hide();
+    });
 
-      $("#toREXT13").click(function() {
-        $("#rExt13").show();
-        $("#rExt12").hide();
-      });
+    $("#toREXT13").click(function() {
+      $("#rExt13").show();
+      $("#rExt12").hide();
+    });
 
-      $("#toREXT14").click(function() {
-        $("#rExt14").show();
-        $("#rExt13").hide();
-      });
+    $("#toREXT14").click(function() {
+      $("#rExt14").show();
+      $("#rExt13").hide();
+    });
 
-      $("#toREXT15").click(function() {
-        $("#rExt15").show();
-        $("#rExt14").hide();
-      });
+    $("#toREXT15").click(function() {
+      $("#rExt15").show();
+      $("#rExt14").hide();
+    });
 
-      $("#toREXT16").click(function() {
-        $("#rExt16").show();
-        $("#rExt15").hide();
-      });
+    $("#toREXT16").click(function() {
+      $("#rExt16").show();
+      $("#rExt15").hide();
+    });
 
-      $("#toREXT17").click(function() {
-        $("#rExt17").show();
-        $("#rExt16").hide();
-      });
+    $("#toREXT17").click(function() {
+      $("#rExt17").show();
+      $("#rExt16").hide();
+    });
 
-      $("#toREXT18").click(function() {
-        $("#rExt18").show();
-        $("#rExt17").hide();
-      });
+    $("#toREXT18").click(function() {
+      $(".storyBG").css("background-image", "url(img/event/camping.jpg)");
+      $("#rExt18").show();
+      $("#rExt17").hide();
+    });
+
+    $("#toREXT19").click(function() {
+      $("#rExt19").show();
+      $("#rExt18").hide();
+    });
+
+    $("#toREXT20").click(function() {
+      $("#rExt20").show();
+      $("#rExt19").hide();
+    });
+
+    $("#toREXT21").click(function() {
+      $("#rExt21").show();
+      $("#rExt20").hide();
+    });
+
+    $("#toREXT22").click(function() {
+      $("#rExt22").show();
+      $("#rExt21").hide();
+    });
+
+    $("#toREXT23").click(function() {
+      $("#rExt23").show();
+      $("#rExt22").hide();
+    });
+
+    $("#toREXT24").click(function() {
+      $("#rExt24").show();
+      $("#rExt23").hide();
+    });
+
+    $("#toREXT25").click(function() {
+      $("#rExt25").show();
+      $("#rExt24").hide();
+    });
+
+    $("#toREXT26").click(function() {
+      $("#rExt26").show();
+      $("#rExt25").hide();
+    });
+
+    $("#toREXT27").click(function() {
+      $("#rExt27").show();
+      $("#rExt26").hide();
+    });
+
+    $("#toREXT28").click(function() {
+      $("#rExt28").show();
+      $("#rExt27").hide();
+    });
+
+    $("#toREXT29").click(function() {
+      $("#rExt29").show();
+      $("#rExt28").hide();
+    });
+
+    $("#toREXT30").click(function() {
+      $("#rExt30").show();
+      $("#rExt29").hide();
+    });
+
+    // --- Player goes home ---
+
+    $("#toHome1").click(function() {
+      $("#home1").show();
+      $("#rExt30").hide();
+    });
+
+    // --- Player stays ---
+
+    $("#toStars1").click(function() {
+      $("#stars1").show();
+      $("#rExt30").hide();
+    });
 
     // --- player leaves ---
     {
