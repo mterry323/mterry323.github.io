@@ -1,9 +1,48 @@
+body {
+  background:#aaa;
+  font-family: Arial;
+  top: 0;
+  left: 0;
+}
+
+#container {
+  top:15vh;
+  left:25vw;
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  background: purple;
+  padding: 5px;
+}
+
+#sidebar {
+  position: absolute;
+  width: 200px;
+  height: 490px;
+  padding: 5px;
+  background: pink;
+}
+
+#content {
+  position: relative;
+  width: 70%;
+  height: 480px;
+  margin-left: 225px;
+  padding: 5px;
+  overflow-y: auto;
+}
+
 ul#tabs {
   list-style-type: none;
-  padding: 0;
+  padding: 5px;
+  text-align: center;
 }
 
 ul#tabs li {
+  display: inline-block;
+  width: 75px;
+  margin: 5px;
+  padding: 5px;
   background: white;
   color: black;
   -moz-transition-duration: 0.5s;
