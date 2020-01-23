@@ -1,0 +1,39 @@
+ul#tabs {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#tabs li {
+  background: white;
+  color: black;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+ul#tabs li:hover {
+  background: black;
+  color: white;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+ul#tabs .active {
+  background: black;
+  color: white;
+}
+
+ul#tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#tab li {
+  display: none;
+}
+
+ul#tab .active {
+  display: block;
+}
