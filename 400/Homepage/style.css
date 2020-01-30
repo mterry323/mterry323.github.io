@@ -1,0 +1,104 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #161616;
+  background-image: url('img/room.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container {
+  display: inline;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+
+.thing {
+  background: rgba(0, 0, 0, .75);
+  position: absolute;
+  display: inline;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, .75);
+  border-radius: 500px;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.thing:hover {
+  background: rgba(255, 255, 255, .75);
+  border: 1px solid rgba(0, 0, 0, .75);
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+#calendar {
+  margin-top: 23vh;
+  margin-left: 50vw;
+}
+
+#eva {
+  margin-top: 32vh;
+  margin-left: 67vw;
+}
+
+#fma {
+  margin-top: 30vh;
+  margin-left: 30vw;
+}
+
+#bandori {
+  margin-top: 35vh;
+  margin-left: 45vw;
+}
+
+#madoka {
+  margin-top: 50vh;
+  margin-left: 35vw;
+}
+
+#bday {
+  margin-top: 50vh;
+  margin-left: 45vw;
+}
+
+#sabi {
+  margin-top: 40vh;
+  margin-left: 80vw;
+}
+
+#photos {
+  margin-top: 60vh;
+  margin-left: 65vw;
+}
+
+#sloth {
+  margin-top: 65vh;
+  margin-left: 55vw;
+}
+
+#nesoberi {
+  margin-top: 65vh;
+  margin-left: 40vw;
+}
+
+#pancake {
+  margin-top: 75vh;
+  margin-left: 30vw;
+}
+
+#magical {
+  margin-top: 10vh;
+  margin-left: 40vw;
+}
