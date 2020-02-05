@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Times NR Condensed';
+  src: url('../font/TimesNRCondensed.woff2') format('woff2'),
+    url('../font/TimesNRCondensed.woff') format('woff'),
+    url('../font/TimesNRCondensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.container {
+  width: 500px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 25vh;
+  font-family: 'Times NR Condensed', Times, serif;
+  font-size: 30px;
+}
