@@ -12,6 +12,8 @@ var quotes = [
 
   "Don't forget: always, somewhere, someone is fighting for you. As long as you remember her, you are not alone.",
 
+  "Even if you can't see me, even if you can't hear me, I'll be by your side.",
+
   "A lesson without pain is meaningless. That's because no one can gain without sacrificing something. But by enduring that pain and overcoming it, he shall obtain a powerful, unmatched heart.",
 
   "Stand up and walk. Keep moving forward. You've got two good legs. So get up and use them. You're strong enough to make your own path.",
