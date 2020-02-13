@@ -14,9 +14,13 @@ var quotes = [
 
   "Even if you can't see me, even if you can't hear me, I'll be by your side.",
 
+  "There're awful, horrible things in this world, I know that now. But there're a lot of things worth protecting, too.".
+
   "A lesson without pain is meaningless. That's because no one can gain without sacrificing something. But by enduring that pain and overcoming it, he shall obtain a powerful, unmatched heart.",
 
   "Stand up and walk. Keep moving forward. You've got two good legs. So get up and use them. You're strong enough to make your own path.",
+
+  "Maybe life has no equal trade. Maybe you can give up all you've got, and get nothing back. But still, even if I can't prove it's true, I have to try.",
 
   "It makes us happy that you're with us! That's reason enough to keep existing!",
 
