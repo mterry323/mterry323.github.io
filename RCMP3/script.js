@@ -8,13 +8,15 @@ var quotes = [
 
   "The only one who can take care of you and understand you, is you, yourself. So you must take care of yourself.",
 
+  "Your heart is fragile, just like glass. And you have my regard for it. ... I'm saying, I love you.",
+
   "If someone says it's wrong to have hope, then I'll tell them they're wrong, every single time. And I know I'll always tell them so.",
 
   "Don't forget: always, somewhere, someone is fighting for you. As long as you remember her, you are not alone.",
 
   "Even if you can't see me, even if you can't hear me, I'll be by your side.",
 
-  "There're awful, horrible things in this world, I know that now. But there're a lot of things worth protecting, too.".
+  "There're awful, horrible things in this world, I know that now. But there're a lot of things worth protecting, too.",
 
   "A lesson without pain is meaningless. That's because no one can gain without sacrificing something. But by enduring that pain and overcoming it, he shall obtain a powerful, unmatched heart.",
 
