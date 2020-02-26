@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>OAT MILK</title>
+  <style>
+    #map{
+      height:600px;
+      width:50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>OAT MILK</h1>
+
+
+  <!-- MAP STARTS -->
+
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      //Inserting the map style
+
+      // Map options: where the map starts + how zoomed in
+      var options = {
+        zoom: 11,
+        center: {
+          lat: 34.0522,
+          lng: -118.2437
+        }
+      }
+
+      // Create new map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+      //Add Marker
+
+
+      //load geojson layer
+      map.data.loadGeoJson('map.geojson');
+
+      // Listen for click on map
+      google.maps.event.addListener(map, 'click', function(event) {
+        // Add marker
+        addMarker({
+          coords: event.latLng
+        });
+      });
+
+      var oat = 'img/milks/smalloat.png';
+      var cow = 'img/milks/smallcow.png';
+      var almond = 'img/milks/smallalmond.png';
+
+      // Array of markers
+      var markers = [{
+          coords: {lat: 34.0435,lng: -118.2519},
+          iconImage: cow,
+          //90014
+          content: '<h4>South Park</h4>'
+        },
+
+        {
+          coords: {lat: 34.0295,lng: -118.2848},
+          iconImage: cow,
+          //90007
+          content: '<h4>North University Park</h4>'
+        },
+
+        {
+          coords: {lat: 34.0625,lng: -118.3089},
+          iconImage: cow,
+          //90010
+          content: '<h4>Central</h4>'
+        },
+
+        {
+            coords: {lat: 34.0544,lng: -118.2673},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90017
+            content: '<h4>Downtown</h4>'
+          },
+          {
+            coords: {lat: 34.0597,lng: -118.3009},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90005
+            content: '<h4>Korea Town</h4>'
+          },
+          {
+            coords: {lat: 34.0390,lng: -118.2673},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90015
+            content: '<h4>South Central</h4>'
+          },
+          {
+            coords: {lat: 34.0623,lng: -118.2383},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90012
+            content: '<h4>China Town</h4>'
+          },
+          {
+            coords: {lat: 34.0704,lng: -118.2844},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90057
+            content: '<h4>Rampart Village</h4>'
+          },
+          {
+            coords: {lat: 34.0584,lng: -118.2794},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90032
+            content: '<h4>McArthur Park</h4>'
+          },
+          {
+            coords: {lat: 34.0782,lng: -118.2606},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90026
+            content: '<h4>Echo Park</h4>'
+          },
+          {
+            coords: {lat: 34.1366,lng: -118.2942},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90027
+            content: '<h4>Griffith Park</h4>'
+          },
+          {
+            coords: {lat: 34.0928,lng: -118.3287},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90028
+            content: '<h4>Hollywood</h4>'
+          },
+          {
+            coords: {lat: 34.0900,lng: -118.3617},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90057
+            content: '<h4>Westlake</h4>'
+          },
+          {
+            coords: {lat: 34.0471,lng: -118.2965},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90006
+            content: '<h4>Pico Heights/Latino Quarter</h4>'
+          },
+          {
+            coords: {lat: 34.0981,lng: -118.3005},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90006
+            content: '<h4>Little Armenia</h4>'
+          },
+          {
+            coords: {lat: 34.0419,lng: -118.2326},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90012
+            content: '<h4>Arts District</h4>'
+          },
+          {
+            coords: {lat: 34.0224,lng: -118.2000},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90023
+            content: '<h4>Vernon</h4>'
+          },
+          {
+            coords: {lat: 34.0503,lng: -118.2117},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90033
+            content: '<h4>Boyle Heights</h4>'
+          },
+          {
+            coords: {lat: 34.0083,lng: -118.3491},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90008
+            content: '<h4>Leimert Park</h4>'
+          },
+          {
+            coords: {lat: 34.0397,lng: -118.3229},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90018
+            content: '<h4>Alington Heights</h4>'
+          },
+          {
+            coords: {lat: 34.0720,lng: -118.3604},
+            iconImage: almond,
+            // 90036
+            content: '<h4>Fairfax</h4>'
+          },
+          {
+            coords: {lat: 34.1103,lng: -118.2585},
+            iconImage: oat,
+            // iconImage: 'ICON PATH',90039
+            content: '<h4>Atwater Village</h4>'
+          },
+          {
+            coords: {lat: 34.0731,lng: -118.3239},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90004
+            content: '<h4>Larchmont Village</h4>'
+          },
+          {
+            coords: {lat: 34.1063,lng: -118.2848},
+            iconImage: cow,
+            // iconImage: 'ICON PATH',90027
+            content: '<h4>Loz Feliz</h4>'
+          },
+      ];
+
+      // Loop through markers
+      for (var i = 0; i < markers.length; i++) {
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props) {
+        var marker = new google.maps.Marker({
+          position: props.coords,
+          map: map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if (props.iconImage) {
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if (props.content) {
+          var infoWindow = new google.maps.InfoWindow({
+            content: props.content
+          });
+
+          marker.addListener('click', function() {
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBVREtVD5ujDfFnKHocAkJpBIfk49S8Tk&callback=initMap">
+  </script>
+
+  <!-- MAP ENDS -->
+  <div id="stats">
+  <h2>California Average Income Brackets</h2>
+<p>The average liveable income in Los Angeles, California is upwards of $70,000 a year.
+  Of the zip codes displayed only two register above this amount. Food Deserts begin to
+  exhibit themselves in areas with Average Incomes less than $30,000. Of the zip codes
+   featured on this map, four geographical areas are susceptible to food desert conditions. </p>
+<h3>(Lower Average Income) $24,380.00 </h3>
+<h4>Non-Fat Milk, $3.10 per Gallon</h4>
+<p>Larchmont Village, 90004, $64,581 (approaching middle)</p>
+<p>Griffith park, 90027, $64,091 (approaching middle)</p>
+<p>Central LA, 90010 $61,849 (approaching middle)</p>
+<p>Hollywood, 90027 $58,208 (low high)</p>
+<p>Loz Feliz, 90027 $58,344 (low high)</p>
+<p>Echo Park, 90026 $54,342 (low high)</p>
+<p>Arlington heights, 90019 $50,671 (low middle)</p>
+<p>Macarthur park, 90032 $47,370 (low middle)</p>
+<p>Leimert Park, 90018 $36,341(lower)</p>
+<p>China Town, 90012 $38,786  (lower)</p>
+<p>South park, 90014 $37,619  (lower)</p>
+<p>Westlake 90057 $31,208 (low)</p>
+<p>Korea town, 90005 $32,149 (low)</p>
+<p>South central, 90015 $32,474 (low)</p>
+<p>Pico Heights, 90006 $33,411(low)</p>
+<p>Arts district, 90012 $38,786 (lower)</p>
+<p>Boyle Heights, 90033 $31,683 (low)</p>
+<p>Downtown , 90017 $28,864 (low)</p>
+<p>NUP, 90007 23,070 (low)</p>
+<p>Little Armenia, 90006 $23,790 (low)</p>
+<p>Vernon, 90023 $16,225 (low)</p>
+
+
+<h3>(Middle Average Income) $77,806.00</h3>
+  <h4>Almond Milk, $3.99 per Gallon</h4>
+  <p>Atwater Village, 90039, $81,391(high) </p>
+
+<h3>(Higher Average Income) $190,923.00</h3>
+  <h4>Oat Milk, $4.29 per Gallon</h4>
+  <p>Atwater Village, 90039, $81,391(high) </p>
+</div>
+
+</body>
+
+</html>
