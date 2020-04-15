@@ -4,20 +4,8 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-  <script>
-    (function($) {
-      $(document).ready(function() {
-        $("a[title]").style_my_tooltips({
-          tip_follows_cursor: true,
-          tip_delay_time: 90,
-          tip_fade_speed: 600,
-          attribute: "title"
-        });
-      });
-    })(jQuery);
-  </script>
-  <script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/nhpup_1.1.js"></script>
   <meta charset="utf-8">
   <title>The Rest of the Portfolio</title>
 </head>
@@ -27,44 +15,71 @@
   <div class="masonry-wrapper">
 
     <div class="masonry">
-      <a title="test tooltip"><div class="masonry-item">
-        <img src="img/College app time/contain response2.png" class="masonry-content">
-      </div></a>
 
       <div class="masonry-item">
-        <img src="img/College app time/figures m.jpg" class="masonry-content">
+        <a onmouseover="nhpup.popup('This is actually a redraw of a <i>really</i> old piece I drew when I was around 11 years old. It&rsquo;s fanart for a series of songs from my childhood, called Daughter / Servant of Evil. They&rsquo;re about a tyrannical princess and a servant that dies for her when the kingdom turns on her. Spoilers I guess.<br><br>I was actually pretty scared to put this in my portfolio for any of my college applications, but I end up putting it on my application to Champlain College in a little town in Vermont. The hope was to show them how much I&rsquo;d improved in seven years. Though I had to pass it off as just &quot;a princess and her servant&quot; without any reference to the songs because I was worried about getting flack for drawing fanart. I ended up getting accepted to Champlain though!');">
+          <img src="img/College app time/servant of evil redraw.png" class="masonry-content">
+        </a>
       </div>
 
       <div class="masonry-item">
-        <img src="img/College app time/servant of evil redraw.png" class="masonry-content">
+        <a onmouseover="nhpup.popup('This was drawn as one of two responses I had to make for my application to Rhode Island School of Art and Design. The prompt was &quot;contain.&quot; I wanted one of my responses to be more literal, and the other to be more figurative. This is the figurative one, viewing the body as a container for different emotions - the different colors. I still like the concept, but I think this piece was hurt by me trying to draw in realism for the sake of seeming like a &quot;real&quot; artist. I didn&rsquo;t end up getting into RISD.');">
+          <img src="img/College app time/contain response2.png" class="masonry-content">
+        </a>
       </div>
 
       <div class="masonry-item">
-        <img src="img/College app time/competitive poem.png" class="masonry-content">
+        <a onmouseover="nhpup.popup('Here are some male figures I drew in order to show the Rhode Island School of Art and Design people, &quot;Hey, I draw from life!&quot; But as a child of &quot;how to draw manga&quot; books and whatnot, I never really learned the &quot;rules&quot; before starting to seriously draw. I think it showed.');">
+          <img src="img/College app time/figures m.jpg" class="masonry-content">
+        </a>
       </div>
 
       <div class="masonry-item">
-        <img src="img/College app time/shark.jpg" class="masonry-content">
+        <a onmouseover="nhpup.popup('test tooltip');">
+          <img src="img/College app time/competitive poem.png" class="masonry-content">
+        </a>
       </div>
 
       <div class="masonry-item">
-        <img src="img/College app time/hand study.jpg" class="masonry-content">
+        <a onmouseover="nhpup.popup('This is the REALLY old version of a piece I redrew for a college app, in order to show my growth as an illustrator. I was eleven when I drew this. It&rsquo;s fanart for a couple of old songs I really liked at the time, called Daughter / Servant of Evil. As proud as I am of how far I&rsquo;ve come, I love looking back at this thing and laughing at it. Like. Why are their heads shaped like that. Why are their hands smaller than their eyes. <i>Where are their eyebrows.</i>);">
+          <img src="img/College app time/hwat the f uck.png" class="masonry-content">
+        </a>
       </div>
 
       <div class="masonry-item">
-        <img src="img/College app time/seven years later.png" class="masonry-content">
+        <a onmouseover="nhpup.popup('test tooltip');">
+          <img src="img/College app time/shark.jpg" class="masonry-content">
+        </a>
       </div>
 
       <div class="masonry-item">
-        <img src="img/College app time/figures f.jpg" class="masonry-content">
+        <a onmouseover="nhpup.popup('test tooltip');">
+          <img src="img/College app time/hand study.jpg" class="masonry-content">
+        </a>
       </div>
 
       <div class="masonry-item">
-        <img src="img/College app time/contain response1.jpg" class="masonry-content">
+        <a onmouseover="nhpup.popup('This is just the side by side of the old and new (well, new<i>er</i>) versions of the piece you see elsewhere on the page. I put this in my application to Champlain College alongside the new version by itself.');">
+          <img src="img/College app time/seven years later.png" class="masonry-content">
+        </a>
       </div>
 
       <div class="masonry-item">
-        <img src="img/College app time/usc image response.jpg" class="masonry-content">
+        <a onmouseover="nhpup.popup('Here are some female figures I drew in order to show the Rhode Island School of Art and Design people, &quot;Hey, I draw from life!&quot; But as a child of &quot;how to draw manga&quot; books and whatnot, I never really learned the &quot;rules&quot; before starting to seriously draw. I think it showed.');">
+          <img src="img/College app time/figures f.jpg" class="masonry-content">
+        </a>
+      </div>
+
+      <div class="masonry-item">
+        <a onmouseover="nhpup.popup('test tooltip');">
+          <img src="img/College app time/contain response1.JPG" class="masonry-content">
+        </a>
+      </div>
+
+      <div class="masonry-item">
+        <a onmouseover="nhpup.popup('test tooltip');">
+          <img src="img/College app time/usc image response.jpg" class="masonry-content">
+        </a>
       </div>
     </div>
 
