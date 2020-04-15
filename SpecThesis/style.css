@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Nothing You Could Do';
+  src: url('font/NothingYouCouldDo.woff2') format('woff2'),
+    url('font/NothingYouCouldDo.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Salt';
+  src: url('font/RockSalt.woff2') format('woff2'),
+    url('font/RockSalt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url('img/paper.jpg');
+  background-size: cover;
+  font-family: 'Nothing You Could Do', sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: 'Rock Salt', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#s-m-t-tooltip {
+  max-width: 300px;
+  background:black;
+  border:1px solid white;
+  font-family:'Nothing You Could Do', sans-serif;
+  font-size:9px;
+  font-weight:bold;
+  color: white;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  padding:3px 4px 3px 4px;
+  margin:20px 0px 0px 20px;
+  z-index:999999999999999999999999999999999999;
+  border-radius: 5px;
+}
+
+.masonry-wrapper {
+  padding: 1.5em;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.masonry {
+  columns: 1;
+  column-gap: 10px;
+}
+
+.masonry-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    columns: 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    columns: 5;
+  }
+}
+
+.masonry-item, .masonry-content {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.masonry-item {
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+  transition: filter .25s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.masonry-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.masonry-item:hover {
+  z-index: 999;
+  transform: scale(1.1);
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+  transition: all .2s ease-in-out;
+}
+
+.masonry-footer {
+  font-size: .75em;
+  opacity: .25;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-bottom: -1.5em;
+  transition: opacity 1s ease-in-out;
+}
+
+.masonry-footer a {
+  color: currentColor;
+}
+
+.masonry-footer:hover, .masonry-footer:active, .masonry-footer:focus {
+  opacity: .75;
+}
