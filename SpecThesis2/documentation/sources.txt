@@ -1,0 +1,13 @@
+https://www.needpix.com/photo/1313842/grey-paper-seamless-background-abstract-parchment-page-aged-blank
+
+notes:
+More research in art therapy
+
+-randomize order of images
+-randomize design of site (fonts, colors, etc)
+-make it more like a desk and less like a grid (things overlapping, etc)
+-make thumbnails draggable
+   -maybe stack them all at first and make it so you HAVE to drag them
+-description is too long sideways (feels like multiple paragraphs); make it more square shaped
+-make the vignettes/text blurbs ALSO draggable "papers"
+-photos of physical environment you were working in
