@@ -53,7 +53,7 @@ h1 {
   text-align:left;
 }
 
-#mydiv {
+#thumb {
   position: absolute;
   z-index: 9;
   background-color: #f1f1f1;
@@ -61,7 +61,7 @@ h1 {
   text-align: center;
 }
 
-#mydivheader {
+#thumbheader {
   padding: 10px;
   cursor: move;
   z-index: 10;
