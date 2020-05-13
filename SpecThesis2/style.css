@@ -20,22 +20,185 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 14px;
   color: black;
+  overflow: scroll;
 }
 
 h1 {
   font-family: 'Rock Salt', sans-serif;
-  font-size: 40px;
-  text-align: center;
+  font-size: 30px;
+  /* text-align: center; */
   font-weight: normal;
 }
 
 #blurb {
+  position: sticky;
   width: 75%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 5%;
   padding: 5px;
-  /* text-align: center; */
+  text-align: right;
 }
+
+#container {
+  /* text-align: center; */
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orb {
+  position: absolute;
+  margin: 3px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  transition: all .2s ease-in-out;
+}
+
+.orb img {
+  width: 100%;
+}
+
+.orb:hover {
+  width: 150px;
+  height: 150px;
+  transition: all .2s ease-in-out;
+}
+
+#figf {
+  margin-top: 200px;
+}
+
+#cont2 {
+  margin-top: 75px;
+  margin-left: 250px;
+}
+
+#hand {
+  margin-top: 350px;
+  margin-left: 350px;
+
+}
+
+#cont1 {
+  margin-left: 550px;
+  margin-top: 250px;
+
+}
+
+#compete {
+  margin-left: 1000px;
+  margin-top: 50px;
+}
+
+#shark {
+  margin-top: 400px;
+  margin-left: 100px;
+}
+
+#soenew {
+  margin-top: 100px;
+  margin-left: 750px;
+}
+
+#soeold {
+  margin-top: 350px;
+  margin-left: 950px;
+}
+
+#usc {
+  margin-left: 500px;
+}
+
+.vl {
+  border-left: 1px solid black;
+  position: absolute;
+}
+
+#figm-cont2 {
+  height: 200px;
+  margin-left: 200px;
+  transform: rotate(-70deg);
+}
+
+#figm-figf {
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 200px;
+  /* transform: rotate(5deg); */
+}
+
+#figf-cont2 {
+  margin-top: 100px;
+  margin-left: 160px;
+  height: 250px;
+  transform: rotate(60deg);
+}
+
+#figf-shark {
+  margin-top: 260px;
+  margin-left: 100px;
+  height: 200px;
+  transform: rotate(-25deg);
+}
+
+#shark-hand {
+  margin-top: 340px;
+  margin-left: 260px;
+  height: 200px;
+  transform: rotate(75deg);
+}
+
+#cont1-cont2 {
+  margin-top: 70px;
+  margin-left: 450px;
+  height: 310px;
+  transform: rotate(-60deg);
+}
+
+#cont1-usc {
+  margin-top: 90px;
+  margin-left: 580px;
+  height: 250px;
+  transform: rotate(-10deg);
+}
+
+#cont2-usc {
+  margin-top: -25px;
+  margin-left: 400px;
+  height: 230px;
+  transform: rotate(70deg);
+}
+
+#usc-soenew {
+  margin-top: -20px;
+  margin-left: 660px;
+  height: 250px;
+  transform: rotate(-60deg);
+}
+
+#soenew-compete {
+  margin-top: 5px;
+  margin-left: 950px;
+  height: 250px;
+  transform: rotate(70deg);
+}
+
+#soenew-soeold {
+  margin-top: 170px;
+  margin-left: 880px;
+  height: 250px;
+  transform: rotate(-35deg);
+}
+
+#compete-soeold {
+  margin-top: 150px;
+  margin-left: 1025px;
+  height: 250px;
+  transform: rotate(5deg);
+}
+
 
 #pup {
   position: absolute;
@@ -51,38 +214,5 @@ h1 {
   font-size: 0.9em;
   font-family: 'Arial', sans-serif;
   text-align: left;
-}
 
-.draggable {
-  position: absolute;
-  width: 200px;
-  height: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -khtml-user-select: none;
-  user-select: none;
-  cursor: default;
-}
-
-.thumb {
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
-  text-align: center;
-  top: 10;
-  left: 10;
-}
-
-.draggable img {
-  width: 100%;
-  height: auto;
-}
-
-.thumbheader {
-  padding: 5px;
-  /* font-family: 'Nothing You Could Do', sans-serif; */
-  cursor: move;
-  z-index: 10;
-  background-color: #2196F3;
-  color: #fff;
 }
