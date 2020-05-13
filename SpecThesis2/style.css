@@ -168,6 +168,12 @@ h1 {
 .vl {
   border-left: 1px solid black;
   position: absolute;
+  transition: all .2s ease-in-out;
+}
+
+.vl:hover {
+  border-left: 1px solid #3399ff;
+  transition: all .2s ease-in-out;
 }
 
 #figm-cont2 {
