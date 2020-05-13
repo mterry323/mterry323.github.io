@@ -78,13 +78,11 @@ h1 {
 #hand {
   margin-top: 350px;
   margin-left: 350px;
-
 }
 
 #cont1 {
   margin-left: 550px;
   margin-top: 250px;
-
 }
 
 #compete {
@@ -199,7 +197,6 @@ h1 {
   transform: rotate(5deg);
 }
 
-
 #pup {
   position: absolute;
   z-index: 200;
@@ -214,5 +211,40 @@ h1 {
   font-size: 0.9em;
   font-family: 'Arial', sans-serif;
   text-align: left;
+}
 
+.popup_block {
+  display: none;
+  /*--hidden by default--*/
+  background: #32353B;
+  padding: 10px;
+  border: 2px solid black;
+  float: left;
+  font-size: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  width:400px;
+  height:400px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  /*--CSS3 Box Shadows--*/
+  -webkit-box-shadow: 0px 0px 20px black;
+  -moz-box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 20px black;
+}
+
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+  position: absolute;
+}
+
+*html .popup_block {
+  position: absolute;
+}
+
+.popup_block img {
+  max-width: 100%;
+  height: auto;
 }
