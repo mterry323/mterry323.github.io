@@ -14,6 +14,19 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar-thumb{
+background: #ccc;
+height:auto;
+}
+
+::-webkit-scrollbar {
+height:auto;
+width:4px;
+background:white;
+border-left:0px solid transparent;
+border-right:0px solid transparent;
+}
+
 body {
   background-image: url('img/paper.jpg');
   background-size: cover;
@@ -37,6 +50,45 @@ h1 {
   margin-right: 5%;
   padding: 5px;
   text-align: right;
+}
+
+#blurb2 {
+  position: sticky;
+  width: 90%;
+  margin-top: 3%;
+  margin-right: auto;
+  margin-left: 5%;
+  padding: 5px;
+  text-align: left;
+}
+
+#wrap {
+    overflow:auto;
+}
+
+#wrap img {
+    float:left;
+    max-width: 400px;
+    margin-right:50px;
+    padding:3px;
+}
+
+#related {
+  /* position: relative!important; */
+  display: inline-block;
+  transition: all .2s ease-in-out;
+}
+
+#related img {
+  width: 100px;
+  height: auto;
+  transition: all .2s ease-in-out;
+}
+
+#related img:hover {
+  width: 150px;
+  height: auto;
+  transition: all .2s ease-in-out;
 }
 
 #container {
@@ -212,39 +264,4 @@ h1 {
   font-family: 'Arial', sans-serif;
   text-align: left;
 }
-
-.popup_block {
-  display: none;
-  /*--hidden by default--*/
-  background: #32353B;
-  padding: 10px;
-  border: 2px solid black;
-  float: left;
-  font-size: 10;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 99999;
-  width:400px;
-  height:400px;
-  overflow-x:hidden;
-  overflow-y:scroll;
-  /*--CSS3 Box Shadows--*/
-  -webkit-box-shadow: 0px 0px 20px black;
-  -moz-box-shadow: 0px 0px 20px black;
-  box-shadow: 0px 0px 20px black;
-}
-
-/*--Making IE6 Understand Fixed Positioning--*/
-*html #fade {
-  position: absolute;
-}
-
-*html .popup_block {
-  position: absolute;
-}
-
-.popup_block img {
-  max-width: 100%;
-  height: auto;
 }
