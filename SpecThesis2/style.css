@@ -27,6 +27,10 @@ border-left:0px solid transparent;
 border-right:0px solid transparent;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-image: url('img/paper.jpg');
   background-size: cover;
