@@ -6,7 +6,7 @@ html, body {
 ::-webkit-scrollbar {
   width: 5px;
   height: 0px;
-  background: #eee;
+  background: #282828;
 }
 
 ::-webkit-scrollbar-button {
@@ -50,7 +50,7 @@ html, body {
   top: 0;
   left: 0;
   width: 270px;
-  background: #eee;
+  background: #282828;
   height: 100%;
   padding: 5px 10px;
   overflow-y: scroll;
@@ -105,7 +105,7 @@ h7 {
   font-size: 9px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #eee;
+  color: #121212;
 }
 
 h4 {
@@ -123,7 +123,7 @@ h4 {
   margin: 10px;
   margin-left: 5px;
   position: fixed;
-  font-size: 15px
+  font-size: 12px;
 }
 
 #navi a {
@@ -154,7 +154,7 @@ h4 {
   width: 250px;
   height: 165px;
   margin: 5px;
-  background: #eee;
+  background: #282828;
 }
 
 #top {
@@ -244,8 +244,8 @@ h2 {
 
 #credit {
   position: fixed;
-  bottom: 2px;
-  right: 2px;
+  bottom: 5px;
+  right: 8px;
 }
 
 #credit a {
