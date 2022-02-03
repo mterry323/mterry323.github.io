@@ -1,0 +1,23 @@
+INVISIBLE ILLNESS:
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/268342120?h=6dda91a8db&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Invisible Illness - Bei Deng and Micaela Terry"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></iframe>
+
+REMIX PROJECT:
+<iframe src="https://archive.org/embed/RemixFinalCut_201803" width="980" height="540" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+SURVEILLANCE:
+<iframe src="https://archive.org/embed/FinalCut_201804" width="980" height="540" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+INDIVIDUAL PROFILE:
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/363746068?h=1f6d8f9ace&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Individual Portrait - IML 335 - Fall 2019"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+ZOOLANDER:
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/293103163?h=f7ecd0cbb8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IML 202 Scene Recreation - Zoolander - Investigatory Journalist"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+3D SPACE:
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/240534861?h=0826cd11af&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IML 354 Assignment #3"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+202 ABSTRACT:
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/305411426?h=f08c2ec6f9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IML 202 Final Project - Abstract Edit"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+202 BLOOPERS:
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/305420224?h=b5bc6aaef8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IML 202 Final Project - Blooper Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>

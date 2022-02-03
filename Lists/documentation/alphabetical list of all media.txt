@@ -1,0 +1,191 @@
+5/3
+  Medium: Illustration
+  Time: 2019
+  Themes: Transformative, LGBT, love
+  Purpose: Fun
+  Personal Satisfaction: A lot
+<div class="panel illust 2019 love lgbt trans fun alot">
+
+Boyfriend of Steel
+  Medium: Web
+  Time: 2019
+  Themes: Transformative, LGBT, love, mental health
+  Purpose: School, fun
+  Personal Satisfaction: A lot
+<div class="panel web 2019 lgbt love mh trans school fun alot">
+
+Claus Swaps In
+  Medium: Illustration
+  Time: 2021
+  Themes: Transformative, family, kindness
+  Purpose: Fun
+  Personal Satisfaction: A lot
+<div class="panel illust 2021 family kind fun alot">
+
+Erasable (PV Artwork): https://www.youtube.com/watch?v=weKVmm1WUcE
+  Medium: Illustration
+  Time: 2019
+  Themes: Mental health, growth
+  Purpose: Commission
+  Personal Satisfaction: A lot
+<div class="panel illust 2019 mh growth commission alot">
+
+Expression sheet commission - Little Mac
+  Medium: Illustration
+  Time: 2020
+  Themes: Transformative
+  Purpose: Commission
+  Personal Satisfaction: Quite a bit
+<div class="panel illust 2020 trans commission qab">
+
+Final Needle
+  Medium: Illustration
+  Time: 2021
+  Themes: Transformative, growth
+  Purpose: Fun
+  Personal Satisfaction: Personal fave
+<div class="panel illust 2021 trans growth fun pf">
+
+I Didn't Choose to Be Like This (Remix)
+  Medium: Video
+  Time: 2018
+  Themes: Transformative, mental health
+  Purpose: School
+  Personal Satisfaction: A lot
+<div class="panel video 2018 trans mh school alot">
+
+Individual Portrait: Carlota Terry
+  Medium: Video
+  Time: 2019
+  Themes: Mental health, family, kindness
+  Purpose: School
+  Personal Satisfaction: Personal fave
+<div class="panel video 2019 mh family kindness school pf">
+
+Invisible Illness
+  Medium: Video, Graphic Design
+  Time: 2018
+  Themes: Mental health
+  Purpose: School
+  Personal Satisfaction: A lot
+<div class="panel video gd 2018 mh school alot">
+
+Iroha Tamaki
+  Medium: Illustration
+  Time: 2020
+  Themes: Transformative
+  Purpose: Commission
+  Personal Satisfaction: Quite a bit
+<div class="panel illust 2020 commission qab">
+
+It Depends Who You Ask (Surveillance)
+  Medium: Video
+  Time: 2018
+  Themes: Mental health, self image
+  Purpose: School
+  Personal Satisfaction: Quite a bit
+<div class="panel video 2018 mh si school qab">
+
+Lucas cosplay (MOTHER 3)
+  Medium: Costume Design, Photo Retouch
+  Time: 2020-21
+  Themes: Transformative, growth
+  Purpose: Fun
+  Personal Satisfaction: Personal fave
+<div class="panel cos photo 2020 2021 trans growth fun pf">
+
+MOTHER 3 15TH Anniversary
+  Medium: Illustration
+  Time: 2021
+  Themes: Transformative, family, growth
+  Purpose: Fun
+  Personal Satisfaction: Personal fave
+<div class="panel illust 2021 trans family growth fun pf">
+
+Same as Always
+  Medium: Illustration
+  Time: 2019
+  Themes: Transformative, friendship
+  Purpose: Fun
+  Personal Satisfaction: Personal fave
+<div class="panel illust 2019 trans friendship fun pf">
+
+Self portrait
+  Medium: Illustration
+  Time: 2018
+  Themes: Self image, growth
+  Purpose: School
+  Personal Satisfaction: Quite a bit
+<div class="panel illust 2018 si growth school qab">
+
+Shinji Ikari Plugsuit
+  Medium: Costume Design
+  Time: 2018-19
+  Themes: Transformative, mental health
+  Purpose: Fun
+  Personal Satisfaction: Personal fave
+<div class="panel cos 2018 2019 trans mh fun pf">
+
+Stipples
+  Medium: Processing
+  Time: 2018
+  Themes: Abstract
+  Purpose: School
+  Personal Satisfaction: Quite a bit
+<div class="panel processing 2018 abstract school qab">
+
+Sunflowers and Illusions
+  Medium: Illustration
+  Time: 2020
+  Themes: Transformative, family, loss
+  Purpose: Fun
+  Personal Satisfaction: A lot
+<div class="panel illust 2020 trans family loss fun alot">
+
+Tanetane Island
+  Medium: Illustration
+  Time: 2020
+  Themes: Transformative, mental health, self image, loss
+  Purpose: Fun
+  Personal Satisfaction: Personal fave
+<div class="panel illust 2020 trans mh si loss fun pf">
+
+Tomoe Udagawa - Rock and Glow
+  Medium: Costume Design
+  Time: 2019
+  Themes: Transformative
+  Purpose: Fun
+  Personal Satisfaction: Quite a bit
+<div class="panel cos 2019 trans fun qab">
+
+Vane icon commission
+  Medium: Illustration
+  Time: 2018
+  Themes: Self image
+  Purpose: Commission
+  Personal Satisfaction: some">
+<div class="panel illust 2018 si commission some">
+
+We Need to Talk (Soundscape pair)
+  Medium: Audio
+  Time: 2018
+  Themes: Mental health, love, self image, loss
+  Purpose: School
+  Personal Satisfaction: A lot
+<div class="panel audio 2018 mh love si loss school alot">
+
+Yui Ikari Prototype Plugsuit
+  Medium: Illustration
+  Time: 2018
+  Themes: Transformative, family, loss
+  Purpose: Fun
+  Personal Satisfaction: Personal fave
+<div class="panel illust trans family loss fun pf">
+
+Zoolander Scene Recreation
+  Medium: Video
+  Time: 2019
+  Themes: Transformative, love
+  Purpose: School
+  Personal Satisfaction: Quite a bit
+<div class="panel video 2019 trans love school qab">
