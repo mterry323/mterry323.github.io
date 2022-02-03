@@ -3,6 +3,8 @@ html, body {
   height: 100%;
 }
 
+/* SCROLLBAR */
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 0px;
@@ -44,6 +46,8 @@ html, body {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+/* SIDEBAR */
 
 .sidebar {
   position: fixed;
@@ -118,6 +122,8 @@ h4 {
 
 .filters {
   margin-top: 180px;
+  padding: 0px 0px 20px;
+  font-size:12px;
 }
 
 #navi {
@@ -144,6 +150,8 @@ h4 {
   transition: all 0.5s ease;
 }
 
+/* MAIN PAGE BODY */
+
 .main {
   margin-left: 295px;
   margin-top: 5px;
@@ -151,9 +159,11 @@ h4 {
   position: fixed;
 }
 
+/* MAIN PAGE ENTRY */
+
 .panel {
   width: 250px;
-  height: 165px;
+  height: 145px;
   margin: 5px;
   background: #282828;
 }
@@ -236,12 +246,63 @@ h2 {
   font-weight: bold;
 }
 
+/* IMAGE WRAP */
+
+.wrap {
+    overflow:auto;
+}
+
+.wrap img {
+    float:left;
+    margin-right:10px;
+    padding:3px;
+}
+
+/* GALLERY */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 #desc p {
   font-size: 12px;
   width: 220px;
   padding: 15px;
   height: 60px;
 }
+
+/* PAGE CREDITS */
 
 #credit {
   position: fixed;
