@@ -69,11 +69,11 @@ a:hover {
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
+/* .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide columns by default */
-}
+  display: none; Hide columns by default
+ } */
 
 /* Clear floats after rows */
 .row:after {
@@ -82,11 +82,26 @@ a:hover {
   clear: both;
 }
 
+#container {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100vw;
+  height: 150vh;
+  padding: 5px;
+}
+
 /* Content */
 .content {
+  max-width:30%;
   position:relative;
   background-color: white;
   padding: 10px;
+  margin:5px;
 }
 
 .content img {
