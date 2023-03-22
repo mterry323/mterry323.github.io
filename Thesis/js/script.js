@@ -39,9 +39,9 @@ for (var i = 0; i < audios.length; i++) {
 
 //CLOSE EVERYTHING ON OVERLAY CLICK
 document.getElementById("overlay").onclick = function() {
-  overlay.style.display = "none";
+  $(overlay).fadeOut();
   for (var i = 0; i < info.length; i++) {
-    info[i].style.display = "none";
+    $(info[i]).fadeOut();
   }
   for (var i = 0; i < audios.length; i++) {
     audios[i].pause();
@@ -50,78 +50,78 @@ document.getElementById("overlay").onclick = function() {
 
 //"Display styles blurb when clicking styles bubble"
 document.getElementById("bStyles").onclick = function() {
-  styles.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(styles).fadeIn();
   audios[0].play();
 }
 
 document.querySelector("#bAki").onclick = function() {
-  aki.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(aki).fadeIn();
   audios[1].play();
 }
 
 document.querySelector("#bCammie").onclick = function() {
-  cammie.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(cammie).fadeIn();
 }
 
 document.querySelector("#bContain").onclick = function() {
-  contain.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(contain).fadeIn();
 }
 
 document.querySelector("#bEdwin").onclick = function() {
-  edwin.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(edwin).fadeIn();
 }
 
 document.querySelector("#bFigapp").onclick = function() {
-  figapp.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(figapp).fadeIn();
 }
 
 document.querySelector("#bFigpers").onclick = function() {
-  figpers.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(figpers).fadeIn();
 }
 
 document.querySelector("#bKaworu").onclick = function() {
-  kaworu.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(kaworu).fadeIn();
 }
 
 document.querySelector("#bKazuya").onclick = function() {
-  kazuya.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(kazuya).fadeIn();
 }
 
 document.querySelector("#bKeydes").onclick = function() {
-  keydes.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(keydes).fadeIn();
 }
 
 document.querySelector("#bKeywip").onclick = function() {
-  keywip.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(keywip).fadeIn();
 }
 
 document.querySelector("#bLucas").onclick = function() {
-  lucas.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(lucas).fadeIn();
 }
 
 document.querySelector("#bPhoto").onclick = function() {
-  photo.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(photo).fadeIn();
 }
 
 document.querySelector("#bSoe").onclick = function() {
-  soe.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(soe).fadeIn();
 }
 
 document.querySelector("#bUsc").onclick = function() {
-  usc.style.display = "block";
-  overlay.style.display = "block";
+  $(overlay).fadeIn();
+  $(usc).fadeIn();
 }
