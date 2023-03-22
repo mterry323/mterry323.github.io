@@ -11,14 +11,6 @@ for (let i = 0; i < clickers.length; i++) {
   }
 }
 
-//CLOSE EVERYTHING ON OVERLAY CLICK
-document.getElementById("overlay").onclick = function() {
-  overlay.style.display = "none";
-  for (var i = 0; i < info.length; i++) {
-    info[i].style.display = "none";
-  }
-}
-
 //INDIVIDUAL BLURBS
 let styles = document.getElementById("artstyles"),
   aki = document.querySelector("#aki"),
@@ -36,15 +28,37 @@ let styles = document.getElementById("artstyles"),
   soe = document.querySelector("#soe"),
   usc = document.querySelector("#usc");
 
+//BLURBS CORRESPONDING AUDIOS
+let audios = [new Audio("./Audio/test1.mp3"),
+  new Audio("./Audio/test2.mp3")
+];
+
+for (var i = 0; i < audios.length; i++) {
+  audios[i].loop = true;
+}
+
+//CLOSE EVERYTHING ON OVERLAY CLICK
+document.getElementById("overlay").onclick = function() {
+  overlay.style.display = "none";
+  for (var i = 0; i < info.length; i++) {
+    info[i].style.display = "none";
+  }
+  for (var i = 0; i < audios.length; i++) {
+    audios[i].pause();
+  }
+}
+
 //"Display styles blurb when clicking styles bubble"
 document.getElementById("bStyles").onclick = function() {
   styles.style.display = "block";
   overlay.style.display = "block";
+  audios[0].play();
 }
 
 document.querySelector("#bAki").onclick = function() {
   aki.style.display = "block";
   overlay.style.display = "block";
+  audios[1].play();
 }
 
 document.querySelector("#bCammie").onclick = function() {
