@@ -30,7 +30,8 @@ let styles = document.getElementById("artstyles"),
 
 //BLURBS CORRESPONDING AUDIOS
 let audios = [new Audio("./Audio/test1.mp3"),
-  new Audio("./Audio/test2.mp3")
+  new Audio("./Audio/test2.mp3"),
+  new Audio("./Audio/contain.wav")
 ];
 
 for (var i = 0; i < audios.length; i++) {
@@ -44,7 +45,7 @@ document.getElementById("overlay").onclick = function() {
     $(info[i]).fadeOut();
   }
   for (var i = 0; i < audios.length; i++) {
-    audios[i].pause();
+      audios[i].pause();
   }
 }
 
@@ -69,6 +70,7 @@ document.querySelector("#bCammie").onclick = function() {
 document.querySelector("#bContain").onclick = function() {
   $(overlay).fadeIn();
   $(contain).fadeIn();
+  audios[2].play();
 }
 
 document.querySelector("#bEdwin").onclick = function() {
