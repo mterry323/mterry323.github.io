@@ -12,7 +12,8 @@ for (let i = 0; i < clickers.length; i++) {
 }
 
 //INDIVIDUAL BLURBS
-let styles = document.getElementById("artstyles"),
+let about = document.getElementById("about"),
+  styles = document.getElementById("artstyles"),
   aki = document.querySelector("#aki"),
   cammie = document.querySelector("#cammie"),
   contain = document.querySelector("#contain"),
@@ -29,9 +30,11 @@ let styles = document.getElementById("artstyles"),
   usc = document.querySelector("#usc");
 
 //BLURBS CORRESPONDING AUDIOS
-let audios = [new Audio("./Audio/test1.mp3"),
-  new Audio("./Audio/test2.mp3"),
-  new Audio("./Audio/contain.wav")
+let audios = [new Audio("./Audio/contain.wav"),
+  new Audio("./Audio/figures apps.wav"),
+  new Audio("./Audio/keyblade wip.wav"),
+  new Audio("./Audio/traced photo.wav"),
+  new Audio("./Audio/soe.wav")
 ];
 
 for (var i = 0; i < audios.length; i++) {
@@ -49,17 +52,21 @@ document.getElementById("overlay").onclick = function() {
   }
 }
 
+//About Button
+document.getElementById("aboutButton").onclick = function() {
+  $(overlay).fadeIn();
+  $(about).fadeIn();
+}
+
 //"Display styles blurb when clicking styles bubble"
 document.getElementById("bStyles").onclick = function() {
   $(overlay).fadeIn();
   $(styles).fadeIn();
-  audios[0].play();
 }
 
 document.querySelector("#bAki").onclick = function() {
   $(overlay).fadeIn();
   $(aki).fadeIn();
-  audios[1].play();
 }
 
 document.querySelector("#bCammie").onclick = function() {
@@ -70,7 +77,7 @@ document.querySelector("#bCammie").onclick = function() {
 document.querySelector("#bContain").onclick = function() {
   $(overlay).fadeIn();
   $(contain).fadeIn();
-  audios[2].play();
+  audios[0].play();
 }
 
 document.querySelector("#bEdwin").onclick = function() {
@@ -81,6 +88,7 @@ document.querySelector("#bEdwin").onclick = function() {
 document.querySelector("#bFigapp").onclick = function() {
   $(overlay).fadeIn();
   $(figapp).fadeIn();
+  audios[1].play();
 }
 
 document.querySelector("#bFigpers").onclick = function() {
@@ -106,6 +114,7 @@ document.querySelector("#bKeydes").onclick = function() {
 document.querySelector("#bKeywip").onclick = function() {
   $(overlay).fadeIn();
   $(keywip).fadeIn();
+  audios[2].play();
 }
 
 document.querySelector("#bLucas").onclick = function() {
@@ -116,11 +125,13 @@ document.querySelector("#bLucas").onclick = function() {
 document.querySelector("#bPhoto").onclick = function() {
   $(overlay).fadeIn();
   $(photo).fadeIn();
+  audios[3].play();
 }
 
 document.querySelector("#bSoe").onclick = function() {
   $(overlay).fadeIn();
   $(soe).fadeIn();
+  audios[4].play();
 }
 
 document.querySelector("#bUsc").onclick = function() {
