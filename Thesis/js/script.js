@@ -29,6 +29,13 @@ let about = document.getElementById("about"),
   soe = document.querySelector("#soe"),
   usc = document.querySelector("#usc");
 
+//BRAIN SOUP
+let brainSoup = new Audio("./Audio/brain soup.wav");
+
+brainSoup.play();
+brainSoup.loop = true;
+brainSoup.volume = 0.5;
+
 //BLURBS CORRESPONDING AUDIOS
 let audios = [new Audio("./Audio/contain.wav"),
   new Audio("./Audio/figures apps.wav"),
@@ -51,6 +58,12 @@ document.getElementById("overlay").onclick = function() {
       audios[i].pause();
   }
 }
+
+//Scroll drag
+const img = document.querySelector("img");
+img.ondragstart = () => {
+  return false;
+};
 
 //About Button
 document.getElementById("aboutButton").onclick = function() {

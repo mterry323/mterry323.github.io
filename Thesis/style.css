@@ -8,7 +8,7 @@ body {
   left: 0vw;
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
+  overflow: auto;
   background-image: url('./Assets/paper.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -38,7 +38,6 @@ body {
   background: black;
   color: white;
   border: 1px solid white;
-
 }
 
 .bubble {
@@ -106,3 +105,9 @@ body {
   word-wrap: normal;
   padding: 10px;
 }
+
+/* Individual bubble placements */
+/* #bAki {
+  top:5vh;
+  left:5vw;
+} */
