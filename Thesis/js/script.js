@@ -34,7 +34,7 @@ let brainSoup = new Audio("./Audio/brain soup.wav");
 
 brainSoup.play();
 brainSoup.loop = true;
-brainSoup.volume = 0.5;
+brainSoup.volume = 0.3;
 
 //BLURBS CORRESPONDING AUDIOS
 let audios = [new Audio("./Audio/contain.wav"),
