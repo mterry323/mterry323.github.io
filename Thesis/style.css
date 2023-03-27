@@ -4,16 +4,17 @@ body {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 35px;
+  font-family: 'Covered By Your Grace', cursive;
 }
 
 #container {
   position: fixed;
   top: 0vh;
   left: 0vw;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
+  width: 99vw;
+  height: 99vh;
+  overflow: scroll;
   background-image: url('./Assets/paper.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -47,7 +48,7 @@ h1 {
 
 .bubble {
   display: inline-grid;
-  position: relative;
+  position: absolute;
   width: 125px;
   height: auto;
   margin: 3px;
@@ -65,8 +66,6 @@ h1 {
 
 .bubble:hover {
   width: 200px;
-  /* top: 25px;
-  left: 25px; */
   transition: all .2s ease-in-out;
   cursor: pointer;
 }
@@ -103,16 +102,89 @@ h1 {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.info img {
+.infopics {
+  width:100%;
+  height:auto;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infopics img {
   display: inline;
-  float: left;
-  max-width: 50%;
+  max-width: 40%;
   word-wrap: normal;
   padding: 10px;
 }
 
 /* Individual bubble placements */
-/* #bAki {
-  top:5vh;
+#bAki {
+  top:50vh;
+  left:10vw;
+}
+
+#bCammie {
+  top:20vh;
+  left:15vw;
+}
+
+#bContain {
+  top:60vh;
+  left:30vw;
+}
+
+#bEdwin {
+  top:50vh;
+  left:50vw;
+}
+
+#bFigapp {
+  top:15vh;
+  left:55vw;
+}
+
+#bFigpers {
+  top:80vh;
+  left:60vw;
+}
+
+#bKaworu {
+  top:70vh;
+  left:85vw;
+}
+
+#bKazuya {
+  top:10vh;
+  left:80vw;
+}
+
+#bKeydes {
+  top:10vh;
+  left:35vw;
+}
+
+#bKeywip {
+  top:90vh;
   left:5vw;
-} */
+}
+
+#bLucas {
+  top:40vh;
+  left:70vw;
+}
+
+#bPhoto {
+  top:100vh;
+  left:35vw;
+}
+
+#bSoe {
+  top:100vh;
+  left:100vw;
+}
+
+#bUsc {
+  top:30vh;
+  left:95vw;
+}
