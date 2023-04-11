@@ -1,6 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 13px;
+  background-image: url('./Assets/paper.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -15,35 +19,51 @@ h1 {
   width: 99vw;
   height: 99vh;
   overflow: scroll;
-  background-image: url('./Assets/paper.jpg');
+  /* background:#333; */
+  /* background-image: url('./Assets/paper.jpg'); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   padding:5px 10px;
 }
 
-#aboutButton {
+#topButtons {
+  display:inline-block;
+  width:100%;
+  height:auto;
+  z-index: 1;
+}
+
+.topButton {
+  position: sticky;
   text-align: center;
-  font-size:13px;
-  display: block;
-  width: 100px;
+  font-size:11px;
+  display: inline-block;
+  width: auto;
   height: auto;
-  padding: 3px;
-  margin: 5px 20px;
+  padding: 3px 10px;
+  margin: 5px;
   border: 1px solid black;
   border-radius: 15px;
   background: white;
   transition: 0.3s;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
-#aboutButton:hover {
-  letter-spacing: 6px;
+.topButton:hover {
+  letter-spacing: 3px;
   cursor: pointer;
   background: black;
   color: white;
   border: 1px solid white;
+}
+
+.buttonOn {
+  background: black!important;
+  color: white;
+  border: 1px solid white!important;
 }
 
 .bubble {
@@ -54,6 +74,11 @@ h1 {
   margin: 3px;
   padding: 10px;
   text-align: center;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
   /* top: 30px;
   left: 30px; */
   transition: all .2s ease-in-out;
@@ -68,6 +93,54 @@ h1 {
   width: 200px;
   transition: all .2s ease-in-out;
   cursor: pointer;
+}
+
+/* Intro splash */
+#intro {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  top: 0vh;
+  left: 0vw;
+  z-index: 999;
+}
+
+#introText {
+  position:absolute;
+  padding:5px;
+  display:block;
+  top:25vh;
+  left:25vw;
+  width:50vw;
+  height:auto;
+  /* border:1px solid black; */
+}
+
+#startButton {
+  text-align: center;
+  font-size:13px;
+  display: block;
+  width: 100px;
+  height: auto;
+  padding: 3px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  background: white;
+  transition: 0.3s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+#startButton:hover {
+  letter-spacing: 6px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border: 1px solid white;
 }
 
 /* Popup boxes */
@@ -102,6 +175,10 @@ h1 {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
+.info h1 {
+  text-align:center;
+}
+
 .infopics {
   width:100%;
   height:auto;
@@ -118,7 +195,22 @@ h1 {
   padding: 10px;
 }
 
+.alttext {
+  display:none;
+  transition: 0.2s ease-in-out;
+}
+
+.on {
+  display:block;
+  transition: 0.2s ease-in-out;
+}
+
 /* Individual bubble placements */
+#bStyles {
+  top:5vh;
+  left:0vw;
+}
+
 #bAki {
   top:50vh;
   left:10vw;

@@ -1,6 +1,7 @@
 // DEFINE THE OVERLAY AS AN ID
 let overlay = document.querySelector("#overlay");
 let info = document.querySelectorAll(".info");
+let intro = document.querySelector("#intro");
 
 //OPEN POPUP
 let clickers = document.querySelectorAll(".click");
@@ -32,10 +33,6 @@ let about = document.getElementById("about"),
 //BRAIN SOUP
 let brainSoup = new Audio("./Audio/brain soup.wav");
 
-brainSoup.play();
-brainSoup.loop = true;
-brainSoup.volume = 0.5;
-
 //BLURBS CORRESPONDING AUDIOS
 let audios = [new Audio("./Audio/contain.wav"),
   new Audio("./Audio/figures apps.wav"),
@@ -55,21 +52,63 @@ document.getElementById("overlay").onclick = function() {
     $(info[i]).fadeOut();
   }
   for (var i = 0; i < audios.length; i++) {
-      audios[i].pause();
+    audios[i].pause();
   }
 }
 
-//Scroll drag
+// Scroll drag
 const img = document.querySelector("img");
 img.ondragstart = () => {
   return false;
 };
+
+// const drag = document.getElementsByClassName('.drag')
+//
+// $(function(){
+// 	  $(drag).dragscroll();
+// 	});
+
+//Start Button
+document.getElementById("startButton").onclick = function() {
+  $(intro).fadeOut();
+  brainSoup.play();
+  brainSoup.loop = true;
+  brainSoup.volume = 0.5;
+}
 
 //About Button
 document.getElementById("aboutButton").onclick = function() {
   $(overlay).fadeIn();
   $(about).fadeIn();
 }
+
+//Alt text
+$("#altToggle").click(function() {
+  if ($(".alttext").hasClass("on")) {
+    $(".alttext").removeClass("on");
+    $("#altToggle").removeClass("buttonOn");
+    $("#altToggle").html('Alt Text: Off');
+  } else {
+    $(".alttext").addClass("on");
+    $("#altToggle").addClass("buttonOn");
+    $("#altToggle").html('Alt Text: On');
+  }
+});
+
+//Mute brain soup
+$("#soupToggle").click(function() {
+  if ($("#soupToggle").hasClass("noSoup")) {
+    brainSoup.volume = 0.5;
+    $("#soupToggle").removeClass("noSoup");
+    $("#soupToggle").removeClass("buttonOn");
+    $("#soupToggle").html('Background Voices: On');
+  } else {
+    brainSoup.volume = 0;
+    $("#soupToggle").addClass("noSoup");
+    $("#soupToggle").addClass("buttonOn");
+    $("#soupToggle").html('Background Voices: Off');
+  }
+});
 
 //"Display styles blurb when clicking styles bubble"
 document.getElementById("bStyles").onclick = function() {
