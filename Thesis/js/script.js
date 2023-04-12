@@ -15,7 +15,7 @@ for (let i = 0; i < clickers.length; i++) {
 //INDIVIDUAL BLURBS
 let about = document.getElementById("about"),
   styles = document.getElementById("artstyles"),
-  aki = document.querySelector("#aki"),
+  xennia = document.querySelector("#xennia"),
   cammie = document.querySelector("#cammie"),
   contain = document.querySelector("#contain"),
   edwin = document.querySelector("#edwin"),
@@ -25,7 +25,7 @@ let about = document.getElementById("about"),
   kazuya = document.querySelector("#kazuya"),
   keydes = document.querySelector("#keyDes"),
   keywip = document.querySelector("#keyWip"),
-  lucas = document.querySelector("#lucas"),
+  newOC = document.querySelector("#newOC"),
   photo = document.querySelector("#photo"),
   soe = document.querySelector("#soe"),
   usc = document.querySelector("#usc");
@@ -84,12 +84,12 @@ document.getElementById("aboutButton").onclick = function() {
 
 //Alt text
 $("#altToggle").click(function() {
-  if ($(".alttext").hasClass("on")) {
-    $(".alttext").removeClass("on");
+  if ($(".altText").hasClass("on")) {
+    $(".altText").removeClass("on");
     $("#altToggle").removeClass("buttonOn");
     $("#altToggle").html('Alt Text: Off');
   } else {
-    $(".alttext").addClass("on");
+    $(".altText").addClass("on");
     $("#altToggle").addClass("buttonOn");
     $("#altToggle").html('Alt Text: On');
   }
@@ -100,13 +100,13 @@ $("#soupToggle").click(function() {
   if ($("#soupToggle").hasClass("noSoup")) {
     brainSoup.volume = 0.5;
     $("#soupToggle").removeClass("noSoup");
-    $("#soupToggle").removeClass("buttonOn");
-    $("#soupToggle").html('Background Voices: On');
+    $("#soupToggle").addClass("buttonOn");
+    $("#soupToggle").html('BG Voices: On');
   } else {
     brainSoup.volume = 0;
     $("#soupToggle").addClass("noSoup");
-    $("#soupToggle").addClass("buttonOn");
-    $("#soupToggle").html('Background Voices: Off');
+    $("#soupToggle").removeClass("buttonOn");
+    $("#soupToggle").html('BG Voices: Off');
   }
 });
 
@@ -116,9 +116,9 @@ document.getElementById("bStyles").onclick = function() {
   $(styles).fadeIn();
 }
 
-document.querySelector("#bAki").onclick = function() {
+document.querySelector("#bXennia").onclick = function() {
   $(overlay).fadeIn();
-  $(aki).fadeIn();
+  $(xennia).fadeIn();
 }
 
 document.querySelector("#bCammie").onclick = function() {
@@ -169,9 +169,9 @@ document.querySelector("#bKeywip").onclick = function() {
   audios[2].play();
 }
 
-document.querySelector("#bLucas").onclick = function() {
+document.querySelector("#bNewOC").onclick = function() {
   $(overlay).fadeIn();
-  $(lucas).fadeIn();
+  $(newOC).fadeIn();
 }
 
 document.querySelector("#bPhoto").onclick = function() {

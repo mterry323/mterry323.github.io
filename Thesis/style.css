@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 13px;
-  background-image: url('./Assets/paper.jpg');
+  background-image: url('./Assets/paper1.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,12 +19,11 @@ h1 {
   width: 99vw;
   height: 99vh;
   overflow: scroll;
-  /* background:#333; */
-  /* background-image: url('./Assets/paper.jpg'); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   padding:5px 10px;
+  background:rgba(255,255,255,0.5)
 }
 
 #topButtons {
@@ -69,18 +68,16 @@ h1 {
 .bubble {
   display: inline-grid;
   position: absolute;
-  width: 125px;
+  width: 150px;
   height: auto;
   margin: 3px;
   padding: 10px;
   text-align: center;
-   user-select: none;
-   -moz-user-select: none;
-   -webkit-user-drag: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-  /* top: 30px;
-  left: 30px; */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   transition: all .2s ease-in-out;
 }
 
@@ -90,9 +87,10 @@ h1 {
 }
 
 .bubble:hover {
-  width: 200px;
+  width: 250px;
   transition: all .2s ease-in-out;
   cursor: pointer;
+  transform: translateX(-25px) translateY(-25px);
 }
 
 /* Intro splash */
@@ -195,7 +193,7 @@ h1 {
   padding: 10px;
 }
 
-.alttext {
+.altText {
   display:none;
   transition: 0.2s ease-in-out;
 }
@@ -211,9 +209,9 @@ h1 {
   left:0vw;
 }
 
-#bAki {
-  top:50vh;
-  left:10vw;
+#bXennia {
+  top:55vh;
+  left:5vw;
 }
 
 #bCammie {
@@ -261,7 +259,7 @@ h1 {
   left:5vw;
 }
 
-#bLucas {
+#bNewOC {
   top:40vh;
   left:70vw;
 }
