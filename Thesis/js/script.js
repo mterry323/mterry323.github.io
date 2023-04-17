@@ -1,6 +1,8 @@
 // DEFINE THE OVERLAY AS AN ID
 let overlay = document.querySelector("#overlay");
 let info = document.querySelectorAll(".info");
+let fullImg = document.querySelectorAll(".fullImg");
+let fullScreen = document.querySelector("#fullScreen");
 let intro = document.querySelector("#intro");
 
 //OPEN POPUP
@@ -30,6 +32,33 @@ let about = document.getElementById("about"),
   soe = document.querySelector("#soe"),
   usc = document.querySelector("#usc");
 
+  let fStyles = document.querySelector("#fStyles"),
+  fXennia1 = document.querySelector("#fXennia1"),
+  fXennia4 = document.querySelector("#fXennia4"),
+  fXennia5 = document.querySelector("#fXennia5"),
+  fCammie = document.querySelector("#fCammie"),
+  fContain1 = document.querySelector("#fContain1"),
+  fContain2 = document.querySelector("#fContain2"),
+  fEdwinNew = document.querySelector("#fEdwinNew"),
+  fEdwinOld = document.querySelector("#fEdwinOld"),
+  fFiguresF = document.querySelector("#fFiguresF"),
+  fFiguresM = document.querySelector("#fFiguresM"),
+  fFigpers1 = document.querySelector("#fFigpers1"),
+  fFigpers2 = document.querySelector("#fFigpers2"),
+  fFigpers3 = document.querySelector("#fFigpers3"),
+  fFigpers4 = document.querySelector("#fFigpers4"),
+  fKaworuNew = document.querySelector("#fKaworuNew"),
+  fKaworuOld = document.querySelector("#fKaworuOld"),
+  fKazuya = document.querySelector("#fKazuya"),
+  fKeyDes = document.querySelector("#fKeyDes"),
+  fKeyWip = document.querySelector("#fKeyWip"),
+  fNewOC = document.querySelector("#fNewOC"),
+  fTrace1 = document.querySelector("#fTrace1"),
+  fTrace2 = document.querySelector("#fTrace2"),
+  fSoeNew = document.querySelector("#fSoeNew"),
+  fSoeOld = document.querySelector("#fSoeOld"),
+  fUsc = document.querySelector("#fUsc");
+
 //BRAIN SOUP
 let brainSoup = new Audio("./Audio/brain soup.wav");
 
@@ -56,17 +85,18 @@ document.getElementById("overlay").onclick = function() {
   }
 }
 
-// Scroll drag
+document.getElementById("fullScreen").onclick = function() {
+  $(fullScreen).fadeOut();
+  for (var i = 0; i < fullImg.length; i++) {
+    $(fullImg[i]).fadeOut();
+  }
+}
+
+// Images not draggable
 const img = document.querySelector("img");
 img.ondragstart = () => {
   return false;
 };
-
-// const drag = document.getElementsByClassName('.drag')
-//
-// $(function(){
-// 	  $(drag).dragscroll();
-// 	});
 
 //Start Button
 document.getElementById("startButton").onclick = function() {
@@ -110,7 +140,7 @@ $("#soupToggle").click(function() {
   }
 });
 
-//"Display styles blurb when clicking styles bubble"
+//MAKE THE BUBBLES OPEN THE INFO POPUPS
 document.getElementById("bStyles").onclick = function() {
   $(overlay).fadeIn();
   $(styles).fadeIn();
@@ -189,4 +219,135 @@ document.querySelector("#bSoe").onclick = function() {
 document.querySelector("#bUsc").onclick = function() {
   $(overlay).fadeIn();
   $(usc).fadeIn();
+}
+
+//MAKE CLICKING THE IMAGES TOGGLE FULLSCREEN
+document.querySelector("#iStyles").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fStyles).fadeIn();
+}
+
+document.querySelector("#iCammie").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fCammie).fadeIn();
+}
+
+document.querySelector("#iXennia1").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fXennia1).fadeIn();
+}
+
+document.querySelector("#iXennia4").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fXennia4).fadeIn();
+}
+
+document.querySelector("#iXennia5").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fXennia5).fadeIn();
+}
+
+document.querySelector("#iContain1").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fContain1).fadeIn();
+}
+
+document.querySelector("#iContain2").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fContain2).fadeIn();
+}
+
+document.querySelector("#iEdwinNew").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fEdwinNew).fadeIn();
+}
+
+document.querySelector("#iEdwinOld").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fEdwinOld).fadeIn();
+}
+
+document.querySelector("#iFiguresM").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fFiguresM).fadeIn();
+}
+
+document.querySelector("#iFiguresF").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fFiguresF).fadeIn();
+}
+
+document.querySelector("#iFigpers1").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fFigpers1).fadeIn();
+}
+
+document.querySelector("#iFigpers2").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fFigpers2).fadeIn();
+}
+
+document.querySelector("#iFigpers3").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fFigpers3).fadeIn();
+}
+
+document.querySelector("#iFigpers4").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fFigpers4).fadeIn();
+}
+
+document.querySelector("#iKaworuOld").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKaworuOld).fadeIn();
+}
+
+document.querySelector("#iKaworuNew").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKaworuNew).fadeIn();
+}
+
+document.querySelector("#iKazuya").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKazuya).fadeIn();
+}
+
+document.querySelector("#iKeyDes").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKeyDes).fadeIn();
+}
+
+document.querySelector("#iKeyWip").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKeyWip).fadeIn();
+}
+
+document.querySelector("#iNewOC").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fNewOC).fadeIn();
+}
+
+document.querySelector("#iTrace1").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fTrace1).fadeIn();
+}
+
+document.querySelector("#iTrace2").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fTrace2).fadeIn();
+}
+
+document.querySelector("#iSoeNew").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fSoeNew).fadeIn();
+}
+
+document.querySelector("#iSoeOld").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fSoeOld).fadeIn();
+}
+
+document.querySelector("#iUsc").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fUsc).fadeIn();
 }

@@ -150,7 +150,7 @@ hr {
 
 /* Popup boxes */
 /*--Transparent background layer--*/
-#overlay {
+#overlay, #fullScreen {
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   width: 100vw;
@@ -160,14 +160,19 @@ hr {
   left: 0vw;
 }
 
+#fullScreen {
+  z-index:200;
+}
+
 /* Popup box styling */
 .info {
   display: none;
   position: fixed;
   z-index: 100;
   color: black;
-  top: 10vh;
-  left: 25vw;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
   width: 50vw;
   height: 75vh;
   background: white;
@@ -189,15 +194,19 @@ hr {
   height:auto;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin:auto auto;
 }
 
 .infopics img {
+  margin:auto auto;
   display: inline;
   max-width: 40%;
   word-wrap: normal;
   padding: 10px;
+}
+
+.infopics img:hover {
+  cursor:pointer;
 }
 
 .details {
@@ -214,6 +223,21 @@ hr {
 .on {
   display:block;
   transition: 0.2s ease-in-out;
+}
+
+.fullImg {
+  height:90%;
+  width:auto;
+  text-align:center;
+}
+
+img.fullImg {
+  left:50%;
+  transform:translateX(-50%);
+  display:none;
+  max-width:100%;
+  z-index: 999;
+  position:absolute;
 }
 
 /* Individual bubble placements */
