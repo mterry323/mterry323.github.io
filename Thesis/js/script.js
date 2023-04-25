@@ -80,7 +80,9 @@ let audios = [new Audio("./Audio/cammie.wav"), //0
   new Audio("./Audio/soe.wav"), //9
   new Audio("./Audio/usc.wav"), //10
   new Audio("./Audio/xennia.wav"), //11
-  new Audio("./Audio/new oc.wav") //12
+  new Audio("./Audio/new oc.wav"), //12
+  new Audio("./Audio/figures personal.wav"), //13
+  new Audio("./Audio/20 styles.wav") //14
 ];
 
 for (var i = 0; i < audios.length; i++) {
@@ -157,6 +159,7 @@ $("#soupToggle").click(function() {
 document.getElementById("bStyles").onclick = function() {
   $(overlay).fadeIn();
   $(styles).fadeIn();
+  audios[14].play();
 }
 
 document.querySelector("#bXennia").onclick = function() {
@@ -192,6 +195,7 @@ document.querySelector("#bFigapp").onclick = function() {
 document.querySelector("#bFigpers").onclick = function() {
   $(overlay).fadeIn();
   $(figpers).fadeIn();
+  audios[14].play();
 }
 
 document.querySelector("#bKaworu").onclick = function() {
