@@ -34,6 +34,7 @@ let about = document.getElementById("about"),
 
   let fStyles = document.querySelector("#fStyles"),
   fXennia1 = document.querySelector("#fXennia1"),
+  fXennia2 = document.querySelector("#fXennia2"),
   fXennia4 = document.querySelector("#fXennia4"),
   fXennia5 = document.querySelector("#fXennia5"),
   fCammie = document.querySelector("#fCammie"),
@@ -50,6 +51,10 @@ let about = document.getElementById("about"),
   fKaworuNew = document.querySelector("#fKaworuNew"),
   fKaworuOld = document.querySelector("#fKaworuOld"),
   fKazuya = document.querySelector("#fKazuya"),
+  fKazuOld1 = document.querySelector("#fKazuOld1"),
+  fKazuOld2 = document.querySelector("#fKazuOld2"),
+  fKazuOld3 = document.querySelector("#fKazuOld3"),
+  fKazuOld4 = document.querySelector("#fKazuOld4"),
   fKeyDes = document.querySelector("#fKeyDes"),
   fKeyWip = document.querySelector("#fKeyWip"),
   fNewOC = document.querySelector("#fNewOC"),
@@ -63,11 +68,19 @@ let about = document.getElementById("about"),
 let brainSoup = new Audio("./Audio/brain soup.wav");
 
 //BLURBS CORRESPONDING AUDIOS
-let audios = [new Audio("./Audio/contain.wav"),
-  new Audio("./Audio/figures apps.wav"),
-  new Audio("./Audio/keyblade wip.wav"),
-  new Audio("./Audio/traced photo.wav"),
-  new Audio("./Audio/soe.wav")
+let audios = [new Audio("./Audio/cammie.wav"), //0
+  new Audio("./Audio/contain.wav"), //1
+  new Audio("./Audio/edwin.wav"), //2
+  new Audio("./Audio/figures apps.wav"), //3
+  new Audio("./Audio/kaworu.wav"), //4
+  new Audio("./Audio/kazuya.wav"), //5
+  new Audio("./Audio/key designs.wav"), //6
+  new Audio("./Audio/keyblade wip.wav"), //7
+  new Audio("./Audio/traced photo.wav"), //8
+  new Audio("./Audio/soe.wav"), //9
+  new Audio("./Audio/usc.wav"), //10
+  new Audio("./Audio/xennia.wav"), //11
+  new Audio("./Audio/new oc.wav") //12
 ];
 
 for (var i = 0; i < audios.length; i++) {
@@ -149,28 +162,31 @@ document.getElementById("bStyles").onclick = function() {
 document.querySelector("#bXennia").onclick = function() {
   $(overlay).fadeIn();
   $(xennia).fadeIn();
+  audios[11].play();
 }
 
 document.querySelector("#bCammie").onclick = function() {
   $(overlay).fadeIn();
   $(cammie).fadeIn();
+  audios[0].play();
 }
 
 document.querySelector("#bContain").onclick = function() {
   $(overlay).fadeIn();
   $(contain).fadeIn();
-  audios[0].play();
+  audios[1].play();
 }
 
 document.querySelector("#bEdwin").onclick = function() {
   $(overlay).fadeIn();
   $(edwin).fadeIn();
+  audios[2].play();
 }
 
 document.querySelector("#bFigapp").onclick = function() {
   $(overlay).fadeIn();
   $(figapp).fadeIn();
-  audios[1].play();
+  audios[3].play();
 }
 
 document.querySelector("#bFigpers").onclick = function() {
@@ -181,44 +197,49 @@ document.querySelector("#bFigpers").onclick = function() {
 document.querySelector("#bKaworu").onclick = function() {
   $(overlay).fadeIn();
   $(kaworu).fadeIn();
+  audios[4].play();
 }
 
 document.querySelector("#bKazuya").onclick = function() {
   $(overlay).fadeIn();
   $(kazuya).fadeIn();
+  audios[5].play();
 }
 
 document.querySelector("#bKeydes").onclick = function() {
   $(overlay).fadeIn();
   $(keydes).fadeIn();
+  audios[6].play();
 }
 
 document.querySelector("#bKeywip").onclick = function() {
   $(overlay).fadeIn();
   $(keywip).fadeIn();
-  audios[2].play();
+  audios[7].play();
 }
 
 document.querySelector("#bNewOC").onclick = function() {
   $(overlay).fadeIn();
   $(newOC).fadeIn();
+  audios[12].play();
 }
 
 document.querySelector("#bPhoto").onclick = function() {
   $(overlay).fadeIn();
   $(photo).fadeIn();
-  audios[3].play();
+  audios[8].play();
 }
 
 document.querySelector("#bSoe").onclick = function() {
   $(overlay).fadeIn();
   $(soe).fadeIn();
-  audios[4].play();
+  audios[9].play();
 }
 
 document.querySelector("#bUsc").onclick = function() {
   $(overlay).fadeIn();
   $(usc).fadeIn();
+  audios[10].play();
 }
 
 //MAKE CLICKING THE IMAGES TOGGLE FULLSCREEN
@@ -235,6 +256,11 @@ document.querySelector("#iCammie").onclick = function() {
 document.querySelector("#iXennia1").onclick = function() {
   $(fullScreen).fadeIn();
   $(fXennia1).fadeIn();
+}
+
+document.querySelector("#iXennia2").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fXennia2).fadeIn();
 }
 
 document.querySelector("#iXennia4").onclick = function() {
@@ -310,6 +336,26 @@ document.querySelector("#iKaworuNew").onclick = function() {
 document.querySelector("#iKazuya").onclick = function() {
   $(fullScreen).fadeIn();
   $(fKazuya).fadeIn();
+}
+
+document.querySelector("#iKazuOld1").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKazuOld1).fadeIn();
+}
+
+document.querySelector("#iKazuOld2").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKazuOld2).fadeIn();
+}
+
+document.querySelector("#iKazuOld3").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKazuOld3).fadeIn();
+}
+
+document.querySelector("#iKazuOld4").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fKazuOld4).fadeIn();
 }
 
 document.querySelector("#iKeyDes").onclick = function() {

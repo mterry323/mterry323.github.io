@@ -12,6 +12,11 @@ h1 {
   font-family: 'Covered By Your Grace', cursive;
 }
 
+h2 {
+  font-size: 25px;
+  font-family: 'Covered By Your Grace', cursive;
+}
+
 hr {
   text-align: center;
   border: 0.5px solid #bbb;
@@ -187,26 +192,34 @@ hr {
 
 .info h1 {
   text-align:center;
+  line-height:80%;
 }
 
 .infopics {
   width:100%;
   height:auto;
   text-align: center;
-  display: block;
+  display: inline-block;
   margin:auto auto;
 }
 
 .infopics img {
   margin:auto auto;
   display: inline;
-  max-width: 40%;
+  width:350px;
+  height:350px;
+  object-fit: cover;
   word-wrap: normal;
   padding: 10px;
 }
 
 .infopics img:hover {
   cursor:pointer;
+}
+
+.infopics .main {
+  width:75%;
+  height:auto;
 }
 
 .details {
