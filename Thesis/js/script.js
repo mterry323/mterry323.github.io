@@ -58,6 +58,7 @@ let about = document.getElementById("about"),
   fKeyDes = document.querySelector("#fKeyDes"),
   fKeyWip = document.querySelector("#fKeyWip"),
   fNewOC = document.querySelector("#fNewOC"),
+  fNewOCGif = document.querySelector("#fNewOCGif"),
   fTrace1 = document.querySelector("#fTrace1"),
   fTrace2 = document.querySelector("#fTrace2"),
   fSoeNew = document.querySelector("#fSoeNew"),
@@ -195,7 +196,7 @@ document.querySelector("#bFigapp").onclick = function() {
 document.querySelector("#bFigpers").onclick = function() {
   $(overlay).fadeIn();
   $(figpers).fadeIn();
-  audios[14].play();
+  audios[13].play();
 }
 
 document.querySelector("#bKaworu").onclick = function() {
@@ -375,6 +376,11 @@ document.querySelector("#iKeyWip").onclick = function() {
 document.querySelector("#iNewOC").onclick = function() {
   $(fullScreen).fadeIn();
   $(fNewOC).fadeIn();
+}
+
+document.querySelector("#iNewOCGif").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fNewOCGif).fadeIn();
 }
 
 document.querySelector("#iTrace1").onclick = function() {
