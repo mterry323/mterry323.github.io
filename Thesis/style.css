@@ -80,7 +80,7 @@ hr {
 .bubble {
   display: inline-grid;
   position: absolute;
-  width: 10%;
+  width: 10%; /* In case this breaks tomorrow: used to be 150px */
   height: auto;
   margin: 3px;
   padding: 10px;
@@ -99,10 +99,10 @@ hr {
 }
 
 .bubble:hover {
-  width: 18%;
+  width: 18%; /* In case this breaks tomorrow: used to be 250px */
   transition: all .2s ease-in-out;
   cursor: pointer;
-  transform: translateX(-10%) translateY(-10%);
+  transform: translateX(-10%) translateY(-10%); /* In case this breaks tomorrow: used to be -25px */
 }
 
 /* Intro splash */

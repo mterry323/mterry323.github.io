@@ -38,6 +38,8 @@ let about = document.getElementById("about"),
   fXennia4 = document.querySelector("#fXennia4"),
   fXennia5 = document.querySelector("#fXennia5"),
   fCammie = document.querySelector("#fCammie"),
+  fCammieOG = document.querySelector("#fCammieOG"),
+  fCammieOld = document.querySelector("#fCammieOld"),
   fContain1 = document.querySelector("#fContain1"),
   fContain2 = document.querySelector("#fContain2"),
   fEdwinNew = document.querySelector("#fEdwinNew"),
@@ -59,6 +61,10 @@ let about = document.getElementById("about"),
   fKeyWip = document.querySelector("#fKeyWip"),
   fNewOC = document.querySelector("#fNewOC"),
   fNewOCGif = document.querySelector("#fNewOCGif"),
+  fNewOC1 = document.querySelector("#fNewOC1"),
+  fNewOC2 = document.querySelector("#fNewOC2"),
+  fNewOC3 = document.querySelector("#fNewOC3"),
+  fNewOC4 = document.querySelector("#fNewOC4"),
   fTrace1 = document.querySelector("#fTrace1"),
   fTrace2 = document.querySelector("#fTrace2"),
   fSoeNew = document.querySelector("#fSoeNew"),
@@ -258,6 +264,16 @@ document.querySelector("#iCammie").onclick = function() {
   $(fCammie).fadeIn();
 }
 
+document.querySelector("#iCammieOG").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fCammieOG).fadeIn();
+}
+
+document.querySelector("#iCammieOld").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fCammieOld).fadeIn();
+}
+
 document.querySelector("#iXennia1").onclick = function() {
   $(fullScreen).fadeIn();
   $(fXennia1).fadeIn();
@@ -381,6 +397,26 @@ document.querySelector("#iNewOC").onclick = function() {
 document.querySelector("#iNewOCGif").onclick = function() {
   $(fullScreen).fadeIn();
   $(fNewOCGif).fadeIn();
+}
+
+document.querySelector("#iNewOC1").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fNewOC1).fadeIn();
+}
+
+document.querySelector("#iNewOC2").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fNewOC2).fadeIn();
+}
+
+document.querySelector("#iNewOC3").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fNewOC3).fadeIn();
+}
+
+document.querySelector("#iNewOC4").onclick = function() {
+  $(fullScreen).fadeIn();
+  $(fNewOC4).fadeIn();
 }
 
 document.querySelector("#iTrace1").onclick = function() {
