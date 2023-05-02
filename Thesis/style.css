@@ -24,6 +24,20 @@ hr {
   margin:25px auto;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #d43b3b;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #3470d9;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
 #container {
   position: fixed;
   top: 0vh;
