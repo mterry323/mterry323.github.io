@@ -80,7 +80,7 @@ hr {
 .bubble {
   display: inline-grid;
   position: absolute;
-  width: 150px;
+  width: 10%;
   height: auto;
   margin: 3px;
   padding: 10px;
@@ -99,10 +99,10 @@ hr {
 }
 
 .bubble:hover {
-  width: 250px;
+  width: 18%;
   transition: all .2s ease-in-out;
   cursor: pointer;
-  transform: translateX(-25px) translateY(-25px);
+  transform: translateX(-10%) translateY(-10%);
 }
 
 /* Intro splash */
@@ -262,17 +262,17 @@ img.fullImg {
 }
 
 #bXennia {
-  top:55vh;
+  top:60vh;
   left:5vw;
 }
 
 #bCammie {
-  top:20vh;
+  top:25vh;
   left:15vw;
 }
 
 #bContain {
-  top:60vh;
+  top:65vh;
   left:30vw;
 }
 
@@ -287,7 +287,7 @@ img.fullImg {
 }
 
 #bFigpers {
-  top:80vh;
+  top:85vh;
   left:60vw;
 }
 
@@ -307,8 +307,8 @@ img.fullImg {
 }
 
 #bKeywip {
-  top:90vh;
-  left:5vw;
+  top:100vh;
+  left:15vw;
 }
 
 #bNewOC {
@@ -317,16 +317,16 @@ img.fullImg {
 }
 
 #bPhoto {
-  top:100vh;
-  left:35vw;
+  top:115vh;
+  left:40vw;
 }
 
 #bSoe {
-  top:100vh;
-  left:100vw;
+  top:125vh;
+  left:75vw;
 }
 
 #bUsc {
-  top:30vh;
-  left:95vw;
+  top:135vh;
+  left:3vw;
 }
