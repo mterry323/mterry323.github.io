@@ -103,6 +103,7 @@ document.getElementById("overlay").onclick = function() {
     $(info[i]).fadeOut();
   }
   for (var i = 0; i < audios.length; i++) {
+    audios[i].currentTime = 0;
     audios[i].pause();
   }
 }
