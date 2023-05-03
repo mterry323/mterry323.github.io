@@ -109,6 +109,7 @@ document.getElementById("overlay").onclick = function() {
 
 document.getElementById("fullScreen").onclick = function() {
   $(fullScreen).fadeOut();
+  $(about).fadeOut();
   for (var i = 0; i < fullImg.length; i++) {
     $(fullImg[i]).fadeOut();
   }
@@ -130,7 +131,7 @@ document.getElementById("startButton").onclick = function() {
 
 //About Button
 document.getElementById("aboutButton").onclick = function() {
-  $(overlay).fadeIn();
+  $(fullScreen).fadeIn();
   $(about).fadeIn();
 }
 
